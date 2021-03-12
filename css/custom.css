@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&family=Playfair+Display&display=swap');
+
+/*--------------------------------------------------------------
+# General Elements
+--------------------------------------------------------------*/
+* {outline: none;}
+
+html {
+	scroll-behavior: smooth;
+}
+
+h1 {
+	font-family: 'Abril Fatface', cursive;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Playfair Display', serif;
+}
+
+b {
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+}
+
+::selection {
+	background-color: #eee;
+}
+
+body {
+	color: #000;
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	word-spacing: 1px;
+	letter-spacing: 0.01em;
+	font-size: 16px;
+	line-height: 25px;
+}
+img {
+	padding-top: 60px;
+	padding-right: 30px;
+}
+
+#single p,
+#page p {
+	margin-bottom: 25px;
+}
+
+ul {
+	font-family: 'Lato', sans-serif;
+	word-spacing: 1px;
+	letter-spacing: 0.01em;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+table {
+	font-family: 'Lato', sans-serif;
+	word-spacing: 1px;
+	letter-spacing: 0.01em;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.page-title {
+	text-align: center;
+}
+h1.entry-title a:hover {
+	color: gray;
+}
+
+.title {
+	margin-bottom: 30px;
+}
+
+figure {
+	margin-bottom: 25px;
+}
+
+.height-40px {
+	margin-bottom: 40px;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#site-header {
+	background-color: #FFF;
+	padding: 25px 20px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #e7e7e7;
+	font-family: 'Playfair Display', serif;
+}
+
+/*--------------------------------------------------------------
+# Logo
+--------------------------------------------------------------*/
+.logo h1 a {
+    color: #000;
+}
+
+.logo h1 a:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.logo h1 {
+	margin: 0;
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 400;
+}
+
+/*--------------------------------------------------------------
+# Main navigation
+--------------------------------------------------------------*/
+.main-nav {
+	margin-top: 11px;
+	max-width: 95%;
+}
+
+.main-nav a {
+	color: #000000 !important;
+	padding: 0 0 5px 0 !important;
+	margin-right: 30px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 24px;
+}
+
+.main-nav a:active,
+.main-nav a:focus,
+.main-nav a:hover {
+	background-color: transparent !important;
+	border-bottom: 0;
+}
+
+.navbar-toggle {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    margin-right: 25px;
+}
+
+.navbar-toggle span {
+    font-size: 2em;
+    color: #000;
+}
+
+/*--------------------------------------------------------------
+# Main Nav CSS 3 Hover Effect
+--------------------------------------------------------------*/
+.cl-effect-11 a {
+	padding: 10px 0;
+	color: #0972b4;
+	text-shadow: none;
+}
+
+.cl-effect-11 a::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	padding: 0 0 5px 0 !important;
+	max-width: 0;
+	border-bottom: 1px solid #000;
+	color: #000;
+	content: attr(data-hover);
+	-webkit-transition: max-width 0.5s;
+	-moz-transition: max-width 0.5s;
+	transition: max-width 0.5s;
+}
+
+.cl-effect-11 a:hover::before,
+.cl-effect-11 a:focus::before {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Home/blog
+--------------------------------------------------------------*/
+.content-body {
+	padding-bottom: 4em;
+}
+
+.post {
+	background: #fff;
+	padding: 30px 30px 0;
+}
+
+.entry-title {
+	text-align: left;
+	font-size: 5em;
+	margin-bottom: 20px;
+	line-height: 1.6;
+}
+
+.entry-meta {
+	text-align: center;
+	color: #DDDDDD;
+	font-size: 13px;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+}
+
+.entry-content {
+	font-size: 18px;
+	line-height: 1.9;
+	font-weight: 300;
+	color: #000;
+}
+
+.post-category,
+.post-date,
+.post-author {
+	position: relative;
+	padding-right: 15px;
+}
+
+.post-category::after,
+.post-date::after,
+.post-author::after {
+	position: absolute;
+	content: '.';
+	color: #000;
+	font-size: 30px;
+	top: -22px;
+	right: 1px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#site-footer {
+	padding-top: 10px;
+	padding: 0 0 1.5em 0;
+}
+
+.copyright {
+	text-align: center;
+	padding-top: 1em;
+	margin: 0;
+	border-top: 1px solid #eee;
+	color: #666;
+}
+
+/*--------------------------------------------------------------
+# Mobile Menu
+--------------------------------------------------------------*/
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+}
+
+.overlay .overlay-close {
+	position: absolute;
+	right: 25px;
+	top: 10px;
+	padding: 0;
+	overflow: hidden;
+	border: none;
+	color: transparent;
+	background-color: transparent;
+	z-index: 100;
+}
+
+.overlay-hugeinc.open .ion-ios-close-empty {
+    color: #000;
+    font-size: 50px;
+}
+
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	font-size: 36px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+}
+
+.overlay ul li a {
+	font-weight: 300;
+	display: block;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #000;
+}
+
+.overlay-hugeinc {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+}
+
+/*--------------------------------------------------------------
+# Media Query
+--------------------------------------------------------------*/
+
+@media (max-width: 991px) {
+	.main-nav a {
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 431px) {
+	.logo h1 {
+		margin-top: 8px;
+		font-size: 24px;
+	}
+
+	.post {
+		background: #fff;
+		padding: 0 10px 0;
+	}
+
+	.more-link {
+		font-size: 0.9em;
+		line-height: 100%;
+	}
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}
