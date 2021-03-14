@@ -159,6 +159,14 @@ figure {
     color: #000;
 }
 
+.dropdown-menu {
+	padding: 1rem;
+}
+
+.dropdown-item a {
+	font-size: 0.7rem;
+}
+
 /*--------------------------------------------------------------
 # Main Nav CSS 3 Hover Effect
 --------------------------------------------------------------*/
@@ -359,6 +367,10 @@ figure {
 .overlay-hugeinc.close nav ul {
 	-webkit-transform: translateY(25%) rotateX(-35deg);
 	transform: translateY(25%) rotateX(-35deg);
+}
+
+.card {
+	background-color: red;
 }
 
 /*--------------------------------------------------------------
