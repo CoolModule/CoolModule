@@ -249,7 +249,7 @@
 							<div class="card col-md-3">
 										<div class="card-body">
     									<h4 class="card-title">Query 5:</h4>
-    									<p class="card-text">Who are the antiheroes that are business partner with the villain?</p>
+    									<p class="card-text">Who are the antiheroes that have work relationship the villain?</p>
 											<div class="col text-center">
     										<button class="btn btn-success" data-toggle="modal" data-target="#myModal4">Result</button>
 											</div>
@@ -258,15 +258,15 @@
   											<div class="modal-dialog modal-dialog-centered">
     											<div class="modal-content">
 	      										<div class="modal-header">
-	        										<h3 class="modal-title">Who are the antiheroes that are business partner with the villain?</h3>
+	        										<h3 class="modal-title">Who are the antiheroes that have work relationship the villain?</h3>
 	      										</div>
 	      										<div class="modal-body">
 															<p>SELECT ?antihero <br>
 																WHERE {<br>
         												&nbsp;&nbsp;&nbsp;&nbsp;?antihero rdf:type cont:AntiHero .<br>
         												&nbsp;&nbsp;&nbsp;&nbsp;?villain rdf:type cont:Villain . <br>
-																&nbsp;&nbsp;&nbsp;&nbsp;?antihero cont:hasBusinessPartner ?Villain . <br>
-																} GROUP BY ?antihero</p>
+																{?antihero cont:hasBusinessPartner ?villain } UNION {?antihero cont:hasEmployer ?villain } <br>
+																}</p>
 																<h4>Outcome:</h4>
 																<p>URI...</p>
 	      										</div>
