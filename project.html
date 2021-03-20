@@ -131,10 +131,10 @@
 	      										<div class="modal-body">
 	        										<p>SELECT ?character <br>
 																 WHERE { <br>
-    													 	 &nbsp;&nbsp;?character cont:hasProfession ?profession .<br>
-    														 &nbsp;&nbsp;?profession rdf:type cont:IllegalProfession .<br>
+    													 	 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasProfession ?profession .<br>
+    														 &nbsp;&nbsp;&nbsp;&nbsp;?profession rdf:type cont:IllegalProfession .<br>
 																 MINUS {<br>
-        									 			 &nbsp;&nbsp;?character cont:hasEthnicOrigiin dataset:White .<br>
+        									 			 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasEthnicOrigiin dataset:White .<br>
 															   }<br>
  														     } GROUP BY ?character</p>
 																 <h5>Outcome:</h5>
