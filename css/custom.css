@@ -256,6 +256,11 @@ figure {
 	float: left;
 	border: none;
 	border-radius: 5%;
+	background-color: #D4EFDF;
+}
+
+.card-body {
+	margin-bottom: 2px;
 }
 /*--------------------------------------------------------------
 # Footer
