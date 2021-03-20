@@ -252,7 +252,8 @@ figure {
 # Query Cards
 --------------------------------------------------------------*/
 .card {
-	margin: 15px;
+	margin-left: 0px;
+	margin-right: 15px;
   float: left;
 	border: 2px solid #52BE80;
 }
