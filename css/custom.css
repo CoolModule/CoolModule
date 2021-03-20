@@ -252,9 +252,10 @@ figure {
 # Query Cards
 --------------------------------------------------------------*/
 .card {
-	margin: 15px;
+	margin: 20px;
 	float: left;
 	border: none;
+	border-radius: 5%
 	background-color: #D4EFDF;
 }
 /*--------------------------------------------------------------
