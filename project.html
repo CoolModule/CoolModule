@@ -125,19 +125,18 @@
     											<div class="modal-content">
 	      										<!-- Modal Header -->
 	      										<div class="modal-header">
-	        										<h4 class="modal-title">How many characters not-white are employed in illegal professions?</h4>
+	        										<h3 class="modal-title">How many characters not-white are employed in illegal professions?</h3>
 	      										</div>
 	      										<!-- Modal body -->
 	      										<div class="modal-body">
 	        										<p>SELECT ?character <br>
 																 WHERE { <br>
-    													 	 ?character cont:hasProfession ?profession .<br>
-    														 ?profession rdf:type cont:IllegalProfession .<br>
+    													 	 &nbsp;&nbsp;?character cont:hasProfession ?profession .<br>
+    														 &nbsp;&nbsp;?profession rdf:type cont:IllegalProfession .<br>
 																 MINUS {<br>
-        									 			 ?character cont:hasEthnicOrigiin dataset:White .<br>
+        									 			 &nbsp;&nbsp;?character cont:hasEthnicOrigiin dataset:White .<br>
 															   }<br>
  														     } GROUP BY ?character</p>
-																 <hr>
 																 <h5>Outcome:</h5>
 																 <p>URI...</p>
 	      										</div>
