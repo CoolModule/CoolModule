@@ -253,7 +253,9 @@ figure {
 --------------------------------------------------------------*/
 .card {
 	margin: 15px;
-  float: center;
+  float: left;
+	border: 2px solid #52BE80;
+	border-radius: 20%;
 }
 /*--------------------------------------------------------------
 # Footer
@@ -374,10 +376,6 @@ figure {
 .overlay-hugeinc.close nav ul {
 	-webkit-transform: translateY(25%) rotateX(-35deg);
 	transform: translateY(25%) rotateX(-35deg);
-}
-
-.card {
-	background-color: red;
 }
 
 /*--------------------------------------------------------------
