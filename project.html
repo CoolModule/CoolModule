@@ -123,11 +123,9 @@
 											<div class="modal" id="myModal">
   											<div class="modal-dialog modal-dialog-centered">
     											<div class="modal-content">
-	      										<!-- Modal Header -->
 	      										<div class="modal-header">
 	        										<h3 class="modal-title">How many characters not-white are employed in illegal professions?</h3>
 	      										</div>
-	      										<!-- Modal body -->
 	      										<div class="modal-body">
 	        										<p>SELECT ?character <br>
 																 WHERE { <br>
@@ -137,10 +135,9 @@
         									 			 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasEthnicOrigiin dataset:White .<br>
 															   }<br>
  														     } GROUP BY ?character</p>
-																 <h5>Outcome:</h5>
+																 <h4>Outcome:</h4>
 																 <p>URI...</p>
 	      										</div>
-	      										<!-- Modal footer -->
 	      										<div class="modal-footer">
 	        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
 	      										</div>
@@ -153,9 +150,32 @@
 							<div class="card col-md-3">
 										<div class="card-body">
     									<h4 class="card-title">Query 2:</h4>
-    									<p class="card-text">Which female characters have both an occupation and a chils?</p>
+    									<p class="card-text">Which female characters have both an occupation and a child?</p>
 											<div class="col text-center">
-    										<button class="btn btn-success">Result</button>
+    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Result</button>
+											</div>
+
+											<div class="modal" id="myModal">
+  											<div class="modal-dialog modal-dialog-centered">
+    											<div class="modal-content">
+	      										<div class="modal-header">
+	        										<h3 class="modal-title">Which female characters have both an occupation and a child?</h3>
+	      										</div>
+	      										<div class="modal-body">
+															<p>SELECT ?character <br>
+																WHERE {<br>
+        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasGender "female"^^rdfs:Literal . <br>
+        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasProfession ?profession . <br>
+        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasChild ?child . <br>
+																}</p>
+																<h4>Outcome:</h4>
+																<p>URI...</p>
+	      										</div>
+	      										<div class="modal-footer">
+	        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+	      										</div>
+    											</div>
+  											</div>
 											</div>
   									</div>
 								 	</div>
@@ -164,17 +184,66 @@
     									<h4 class="card-title">Query 3:</h4>
     									<p class="card-text">Which are the characters that have professions somewhat related to drug?</p>
 											<div class="col text-center">
-    										<button class="btn btn-success">Result</button>
+    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Result</button>
 											</div>
-  									</div>
+
+											<div class="modal" id="myModal">
+  											<div class="modal-dialog modal-dialog-centered">
+    											<div class="modal-content">
+	      										<div class="modal-header">
+	        										<h3 class="modal-title">Which are the characters that have professions somewhat related to drug?</h3>
+	      										</div>
+	      										<div class="modal-body">
+															<p>SELECT ?character <br>
+																WHERE {<br>
+        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasProfession ?profession . <br>
+        												&nbsp;&nbsp;&nbsp;&nbsp;?profession rdfs:label ?profName . <br>
+        												&nbsp;&nbsp;&nbsp;&nbsp;FILTER regex(?profName, "drug", "i") . <br>
+																}</p>
+																<h4>Outcome:</h4>
+																<p>URI...</p>
+	      										</div>
+	      										<div class="modal-footer">
+	        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+	      										</div>
+    											</div>
+  											</div>
+											</div>
+
+  							</div>
 							</div>
 							<div class="card col-md-3">
 										<div class="card-body">
     									<h4 class="card-title">Query 4:</h4>
     									<p class="card-text">Who are the fictional characters that are not protagonist?</p>
 											<div class="col text-center">
-    										<button class="btn btn-success">Result</button>
+    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Result</button>
 											</div>
+
+											<div class="modal" id="myModal">
+  											<div class="modal-dialog modal-dialog-centered">
+    											<div class="modal-content">
+	      										<div class="modal-header">
+	        										<h3 class="modal-title">Who are the fictional characters that are not protagonist?</h3>
+	      										</div>
+	      										<div class="modal-body">
+															<p>SELECT ?FictionalCharacter <br>
+																WHERE {<br>
+        												&nbsp;&nbsp;&nbsp;&nbsp;?FictionalCharacter ref:type cont:character .  <br>
+																MINUS {<br>
+        												&nbsp;&nbsp;&nbsp;&nbsp;?FictionalCharacter rdf:type cont:Protagonist . <br>
+																}<br>
+																}</p>
+																<h4>Outcome:</h4>
+																<p>URI...</p>
+	      										</div>
+	      										<div class="modal-footer">
+	        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+	      										</div>
+    											</div>
+  											</div>
+											</div>
+
   									</div>
 									</div>
 							<div class="card col-md-3">
@@ -182,8 +251,32 @@
     									<h4 class="card-title">Query 5:</h4>
     									<p class="card-text">Who are the antiheroes that are business partner with the villain?</p>
 											<div class="col text-center">
-    										<button class="btn btn-success">Result</button>
+    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Result</button>
 											</div>
+
+											<div class="modal" id="myModal">
+  											<div class="modal-dialog modal-dialog-centered">
+    											<div class="modal-content">
+	      										<div class="modal-header">
+	        										<h3 class="modal-title">Who are the antiheroes that are business partner with the villain?</h3>
+	      										</div>
+	      										<div class="modal-body">
+															<p>SELECT ?antihero <br>
+																WHERE {<br>
+        												&nbsp;&nbsp;&nbsp;&nbsp;?antihero rdf:type cont:AntiHero .<br>
+        												&nbsp;&nbsp;&nbsp;&nbsp;?villain rdf:type cont:Villain . <br>
+																&nbsp;&nbsp;&nbsp;&nbsp;?antihero cont:hasBusinessPartner ?Villain . <br>
+																} GROUP BY ?antihero</p>
+																<h4>Outcome:</h4>
+																<p>URI...</p>
+	      										</div>
+	      										<div class="modal-footer">
+	        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+	      										</div>
+    											</div>
+  											</div>
+											</div>
+
   									</div>
 									</div>
 							<div class="card col-md-3">
@@ -191,8 +284,33 @@
     									<h4 class="card-title">Query 6:</h4>
     									<p class="card-text">Who are the opposing characters with scope not universal good?</p>
 											<div class="col text-center">
-    										<button class="btn btn-success">Result</button>
+    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Result</button>
 											</div>
+
+											<div class="modal" id="myModal">
+  											<div class="modal-dialog modal-dialog-centered">
+    											<div class="modal-content">
+	      										<div class="modal-header">
+	        										<h3 class="modal-title">Who are the opposing characters with scope not universal good?</h3>
+	      										</div>
+	      										<div class="modal-body">
+															<p>SELECT ?character <br>
+																WHERE {<br>
+        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:Opposing . <br>
+        												MINUS {<br>
+																&nbsp;&nbsp;&nbsp;&nbsp;?characterScope rdf:type cont:UniversalGood . <br>
+																}<br>
+																}</p>
+																<h4>Outcome:</h4>
+																<p>URI...</p>
+	      										</div>
+	      										<div class="modal-footer">
+	        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+	      										</div>
+    											</div>
+  											</div>
+											</div>
+
   									</div>
 							 		</div>
 					 		<div class="card col-md-3">
@@ -200,8 +318,32 @@
     									<h4 class="card-title">Query 7:</h4>
     									<p class="card-text">Who are he characters that has been killed by protagonist?</p>
 											<div class="col text-center">
-    										<button class="btn btn-success">Result</button>
+    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Result</button>
 											</div>
+
+											<div class="modal" id="myModal">
+  											<div class="modal-dialog modal-dialog-centered">
+    											<div class="modal-content">
+	      										<div class="modal-header">
+	        										<h3 class="modal-title">Who are he characters that has been killed by protagonist?</h3>
+	      										</div>
+	      										<div class="modal-body">
+															<p>SELECT ?character <br>
+																WHERE {<br>
+        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:Character .<br>
+        												&nbsp;&nbsp;&nbsp;&nbsp;?protagonist rdf:type cont:Protagonist . <br>
+																&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasBeenKilledBy ?Protagonist . <br>
+																}</p>
+																<h4>Outcome:</h4>
+																<p>URI...</p>
+	      										</div>
+	      										<div class="modal-footer">
+	        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+	      										</div>
+    											</div>
+  											</div>
+											</div>
+
   									</div>
 							</div>
 							<div class="card col-md-3">
@@ -209,8 +351,31 @@
     									<h4 class="card-title">Query 8:</h4>
     									<p class="card-text">Which are the sociological characteristics of an antihero?</p>
 											<div class="col text-center">
-    										<button class="btn btn-success">Result</button>
+    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Result</button>
 											</div>
+
+											<div class="modal" id="myModal">
+  											<div class="modal-dialog modal-dialog-centered">
+    											<div class="modal-content">
+	      										<div class="modal-header">
+	        										<h3 class="modal-title">Which are the sociological characteristics of an antihero?</h3>
+	      										</div>
+	      										<div class="modal-body">
+															<p>?sociologicalCharacteristics <br>
+																WHERE {<br>
+        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:AntiHero . <br>
+        												&nbsp;&nbsp;&nbsp;&nbsp;?sociologicalCharacteristics rdf:type cont:SociologicalCharacteristics . <br>
+																} GROUP BY ?sociologicalCharacteristics</p>
+																<h4>Outcome:</h4>
+																<p>URI...</p>
+	      										</div>
+	      										<div class="modal-footer">
+	        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+	      										</div>
+    											</div>
+  											</div>
+											</div>
+
   									</div>
 							</div>
 
