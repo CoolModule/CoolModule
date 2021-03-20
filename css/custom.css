@@ -253,9 +253,8 @@ figure {
 --------------------------------------------------------------*/
 .card {
 	margin: 15px;
-	float: center;
+	float: left;
 	border: none;
-	border-radius: 10%;
 	background-color: #D4EFDF;
 }
 /*--------------------------------------------------------------
