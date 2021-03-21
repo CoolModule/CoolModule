@@ -22,14 +22,16 @@ h6 {
 }
 
 b {
-	font-weight: 400;
+	font-weight: 900;
 }
 
 a {
+	color:#00b300;
 	text-decoration: none;
 }
 
 a:hover, a:focus {
+	color:;
 	text-decoration: none;
 }
 
@@ -48,6 +50,7 @@ p {
 	letter-spacing: 0.01em;
 	font-size: 16px;
 	line-height: 25px;
+	padding-bottom: 12px;
 }
 img {
 	padding-top: 60px;
@@ -170,6 +173,94 @@ figure {
 #graph {
 	padding-top: 10px;
 }
+
+.title-word {
+	color:#00b300;
+	font-size: 1em;
+	font-family: 'Shadows Into Light Two', cursive;
+}
+
+.img-desc {
+	font-size:0.9em;
+}
+
+.index-button {
+	background-color: white;
+	border: none;
+	text-align: center;
+}
+
+.index-button {
+  margin: auto; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  text-align: center;
+}
+
+.index-button a {
+  color: #444;
+  font-size: 1.3em;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 5px;
+  position: relative;
+}
+.index-button a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #444; /**#00b300;**/
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.index-button a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.aside {
+	position: fixed;
+    margin-left: -100px;
+    /**background-color: #00b300;**/
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-right: solid 1px #d9d9d9;
+}
+
+.aside a{
+	color:black;
+}
+.aside a:hover {
+	color:#00b300;
+}
+
+.btn-success {
+    color: black;
+    /* color: #fff; */
+    background-color: #f2f2f2;
+    border-color: black;
+    font-family: 'Playfair Display', serif;
+}
+.btn-success:hover {
+	background-color: #8c8c8c;
+}
+.btn-success:active {
+	background-color: #8c8c8c;
+}
+.btn-success:focus {
+	background-color: #8c8c8c;
+}
+.card {
+	padding: 10px;
+}
+
+
 /*--------------------------------------------------------------
 # Main Nav CSS 3 Hover Effect
 --------------------------------------------------------------*/
@@ -212,7 +303,7 @@ figure {
 }
 
 .entry-title {
-	text-align: left;
+	text-align: center;
 	font-size: 5em;
 	margin-bottom: 20px;
 	line-height: 1.6;
@@ -259,7 +350,7 @@ figure {
 	float: left;
 	border: none;
 	border-radius: 5%;
-	background-color: #D4EFDF;
+	background-color: #f2f2f2;
 }
 
 .card-body {
@@ -410,6 +501,11 @@ figure {
 	.more-link {
 		font-size: 0.9em;
 		line-height: 100%;
+	}
+	.aside {
+		position:static;
+		margin:none;
+		padding:none;
 	}
 }
 
