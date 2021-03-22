@@ -55,7 +55,7 @@ p {
 img {
 	padding-top: 60px;
 	padding-right: 30px;
-	height:auto;
+	width: 120px;
 }
 
 #single p,
