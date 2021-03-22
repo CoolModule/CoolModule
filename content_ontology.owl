@@ -1,0 +1,911 @@
+@prefix : <http://www.semanticweb.org/ontologies/2021/1/content#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cont: <http://www.semanticweb.org/ontologies/2021/1/content#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ontologies/2021/1/content> .
+
+<http://www.semanticweb.org/ontologies/2021/1/content> rdf:type owl:Ontology ;
+                                                        owl:imports <https://w3id.org/arco/ontology/context-description> ,
+                                                                    <https://w3id.org/arco/ontology/denotative-description> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#defines
+cont:defines rdf:type owl:ObjectProperty ;
+             rdfs:comment "This property define the act of attaching a meaning to a term."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasAuthor
+cont:hasAuthor rdf:type owl:ObjectProperty ;
+               owl:inverseOf cont:isAuthorOf ;
+               rdfs:comment "This property links any written work to its creator or originator."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasBusinessPartner
+cont:hasBusinessPartner rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf cont:isRelatedTo ;
+                        rdf:type owl:SymmetricProperty ;
+                        rdfs:comment "This property defines a business relations bwtween two agents."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasCharacter
+cont:hasCharacter rdf:type owl:ObjectProperty ;
+                  owl:inverseOf cont:isCharacterOf .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasCharacterRole
+cont:hasCharacterRole rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf cont:hasType ;
+                      owl:inverseOf cont:isCharacterRole ;
+                      rdfs:comment "This property defines character’s role as protagonist, antagonist or secondary."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasCharacterScope
+cont:hasCharacterScope rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf cont:hasType ;
+                       owl:inverseOf cont:isCharacterScope ;
+                       rdfs:comment "This property defines character’s scope as universal good, universal bad or self good."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasCharacterStatus
+cont:hasCharacterStatus rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf cont:hasType ;
+                        owl:inverseOf cont:isCharacterStatus ;
+                        rdfs:comment "This property defines character’s status as leading, opposing or supporting."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasCharacterType
+cont:hasCharacterType rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf cont:hasType ;
+                      owl:inverseOf cont:isCharacterType ;
+                      rdfs:comment "This property defines character’s type as hero, antihero, or villain."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasChild
+cont:hasChild rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf cont:hasRelative ;
+              owl:inverseOf cont:hasParent ;
+              rdfs:comment "This property links an agent that is parent to another agent."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasEmployee
+cont:hasEmployee rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf cont:isRelatedTo ;
+                 owl:inverseOf cont:hasEmployer ;
+                 rdfs:comment "This property links an employer to its employee."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasEmployer
+cont:hasEmployer rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf cont:isRelatedTo ;
+                 rdfs:comment "This property links an employee to its employer."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasEnvironment
+cont:hasEnvironment rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf cont:hasSociologicalCharacteristic ;
+                    rdfs:comment "This property links an agent to an environment."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasEthnicGroup
+cont:hasEthnicGroup rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf cont:hasSociologicalCharacteristic ;
+                    owl:inverseOf cont:isEthnicGroupOf ;
+                    rdfs:comment "This property links an agent to an ethnic group."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasEthnicOrigin
+cont:hasEthnicOrigin rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf cont:hasOrigin ;
+                     owl:inverseOf cont:isEthnicOriginOf ;
+                     rdfs:comment "This property defines the origin an agent has from an ethnic point of view."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasFictionalType
+cont:hasFictionalType rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf cont:hasType ;
+                      owl:inverseOf cont:isFictionalType ;
+                      rdfs:comment "This property defines fictional character’s type as fictional or non fictional."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasGeographicOrigin
+cont:hasGeographicOrigin rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf cont:hasOrigin ;
+                         owl:inverseOf cont:isGeographicOriginOf ;
+                         rdfs:comment "This property defines the origin an agent has from a geographic point of view."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasOrigin
+cont:hasOrigin rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf cont:hasSociologicalCharacteristic ;
+               rdfs:comment "This property defines the origin an agent has."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasParent
+cont:hasParent rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf cont:hasRelative ;
+               rdfs:comment "This property link an agent that is child to another agent."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasPartIn
+cont:hasPartIn rdf:type owl:ObjectProperty ;
+               rdfs:comment "To be involved in, to be a factor in."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasProfession
+cont:hasProfession rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf cont:hasSociologicalCharacteristic ;
+                   rdfs:comment "This property links an agent to a profession."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasRelative
+cont:hasRelative rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf cont:isRelatedTo ;
+                 rdf:type owl:SymmetricProperty ;
+                 rdfs:comment "This property links two agents connected by blood or marriage."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasRole
+cont:hasRole rdf:type owl:ObjectProperty ;
+             owl:inverseOf cont:isRole ;
+             rdfs:comment "This property defines the role of character in a play."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasSocialOrigin
+cont:hasSocialOrigin rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf cont:hasOrigin ;
+                     rdf:type owl:FunctionalProperty ;
+                     rdfs:comment "This property defines the origin an agent has from a social point of view."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasSociologicalCharacteristic
+cont:hasSociologicalCharacteristic rdf:type owl:ObjectProperty ;
+                                   owl:inverseOf cont:isSociologicalCharacteristicOf ;
+                                   rdfs:comment "This property defines a sociological characteristic that can be described as belonging to an agent."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasSpinOff
+cont:hasSpinOff rdf:type owl:ObjectProperty ;
+                owl:inverseOf cont:isSpinOffOf ;
+                rdfs:comment "This property links a TV serie to another TV serie in which a secondary character in the first show becomes the protagonist."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasType
+cont:hasType rdf:type owl:ObjectProperty ;
+             owl:inverseOf cont:isType ;
+             rdfs:comment "This property defines the typology of character depicted as human, animal or supernatural one."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isAuthorOf
+cont:isAuthorOf rdf:type owl:ObjectProperty ;
+                rdfs:comment "This property links a creator or originator to its written work."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isBasedOn
+cont:isBasedOn rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ,
+                        owl:InverseFunctionalProperty ;
+               rdfs:comment "This property defines a character that is based on or inspired to a real or invented person, animal or supernatural being."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isCharacterOf
+cont:isCharacterOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isCharacterRole
+cont:isCharacterRole rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf cont:isType ;
+                     rdfs:comment "This property defines protagonist, antagonist and secondary as character’s role."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isCharacterScope
+cont:isCharacterScope rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf cont:isType ;
+                      rdfs:comment "This property defines universal good, universal bad and self good as character’s scope."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isCharacterStatus
+cont:isCharacterStatus rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf cont:isType ;
+                       rdfs:comment "This property defines leading, opposing, and supporting as character’s status."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isCharacterType
+cont:isCharacterType rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf cont:isType ;
+                     rdfs:comment "This property defines hero, antihero, and villain as character’s type."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isDefinedBy
+cont:isDefinedBy rdf:type owl:ObjectProperty ;
+                 rdfs:comment "This property defines the meaning that is attached to a term."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isEnvironmentOf
+cont:isEnvironmentOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf cont:isSociologicalCharacteristicOf ;
+                     rdfs:comment "This property links an environment to an agent."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isEthnicGroupOf
+cont:isEthnicGroupOf rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf cont:isSociologicalCharacteristicOf ;
+                     rdfs:comment "This property links an ethnic group to an agent."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isEthnicOriginOf
+cont:isEthnicOriginOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf cont:isOriginOf ;
+                      rdfs:comment "This property defines the origin referring to an agent from an ethnic point of view."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isFictionalType
+cont:isFictionalType rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf cont:isType ;
+                     rdfs:comment "This property defines fictional and non fictional as character’s fictional type."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isGeographicOriginOf
+cont:isGeographicOriginOf rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf cont:isOriginOf ;
+                          rdfs:comment "This property defines the origin referring to an agent from a geographic point of view."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isKilledBy
+cont:isKilledBy rdf:type owl:ObjectProperty ;
+                owl:inverseOf cont:kills ;
+                rdfs:comment "This property links two agents in which the first one is killed by the second one."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isOriginOf
+cont:isOriginOf rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf cont:isSociologicalCharacteristicOf ;
+                rdfs:comment "This property defines the origin referring to an agent."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isPlayedBy
+cont:isPlayedBy rdf:type owl:ObjectProperty ;
+                owl:inverseOf cont:plays ;
+                rdfs:comment "This property defines a character that is interpreted by an actor."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isProfessionOf
+cont:isProfessionOf rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf cont:isSociologicalCharacteristicOf ;
+                    rdfs:comment "This property link a profession to an agent."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isRelatedTo
+cont:isRelatedTo rdf:type owl:ObjectProperty ,
+                          owl:SymmetricProperty ;
+                 rdfs:comment "This property defines a personal relations between two agents."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isRole
+cont:isRole rdf:type owl:ObjectProperty ;
+            rdfs:comment "This property defines a character by its role in a play."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isSocialOriginOf
+cont:isSocialOriginOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf cont:isOriginOf ;
+                      rdfs:comment "This property defines the origin referring to an agent from a social point of view."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isSociologicalCharacteristicOf
+cont:isSociologicalCharacteristicOf rdf:type owl:ObjectProperty ;
+                                    rdfs:comment "This property defines a sociological characteristic that refers to an agent." .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isSpinOffOf
+cont:isSpinOffOf rdf:type owl:ObjectProperty ;
+                 rdfs:comment "This property links a TV serie to another TV serie in which the protagonist played a secondary role."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#isType
+cont:isType rdf:type owl:ObjectProperty ;
+            rdfs:comment "This property defines human, animal or supernatural being as typology of character."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#kills
+cont:kills rdf:type owl:ObjectProperty ;
+           rdfs:comment "This property links two agents in which the first one kills the second one."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#plays
+cont:plays rdf:type owl:ObjectProperty ;
+           rdfs:comment "This property defines an actor that interprets a character."@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasAlternativeName
+cont:hasAlternativeName rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf cont:hasName ;
+                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasBirthDate
+cont:hasBirthDate rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:comment "This property associates an agent to the day of its birth."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasDeathDate
+cont:hasDeathDate rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:comment "This property associates an agent to the day of its death."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasFirstName
+cont:hasFirstName rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf cont:hasName ;
+                  rdfs:comment "This property links an agent to its first name."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasLastName
+cont:hasLastName rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf cont:hasName ;
+                 rdfs:comment "This property links an agent to its last name."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasName
+cont:hasName rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:string ;
+             rdfs:comment "This property links an agent to its name."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasNickname
+cont:hasNickname rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf cont:hasAlternativeName ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "This property links an agent to its nickname."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasPlaceOfBirth
+cont:hasPlaceOfBirth rdf:type owl:DatatypeProperty ;
+                     rdfs:comment "This property links an agent to the geografical place in which it was born."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasPlaceOfDeath
+cont:hasPlaceOfDeath rdf:type owl:DatatypeProperty ;
+                     rdfs:comment "This property links an agent to the geografical place in which it died."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasPlaceOfLiving
+cont:hasPlaceOfLiving rdf:type owl:DatatypeProperty ;
+                      rdfs:comment "This property links an agent to the geografical place in which it lives."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasPseudonym
+cont:hasPseudonym rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf cont:hasAlternativeName ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "This property links an agent to its pseudonym."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#hasSex
+cont:hasSex rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string ;
+            rdfs:comment "This property links an agent to its biological sex."@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dati.beniculturali.it/cis/CulturalEntity
+<http://dati.beniculturali.it/cis/CulturalEntity> owl:equivalentClass cont:CulturalProduct .
+
+
+###  http://dati.gov.it/onto/dcatapit#Agent
+<http://dati.gov.it/onto/dcatapit#Agent> owl:equivalentClass cont:Agent .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Actor
+cont:Actor rdf:type owl:Class ;
+           rdfs:subClassOf cont:Person ;
+           rdfs:comment "This class refers to a person who’s profession is acting on stage, films, or television."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Agent
+cont:Agent rdf:type owl:Class ;
+           owl:equivalentClass <https://w3id.org/italia/onto/l0/Agent> ;
+           rdfs:subClassOf owl:Thing ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty cont:hasProfession ;
+                             owl:someValuesFrom cont:Profession
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty cont:hasSocialOrigin ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass cont:SocialOrigin
+                           ] ;
+           owl:disjointWith cont:SociologicalCharacteristics .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Animal
+cont:Animal rdf:type owl:Class ;
+            rdfs:subClassOf cont:Agent ;
+            rdfs:comment "This class refers to living organism that feeds on organic matter."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Antagonist
+cont:Antagonist rdf:type owl:Class ;
+                rdfs:subClassOf cont:CharacterRole ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty cont:hasCharacterStatus ;
+                                  owl:allValuesFrom cont:Opposing
+                                ] ;
+                rdfs:comment "This class refers to a character of a work actively opposing the protagonist."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#AntiHero
+cont:AntiHero rdf:type owl:Class ;
+              rdfs:subClassOf cont:CharacterType ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty cont:hasCharacterStatus ;
+                                owl:someValuesFrom cont:CharacterStatus
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty cont:hasCharacterRole ;
+                                owl:allValuesFrom [ rdf:type owl:Class ;
+                                                    owl:unionOf ( cont:Antagonist
+                                                                  cont:CharacterStatus
+                                                                  cont:Protagonist
+                                                                  cont:Secondary
+                                                                )
+                                                  ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty cont:hasCharacterScope ;
+                                owl:allValuesFrom cont:SelfGood
+                              ] ;
+              rdfs:comment "This class refers to a leading character in a film, book or play, who is devoid of heroic qualities."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Aristocracy
+cont:Aristocracy rdf:type owl:Class ;
+                 rdfs:subClassOf cont:SocialClass ;
+                 owl:disjointWith cont:Clergy ,
+                                  cont:Commoner ;
+                 rdfs:comment "This class refers to the social class aristocrats are recognized to belong to."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Author
+cont:Author rdf:type owl:Class ;
+            rdfs:subClassOf cont:Writer ;
+            rdfs:comment "This class refers to a writer of any written work."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Character
+cont:Character rdf:type owl:Class ;
+               rdfs:subClassOf cont:Agent ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty cont:hasCharacterRole ;
+                                 owl:someValuesFrom cont:CharacterRole
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty cont:hasCharacterType ;
+                                 owl:someValuesFrom cont:CharacterType
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty cont:hasFictionalType ;
+                                 owl:allValuesFrom [ rdf:type owl:Class ;
+                                                     owl:unionOf ( cont:FictionalCharacter
+                                                                   cont:NonFictionalCharacter
+                                                                 )
+                                                   ]
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty cont:hasSocialOrigin ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass cont:SocialOrigin
+                               ] ;
+               rdfs:comment "This class refers to an art figure."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#CharacterRole
+cont:CharacterRole rdf:type owl:Class ;
+                   rdfs:subClassOf cont:Character ;
+                   rdfs:comment "This class refers to specific role played or filled by a character."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#CharacterScope
+cont:CharacterScope rdf:type owl:Class ;
+                    rdfs:subClassOf cont:Character ;
+                    rdfs:comment "This class refers to an identifier of a character intention."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#CharacterStatus
+cont:CharacterStatus rdf:type owl:Class ;
+                     rdfs:subClassOf cont:Character ;
+                     rdfs:comment "This class refers to social or professional character position."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#CharacterType
+cont:CharacterType rdf:type owl:Class ;
+                   rdfs:subClassOf cont:Character ;
+                   rdfs:comment "This class refers to a category of people or things having in common some characteristics."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Clergy
+cont:Clergy rdf:type owl:Class ;
+            rdfs:subClassOf cont:SocialClass ;
+            owl:disjointWith cont:Commoner ;
+            rdfs:comment "This class refers to the social class people in religious orders are recognized to belong to."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Commoner
+cont:Commoner rdf:type owl:Class ;
+              rdfs:subClassOf cont:SocialClass ;
+              rdfs:comment "This class refers to the social class people without any other social background are recognized to belong to."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#CulturalProduct
+cont:CulturalProduct rdf:type owl:Class ;
+                     rdfs:comment "Goods and services that include the arts (performing arts, visual arts, architecture), heritage conservation (museums, galleries, libraries), the cultural industries (written media, broadcasting, film, recording), and festivals."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Director
+cont:Director rdf:type owl:Class ;
+              rdfs:subClassOf cont:Person ;
+              rdfs:comment "This class refers to person responsible for leading teams in the artistic design and production of various kinds of visual art."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#EconomicStatus
+cont:EconomicStatus rdf:type owl:Class ;
+                    rdfs:subClassOf cont:SociologicalCharacteristics ;
+                    rdfs:comment "This class refers to the status of an agent defining its condition from an economic point of view."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Environment
+cont:Environment rdf:type owl:Class ;
+                 owl:equivalentClass <https://w3id.org/arco/ontology/denotative-description/Environment> ;
+                 rdfs:subClassOf cont:SociologicalCharacteristics ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty cont:isEnvironmentOf ;
+                                   owl:someValuesFrom cont:GeographicOrigin
+                                 ] ;
+                 rdfs:comment "This class refers to an environment."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#EthnicGroup
+cont:EthnicGroup rdf:type owl:Class ;
+                 rdfs:subClassOf cont:SociologicalCharacteristics ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty cont:defines ;
+                                   owl:someValuesFrom cont:EthnicOrigin
+                                 ] ;
+                 rdfs:comment "This class refers to a grouping of people who share common traits and set of traditions (ancestry, language, history, culture) that allow them to identify themselves as a distinguished group."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#EthnicOrigin
+cont:EthnicOrigin rdf:type owl:Class ;
+                  rdfs:subClassOf cont:Origin ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty cont:isDefinedBy ;
+                                    owl:someValuesFrom cont:EthnicGroup
+                                  ] ;
+                  rdfs:comment "This class refers to the peculiar trait in the origin of an individual related to its belonging to one or more ethnic groups."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#FictionalCharacter
+cont:FictionalCharacter rdf:type owl:Class ;
+                        rdfs:subClassOf cont:Character ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty cont:hasPartIn ;
+                                          owl:allValuesFrom cont:FictionalPlot
+                                        ] ;
+                        rdfs:comment "This class refers to fictional human or non-human character in a narrative work of art."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#FictionalPlot
+cont:FictionalPlot rdf:type owl:Class ;
+                   rdfs:subClassOf cont:Plot ;
+                   rdfs:comment "Plot based on characters or events that occurs only in stories, plays, or films and never actually existed or happened."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#GeographicOrigin
+cont:GeographicOrigin rdf:type owl:Class ;
+                      rdfs:subClassOf cont:Origin ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty cont:hasEnvironment ;
+                                        owl:allValuesFrom cont:Environment
+                                      ] ;
+                      rdfs:comment "This class refers to the peculiar trait in the origin of an individual related to its geographic provenance."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Hero
+cont:Hero rdf:type owl:Class ;
+          rdfs:subClassOf cont:CharacterType ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty cont:hasCharacterStatus ;
+                            owl:someValuesFrom cont:CharacterStatus
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty cont:hasCharacterRole ;
+                            owl:allValuesFrom [ rdf:type owl:Class ;
+                                                owl:unionOf ( cont:Antagonist
+                                                              cont:Protagonist
+                                                            )
+                                              ]
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty cont:hasCharacterScope ;
+                            owl:allValuesFrom cont:UniversalGood
+                          ] ;
+          rdfs:comment "This class refers to a character who fights adversity through ingenuity, courage, or strength."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#IllegalProfession
+cont:IllegalProfession rdf:type owl:Class ;
+                       rdfs:subClassOf cont:Profession ;
+                       owl:disjointWith cont:LegalProfession ;
+                       rdfs:comment "This class refers to a profession that has an illegal status."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Leading
+cont:Leading rdf:type owl:Class ;
+             rdfs:subClassOf cont:CharacterStatus ;
+             rdfs:comment "This class refers to a character in a narrative that is focused on by the primary storyline."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#LegalProfession
+cont:LegalProfession rdf:type owl:Class ;
+                     rdfs:subClassOf cont:Profession ;
+                     rdfs:comment "This class refers to a profession that has a legal status."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#LiteraryWork
+cont:LiteraryWork rdf:type owl:Class ;
+                  rdfs:subClassOf cont:CulturalProduct ;
+                  rdfs:comment "Imaginative or creative writing textual work, with or without illustrations, published or nonpublished."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Medium
+cont:Medium rdf:type owl:Class ;
+            rdfs:subClassOf cont:EconomicStatus ;
+            rdfs:comment "This class represents an economic status of an agent that is not rich nor poor."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Movie
+cont:Movie rdf:type owl:Class ;
+           rdfs:subClassOf cont:Scenario ;
+           rdfs:comment "A recording of moving images that tells a story and that people watch on a screen or television."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#NonFictionalCharacter
+cont:NonFictionalCharacter rdf:type owl:Class ;
+                           rdfs:subClassOf cont:Character ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty cont:hasPartIn ;
+                                             owl:allValuesFrom cont:NonFictionalPlot
+                                           ] ;
+                           rdfs:comment "This class refers to a non fictional human or non-human character in a narrative work of art."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#NonFictionalPlot
+cont:NonFictionalPlot rdf:type owl:Class ;
+                      rdfs:subClassOf cont:Plot ;
+                      rdfs:comment "Plot based on truth and accuracy regarding information, events, or people."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Opposing
+cont:Opposing rdf:type owl:Class ;
+              rdfs:subClassOf cont:CharacterStatus ;
+              rdfs:comment "This class refers to a character in a narrative that is focused on by the primary storyline and in opposition to the leading character."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Origin
+cont:Origin rdf:type owl:Class ;
+            rdfs:subClassOf cont:SociologicalCharacteristics ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty cont:isOriginOf ;
+                              owl:allValuesFrom cont:Agent
+                            ] ;
+            owl:disjointWith cont:Profession ,
+                             cont:SocialClass .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Person
+cont:Person rdf:type owl:Class ;
+            rdfs:subClassOf cont:Agent ;
+            rdfs:comment "This class refers to a human being regarded as individuals."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Plot
+cont:Plot rdf:type owl:Class ;
+          rdfs:comment "The main events of a play, novel, film, or similar work, devised and presented by the writer as an interrelated sequence."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Poor
+cont:Poor rdf:type owl:Class ;
+          rdfs:subClassOf cont:EconomicStatus ;
+          rdfs:comment "This class represents an economic status of an agent that lacks sufficient money to live at a standard considered comfortable by society."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Profession
+cont:Profession rdf:type owl:Class ;
+                owl:equivalentClass <https://w3id.org/arco/ontology/context-description/Profession> ;
+                rdfs:subClassOf cont:SociologicalCharacteristics ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty cont:isProfessionOf ;
+                                  owl:allValuesFrom cont:Agent
+                                ] ;
+                owl:disjointWith cont:SocialClass ;
+                rdfs:comment "This class refers to the profession or occupation employed by an agent."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Protagonist
+cont:Protagonist rdf:type owl:Class ;
+                 rdfs:subClassOf cont:CharacterRole ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty cont:hasCharacterStatus ;
+                                   owl:allValuesFrom cont:Leading
+                                 ] ;
+                 rdfs:comment "This class refers to the main character of a creative work."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Rich
+cont:Rich rdf:type owl:Class ;
+          rdfs:subClassOf cont:EconomicStatus ;
+          rdfs:comment "This class represents an economic status of an agent that has a great deal of money or assets."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Scenario
+cont:Scenario rdf:type owl:Class ;
+              rdfs:subClassOf cont:CulturalProduct ;
+              rdfs:comment "A written outline of a film, novel, or stage work giving details of the plot and individual scenes."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Screenwriter
+cont:Screenwriter rdf:type owl:Class ;
+                  rdfs:subClassOf cont:Writer ;
+                  rdfs:comment "This class refers to a writer who wrote the script for TV, films, radio, comics or games."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Secondary
+cont:Secondary rdf:type owl:Class ;
+               rdfs:subClassOf cont:CharacterRole ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty cont:hasCharacterStatus ;
+                                 owl:allValuesFrom cont:Supporting
+                               ] ;
+               rdfs:comment "This class refers to a minor character necessary for the plot due to the key details he/she reveals."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#SelfGood
+cont:SelfGood rdf:type owl:Class ;
+              rdfs:subClassOf cont:CharacterScope ;
+              rdfs:comment "This class refers to the character personal advantage intention."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#SocialClass
+cont:SocialClass rdf:type owl:Class ;
+                 rdfs:subClassOf cont:SociologicalCharacteristics ;
+                 rdfs:comment "This class refers to a grouping of people identifying themselves as belonging to a specific social class within a society. The main social classes are the aristocracy, the clergy and the commoners."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#SocialOrigin
+cont:SocialOrigin rdf:type owl:Class ;
+                  rdfs:subClassOf cont:Origin ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty cont:isDefinedBy ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass cont:EconomicStatus
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty cont:isDefinedBy ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass cont:SocialClass
+                                  ] ;
+                  rdfs:comment "This class refers to the peculiar trait in the origin of an individual related to its social provenance from the point of view of the social status and the social class defining them at their birth."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#SociologicalCharacteristics
+cont:SociologicalCharacteristics rdf:type owl:Class ;
+                                 rdfs:comment "This class refers to characteristics and features able to describe an agent from a sociological point of view." .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#SupernaturalBeing
+cont:SupernaturalBeing rdf:type owl:Class ;
+                       rdfs:subClassOf cont:Agent ;
+                       rdfs:comment "This class refers to kind of being from religion, mythology or folklore."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Supporting
+cont:Supporting rdf:type owl:Class ;
+                rdfs:subClassOf cont:CharacterStatus ;
+                rdfs:comment "This class refers to a character in a narrative that is not focused on by the primary storyline."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#TvSerie
+cont:TvSerie rdf:type owl:Class ;
+             rdfs:subClassOf cont:Scenario ;
+             rdfs:comment "A group of programs created or adapted for television broadcast with a common series title."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#UniversalBad
+cont:UniversalBad rdf:type owl:Class ;
+                  rdfs:subClassOf cont:CharacterScope ;
+                  rdfs:comment "An action that is against the interest of the world, applicable to all cases (humans, animals, enviroment etc.)."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#UniversalGood
+cont:UniversalGood rdf:type owl:Class ;
+                   rdfs:subClassOf cont:CharacterScope ;
+                   rdfs:comment "An action that is in the interest of the world, applicable to all cases (humans, animals, enviroment etc.)."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Villain
+cont:Villain rdf:type owl:Class ;
+             rdfs:subClassOf cont:CharacterType ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty cont:hasCharacterStatus ;
+                               owl:someValuesFrom cont:CharacterStatus
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty cont:hasCharacterRole ;
+                               owl:allValuesFrom [ rdf:type owl:Class ;
+                                                   owl:unionOf ( cont:Antagonist
+                                                                 cont:Protagonist
+                                                               )
+                                                 ]
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty cont:hasCharacterScope ;
+                               owl:allValuesFrom cont:UniversalBad
+                             ] ;
+             rdfs:comment "This class refers to a character whose evil actions or motives are important to the plot."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2021/1/content#Writer
+cont:Writer rdf:type owl:Class ;
+            rdfs:subClassOf cont:Person ;
+            rdfs:comment "This class refers to person who uses written words to communicate ideas and to produce works of literature."@en .
+
+
+###  https://w3id.org/arco/ontology/context-description/Profession
+
+###  https://w3id.org/arco/ontology/denotative-description/Environment
+
+###  https://w3id.org/italia/onto/l0/Agent
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( cont:Animal
+                cont:Character
+                cont:Person
+                cont:SupernaturalBeing
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( cont:EthnicOrigin
+                cont:GeographicOrigin
+                cont:SocialOrigin
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( cont:Medium
+                cont:Poor
+                cont:Rich
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
