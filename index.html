@@ -72,6 +72,7 @@
 							<hr>
 
 							<div class="entry-content clearfix" align="center">
+								<img src="img/brbanet.png" id="home_img" class="img-responsive" style="width:90%;"><br><br>
 								<button class="index-button" onclick="toggleText()"><h4><a href="#">About</a></h4></button>
 								<!--<button class="index-button"><h4><a href="project.html">See the project</a></h4></button>-->
 
@@ -135,7 +136,6 @@
 					</main>
 
 
-
 				</div>
 			</div>
 		</div>
@@ -168,6 +168,8 @@
 		<script src="js/script.js"></script>
 		<script>
 			function toggleText() {
+				var img = document.getElementById("home_img");
+				img.style.display = "none";
 			  var text = document.getElementById("demo");
 			  if (text.style.display === "none") {
 			    text.style.display = "block";
