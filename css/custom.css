@@ -55,6 +55,7 @@ p {
 img {
 	padding-top: 60px;
 	padding-right: 30px;
+	max-width:100%;
 }
 
 #single p,
@@ -191,9 +192,9 @@ figure {
 }
 
 .index-button {
-  margin: auto; 
-  padding: 0; 
-  list-style: none; 
+  margin: auto;
+  padding: 0;
+  list-style: none;
   display: table;
   text-align: center;
 }
@@ -206,7 +207,7 @@ figure {
   padding: 5px 5px;
   position: relative;
 }
-.index-button a:after {    
+.index-button a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -218,9 +219,9 @@ figure {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-.index-button a:hover:after { 
-  width: 100%; 
-  left: 0; 
+.index-button a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .aside {
