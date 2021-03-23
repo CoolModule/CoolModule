@@ -30,7 +30,7 @@ cont:hasAuthor rdf:type owl:ObjectProperty ;
 cont:hasBusinessPartner rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf cont:isRelatedTo ;
                         rdf:type owl:SymmetricProperty ;
-                        rdfs:comment "This property defines a business relations bwtween two agents."@en .
+                        rdfs:comment "This property defines a business relations between two agents."@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2021/1/content#hasCharacter
@@ -172,7 +172,7 @@ cont:hasSociologicalCharacteristic rdf:type owl:ObjectProperty ;
 ###  http://www.semanticweb.org/ontologies/2021/1/content#hasSpinOff
 cont:hasSpinOff rdf:type owl:ObjectProperty ;
                 owl:inverseOf cont:isSpinOffOf ;
-                rdfs:comment "This property links a TV serie to another TV serie in which a secondary character in the first show becomes the protagonist."@en .
+                rdfs:comment "This property links a TV series to another TV series in which a secondary character in the first show becomes the protagonist."@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2021/1/content#hasType
@@ -304,7 +304,7 @@ cont:isSociologicalCharacteristicOf rdf:type owl:ObjectProperty ;
 
 ###  http://www.semanticweb.org/ontologies/2021/1/content#isSpinOffOf
 cont:isSpinOffOf rdf:type owl:ObjectProperty ;
-                 rdfs:comment "This property links a TV serie to another TV serie in which the protagonist played a secondary role."@en .
+                 rdfs:comment "This property links a TV series to another TV series in which the protagonist played a secondary role."@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2021/1/content#isType
@@ -371,17 +371,17 @@ cont:hasNickname rdf:type owl:DatatypeProperty ;
 
 ###  http://www.semanticweb.org/ontologies/2021/1/content#hasPlaceOfBirth
 cont:hasPlaceOfBirth rdf:type owl:DatatypeProperty ;
-                     rdfs:comment "This property links an agent to the geografical place in which it was born."@en .
+                     rdfs:comment "This property links an agent to the geographical place in which it was born."@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2021/1/content#hasPlaceOfDeath
 cont:hasPlaceOfDeath rdf:type owl:DatatypeProperty ;
-                     rdfs:comment "This property links an agent to the geografical place in which it died."@en .
+                     rdfs:comment "This property links an agent to the geographical place in which it died."@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2021/1/content#hasPlaceOfLiving
 cont:hasPlaceOfLiving rdf:type owl:DatatypeProperty ;
-                      rdfs:comment "This property links an agent to the geografical place in which it lives."@en .
+                      rdfs:comment "This property links an agent to the geographical place in which it lives."@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2021/1/content#hasPseudonym
@@ -667,7 +667,7 @@ cont:LegalProfession rdf:type owl:Class ;
 ###  http://www.semanticweb.org/ontologies/2021/1/content#LiteraryWork
 cont:LiteraryWork rdf:type owl:Class ;
                   rdfs:subClassOf cont:CulturalProduct ;
-                  rdfs:comment "Imaginative or creative writing textual work, with or without illustrations, published or nonpublished."@en .
+                  rdfs:comment "Imaginative or creative writing textual work, with or without illustrations, published or unpublished."@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2021/1/content#Medium
@@ -828,7 +828,7 @@ cont:Supporting rdf:type owl:Class ;
 
 
 ###  http://www.semanticweb.org/ontologies/2021/1/content#TvSerie
-cont:TvSerie rdf:type owl:Class ;
+cont:TvSeries rdf:type owl:Class ;
              rdfs:subClassOf cont:Scenario ;
              rdfs:comment "A group of programs created or adapted for television broadcast with a common series title."@en .
 
@@ -836,13 +836,13 @@ cont:TvSerie rdf:type owl:Class ;
 ###  http://www.semanticweb.org/ontologies/2021/1/content#UniversalBad
 cont:UniversalBad rdf:type owl:Class ;
                   rdfs:subClassOf cont:CharacterScope ;
-                  rdfs:comment "An action that is against the interest of the world, applicable to all cases (humans, animals, enviroment etc.)."@en .
+                  rdfs:comment "An action that is against the interest of the world, applicable to all cases (humans, animals, environment etc.)."@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2021/1/content#UniversalGood
 cont:UniversalGood rdf:type owl:Class ;
                    rdfs:subClassOf cont:CharacterScope ;
-                   rdfs:comment "An action that is in the interest of the world, applicable to all cases (humans, animals, enviroment etc.)."@en .
+                   rdfs:comment "An action that is in the interest of the world, applicable to all cases (humans, animals, environment etc.)."@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2021/1/content#Villain
