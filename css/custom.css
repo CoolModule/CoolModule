@@ -31,7 +31,7 @@ a {
 }
 
 a:hover, a:focus {
-	color:;
+	color: #00b300;
 	text-decoration: none;
 }
 
@@ -259,7 +259,6 @@ figure {
 .card {
 	padding: 10px;
 }
-
 
 /*--------------------------------------------------------------
 # Main Nav CSS 3 Hover Effect
@@ -504,8 +503,6 @@ figure {
 	}
 	.aside {
 		position:static;
-		margin:none;
-		padding:none;
 	}
 }
 
