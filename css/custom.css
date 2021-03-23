@@ -240,9 +240,9 @@ figure {
 	color:#00b300;
 }
 
-.btn-success {
+/*.btn-success {
     color: black;
-    /* color: #fff; */
+    /* color: #fff;
     background-color: #f2f2f2;
     border-color: black;
     font-family: 'Playfair Display', serif;
@@ -255,7 +255,7 @@ figure {
 }
 .btn-success:focus {
 	background-color: #8c8c8c;
-}
+} */
 .card {
 	padding: 10px;
 }
