@@ -52,10 +52,6 @@ p {
 	line-height: 25px;
 	padding-bottom: 12px;
 }
-img {
-	padding-top: 60px;
-	padding-right: 30px;
-}
 
 #single p,
 #page p {
@@ -68,6 +64,10 @@ ul {
 	letter-spacing: 0.01em;
 	font-size: 16px;
 	line-height: 25px;
+}
+
+.ul {
+	border-left: solid 1px #00994d;
 }
 
 table {
@@ -170,8 +170,9 @@ figure {
 	font-size: 0.7rem;
 }
 
-#graph {
+.graph {
 	padding-top: 10px;
+	padding-bottom: 30px;
 }
 
 .title-word {
@@ -260,6 +261,12 @@ figure {
 	padding: 10px;
 }
 
+#home {
+	height:500px;
+	background: rgb(31,121,24);
+background: linear-gradient(0deg, rgba(31,121,24,1) 0%, rgba(109,212,86,0.5802696078431373) 32%, rgba(255,255,255,1) 61%, rgba(255,255,255,0) 100%);
+}
+
 /*--------------------------------------------------------------
 # Main Nav CSS 3 Hover Effect
 --------------------------------------------------------------*/
@@ -317,6 +324,15 @@ figure {
 }
 
 .entry-content {
+	font-size: 18px;
+	line-height: 1.9;
+	font-weight: 300;
+	color: #000;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.entry-content_project {
 	font-size: 18px;
 	line-height: 1.9;
 	font-weight: 300;
