@@ -7,8 +7,7 @@
 @base <http://www.w3id.org/arco/ontology/content> .
 
 <http://www.w3id.org/arco/ontology/content> rdf:type owl:Ontology ;
-                                             owl:imports <https://w3id.org/arco/ontology/context-description> ,
-                                                         <https://w3id.org/arco/ontology/denotative-description> .
+                                             
 
 #################################################################
 #    Object Properties
