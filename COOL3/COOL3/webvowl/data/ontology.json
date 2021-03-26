@@ -1,0 +1,2842 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.w3id.org/arco/ontology/content" ],
+    "iri" : "http://www.w3id.org/arco/ontology/content"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "144",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Person",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "subClasses" : [ "5", "6", "7" ],
+    "comment" : {
+      "en" : "This class refers to a human being regarded as individuals."
+    },
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Director",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Director"
+    },
+    "comment" : {
+      "en" : "This class refers to person responsible for leading teams in the artistic design and production of various kinds of visual art."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Agent",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "10", "11", "12", "3" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Protagonist",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Protagonist"
+    },
+    "comment" : {
+      "en" : "This class refers to the main character of a creative work."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/EconomicStatus",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EconomicStatus"
+    },
+    "subClasses" : [ "23", "24", "25" ],
+    "comment" : {
+      "en" : "This class refers to the status of an agent defining its condition from an economic point of view."
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SociologicalCharacteristics"
+    },
+    "subClasses" : [ "39", "21", "40", "41", "42", "43" ],
+    "comment" : {
+      "undefined" : "This class refers to characteristics and features able to describe an agent from a sociological point of view."
+    },
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Antagonist",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Antagonist"
+    },
+    "comment" : {
+      "en" : "This class refers to a character of a work actively opposing the protagonist."
+    },
+    "attributes" : [ "external" ],
+    "id" : "47",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/NonFictionalPlot",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonFictionalPlot"
+    },
+    "comment" : {
+      "en" : "Plot based on truth and accuracy regarding information, events, or people."
+    },
+    "attributes" : [ "external" ],
+    "id" : "45",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/AntiHero",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AntiHero"
+    },
+    "comment" : {
+      "en" : "This class refers to a leading character in a film, book or play, who is devoid of heroic qualities."
+    },
+    "attributes" : [ "external" ],
+    "id" : "59",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Writer",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Writer"
+    },
+    "subClasses" : [ "61", "62" ],
+    "comment" : {
+      "en" : "This class refers to person who uses written words to communicate ideas and to produce works of literature."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/UniversalBad",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UniversalBad"
+    },
+    "comment" : {
+      "en" : "An action that is against the interest of the world, applicable to all cases (humans, animals, enviroment etc.)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "72",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/IllegalProfession",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IllegalProfession"
+    },
+    "comment" : {
+      "en" : "This class refers to a profession that has an illegal status."
+    },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "42" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Environment",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Environment"
+    },
+    "comment" : {
+      "en" : "This class refers to an environment."
+    },
+    "attributes" : [ "external" ],
+    "id" : "39",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/LegalProfession",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LegalProfession"
+    },
+    "comment" : {
+      "en" : "This class refers to a profession that has a legal status."
+    },
+    "attributes" : [ "external" ],
+    "id" : "79",
+    "superClasses" : [ "42" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Hero",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hero"
+    },
+    "comment" : {
+      "en" : "This class refers to a character who fights adversity through ingenuity, courage, or strength."
+    },
+    "attributes" : [ "external" ],
+    "id" : "83",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/FictionalPlot",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FictionalPlot"
+    },
+    "comment" : {
+      "en" : "Plot based on characters or events that occurs only in stories, plays, or films and never actually existed or happened."
+    },
+    "attributes" : [ "external" ],
+    "id" : "31",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/CharacterStatus",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CharacterStatus"
+    },
+    "subClasses" : [ "85", "86", "87" ],
+    "comment" : {
+      "en" : "This class refers to social or professional character position."
+    },
+    "attributes" : [ "external" ],
+    "id" : "84",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/CulturalProduct",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalProduct"
+    },
+    "subClasses" : [ "90", "37" ],
+    "comment" : {
+      "en" : "Goods and services that include the arts (performing arts, visual arts, architecture), heritage conservation (museums, galleries, libraries), the cultural industries (written media, broadcasting, film, recording), and festivals."
+    },
+    "attributes" : [ "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Commoner",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Commoner"
+    },
+    "comment" : {
+      "en" : "This class refers to the social class people without any other social background are recognized to belong to."
+    },
+    "attributes" : [ "external" ],
+    "id" : "91",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Supporting",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Supporting"
+    },
+    "comment" : {
+      "en" : "This class refers to a character in a narrative that is not focused on by the primary storyline."
+    },
+    "attributes" : [ "external" ],
+    "id" : "85",
+    "superClasses" : [ "84" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/NonFictionalCharacter",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonFictionalCharacter"
+    },
+    "comment" : {
+      "en" : "This class refers to a non fictional human or non-human character in a narrative work of art."
+    },
+    "attributes" : [ "external" ],
+    "id" : "93",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/SocialOrigin",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SocialOrigin"
+    },
+    "comment" : {
+      "en" : "This class refers to the peculiar trait in the origin of an individual related to its social provenance from the point of view of the social status and the social class defining them at their birth."
+    },
+    "attributes" : [ "external" ],
+    "id" : "95",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Secondary",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Secondary"
+    },
+    "comment" : {
+      "en" : "This class refers to a minor character necessary for the plot due to the key details he/she reveals."
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/CharacterRole",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CharacterRole"
+    },
+    "subClasses" : [ "47", "19", "15" ],
+    "comment" : {
+      "en" : "This class refers to specific role played or filled by a character."
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Villain",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Villain"
+    },
+    "comment" : {
+      "en" : "This class refers to a character whose evil actions or motives are important to the plot."
+    },
+    "attributes" : [ "external" ],
+    "id" : "98",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Aristocracy",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aristocracy"
+    },
+    "comment" : {
+      "en" : "This class refers to the social class aristocrats are recognized to belong to."
+    },
+    "attributes" : [ "external" ],
+    "id" : "103",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/SupernaturalBeing",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SupernaturalBeing"
+    },
+    "comment" : {
+      "en" : "This class refers to kind of being from religion, mythology or folklore."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/GeographicOrigin",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GeographicOrigin"
+    },
+    "comment" : {
+      "en" : "This class refers to the peculiar trait in the origin of an individual related to its geographic provenance."
+    },
+    "attributes" : [ "external" ],
+    "id" : "110",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Poor",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Poor"
+    },
+    "comment" : {
+      "en" : "This class represents an economic status of an agent that lacks sufficient money to live at a standard considered comfortable by society."
+    },
+    "attributes" : [ "external" ],
+    "id" : "23",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Character",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Character"
+    },
+    "subClasses" : [ "93", "60", "84", "73", "16", "117" ],
+    "comment" : {
+      "en" : "This class refers to an art figure."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Author",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Author"
+    },
+    "comment" : {
+      "en" : "This class refers to a writer of any written work."
+    },
+    "attributes" : [ "external" ],
+    "id" : "62",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Scenario",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Scenario"
+    },
+    "subClasses" : [ "123", "124" ],
+    "comment" : {
+      "en" : "A written outline of a film, novel, or stage work giving details of the plot and individual scenes."
+    },
+    "attributes" : [ "external" ],
+    "id" : "37",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Profession",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Profession"
+    },
+    "subClasses" : [ "79", "76" ],
+    "comment" : {
+      "en" : "This class refers to the profession or occupation employed by an agent."
+    },
+    "attributes" : [ "external" ],
+    "id" : "42",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "134",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "135",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Medium",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Medium"
+    },
+    "comment" : {
+      "en" : "This class represents an economic status of an agent that is not rich nor poor."
+    },
+    "attributes" : [ "external" ],
+    "id" : "25",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/FictionalCharacter",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FictionalCharacter"
+    },
+    "comment" : {
+      "en" : "This class refers to fictional human or non-human character in a narrative work of art."
+    },
+    "attributes" : [ "external" ],
+    "id" : "117",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/EthnicOrigin",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EthnicOrigin"
+    },
+    "comment" : {
+      "en" : "This class refers to the peculiar trait in the origin of an individual related to its belonging to one or more ethnic groups."
+    },
+    "attributes" : [ "external" ],
+    "id" : "114",
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/LiteraryWork",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LiteraryWork"
+    },
+    "comment" : {
+      "en" : "Imaginative or creative writing textual work, with or without illustrations, published or nonpublished."
+    },
+    "attributes" : [ "external" ],
+    "id" : "90",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "141",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/CharacterScope",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CharacterScope"
+    },
+    "subClasses" : [ "144", "72", "105" ],
+    "comment" : {
+      "en" : "This class refers to an identifier of a character intention."
+    },
+    "attributes" : [ "external" ],
+    "id" : "73",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "145",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "139",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "146",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/TvSerie",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TvSerie"
+    },
+    "comment" : {
+      "en" : "A group of programs created or adapted for television broadcast with a common series title."
+    },
+    "attributes" : [ "external" ],
+    "id" : "123",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Actor",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Actor"
+    },
+    "comment" : {
+      "en" : "This class refers to a person who’s profession is acting on stage, films, or television."
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Movie",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Movie"
+    },
+    "comment" : {
+      "en" : "A recording of moving images that tells a story and that people watch on a screen or television."
+    },
+    "attributes" : [ "external" ],
+    "id" : "124",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Origin",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Origin"
+    },
+    "subClasses" : [ "110", "114", "95" ],
+    "attributes" : [ "external" ],
+    "id" : "43",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Leading",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Leading"
+    },
+    "comment" : {
+      "en" : "This class refers to a character in a narrative that is focused on by the primary storyline."
+    },
+    "attributes" : [ "external" ],
+    "id" : "87",
+    "superClasses" : [ "84" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Opposing",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Opposing"
+    },
+    "comment" : {
+      "en" : "This class refers to a character in a narrative that is focused on by the primary storyline and in opposition to the leading character."
+    },
+    "attributes" : [ "external" ],
+    "id" : "86",
+    "superClasses" : [ "84" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/SocialClass",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SocialClass"
+    },
+    "subClasses" : [ "103", "91", "130" ],
+    "comment" : {
+      "en" : "This class refers to a grouping of people identifying themselves as belonging to a specific social class within a society. The main social classes are the aristocracy, the clergy and the commoners."
+    },
+    "attributes" : [ "external" ],
+    "id" : "41",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/EthnicGroup",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EthnicGroup"
+    },
+    "comment" : {
+      "en" : "This class refers to a grouping of people who share common traits and set of traditions (ancestry, language, history, culture) that allow them to identify themselves as a distinguished group."
+    },
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Animal",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Animal"
+    },
+    "comment" : {
+      "en" : "This class refers to living organism that feeds on organic matter."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/UniversalGood",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UniversalGood"
+    },
+    "comment" : {
+      "en" : "An action that is in the interest of the world, applicable to all cases (humans, animals, enviroment etc.)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "105",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/CharacterType",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CharacterType"
+    },
+    "subClasses" : [ "83", "59", "98" ],
+    "comment" : {
+      "en" : "This class refers to a category of people or things having in common some characteristics."
+    },
+    "attributes" : [ "external" ],
+    "id" : "60",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Clergy",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Clergy"
+    },
+    "comment" : {
+      "en" : "This class refers to the social class people in religious orders are recognized to belong to."
+    },
+    "attributes" : [ "external" ],
+    "id" : "130",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/SelfGood",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SelfGood"
+    },
+    "comment" : {
+      "en" : "This class refers to the character personal advantage intention."
+    },
+    "attributes" : [ "external" ],
+    "id" : "144",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Plot",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Plot"
+    },
+    "subClasses" : [ "31", "45" ],
+    "comment" : {
+      "en" : "The main events of a play, novel, film, or similar work, devised and presented by the writer as an interrelated sequence."
+    },
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Rich",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rich"
+    },
+    "comment" : {
+      "en" : "This class represents an economic status of an agent that has a great deal of money or assets."
+    },
+    "attributes" : [ "external" ],
+    "id" : "24",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/Screenwriter",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Screenwriter"
+    },
+    "comment" : {
+      "en" : "This class refers to a writer who wrote the script for TV, films, radio, comics or games."
+    },
+    "attributes" : [ "external" ],
+    "id" : "61",
+    "superClasses" : [ "6" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "102",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "106",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "107",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "108",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "109",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "115",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "116",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "121",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "127",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "128",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "131",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "149",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "150",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "151",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "155",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "156",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "176",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "192",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "195",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "196",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "197",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "198",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "199",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "200",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "213",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "215",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isCharacterScope",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isCharacterScope"
+    },
+    "superproperty" : [ "2" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines universal good, universal bad and self good as character’s scope."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacter",
+    "inverse" : "9",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasCharacter"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasPlaceOfLiving",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasPlaceOfLiving"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links an agent to the geografical place in which it lives."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isRole",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isRole"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines a character by its role in a play."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "17"
+  }, {
+    "range" : "16",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasPlaceOfDeath",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasPlaceOfDeath"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links an agent to the geografical place in which it died."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasBusinessPartner",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasBusinessPartner"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines a business relations bwtween two agents."
+    },
+    "attributes" : [ "object", "symmetric", "external" ],
+    "id" : "28"
+  }, {
+    "range" : "32",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasRelative",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasRelative"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "1",
+    "subproperty" : [ "34", "35" ],
+    "comment" : {
+      "en" : "This property links two agents connected by blood or marriage."
+    },
+    "attributes" : [ "object", "symmetric", "external" ],
+    "id" : "33"
+  }, {
+    "range" : "38",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "32",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "16",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasEthnicGroup",
+    "inverse" : "49",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasEthnicGroup"
+    },
+    "superproperty" : [ "50" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links an agent to an ethnic group."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isPlayedBy",
+    "inverse" : "52",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isPlayedBy"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines a character that is interpreted by an actor."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasType",
+    "inverse" : "2",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasType"
+    },
+    "domain" : "1",
+    "subproperty" : [ "54", "55", "56", "57", "58" ],
+    "comment" : {
+      "en" : "This property defines the typology of character depicted as human, animal or supernatural one."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasSociologicalCharacteristic",
+    "inverse" : "63",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasSociologicalCharacteristic"
+    },
+    "domain" : "1",
+    "subproperty" : [ "64", "65", "66", "48" ],
+    "comment" : {
+      "en" : "This property defines a sociological characteristic that can be described as belonging to an agent."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isEthnicOriginOf",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isEthnicOriginOf"
+    },
+    "superproperty" : [ "68" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines the origin referring to an agent from an ethnic point of view."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasAuthor",
+    "inverse" : "70",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasAuthor"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links any written work to its creator or originator."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasRole",
+    "inverse" : "17",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasRole"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines the role of character in a play."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasPlaceOfBirth",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "hasPlaceOfBirth"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links an agent to the geografical place in which it was born."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isSocialOriginOf",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isSocialOriginOf"
+    },
+    "superproperty" : [ "68" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines the origin referring to an agent from a social point of view."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacterRole",
+    "inverse" : "78",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasCharacterRole"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines character’s role as protagonist, antagonist or secondary."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasFictionalType",
+    "inverse" : "80",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasFictionalType"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines fictional character’s type as fictional or non fictional."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasName",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "hasName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links an agent to its name."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasEmployee",
+    "inverse" : "89",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasEmployee"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links an employer to its employee."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isAuthorOf",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isAuthorOf"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links a creator or originator to its written work."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasEmployer",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasEmployer"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links an employee to its employer."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasEthnicOrigin",
+    "inverse" : "67",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasEthnicOrigin"
+    },
+    "superproperty" : [ "65" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines the origin an agent has from an ethnic point of view."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/plays",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "plays"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines an actor that interprets a character."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isBasedOn",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isBasedOn"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines a character that is based on or inspired to a real or invented person, animal or supernatural being."
+    },
+    "attributes" : [ "object", "external", "functional", "inverse functional" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isCharacterStatus",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isCharacterStatus"
+    },
+    "superproperty" : [ "2" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines leading, opposing, and supporting as character’s status."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasPartIn",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasPartIn"
+    },
+    "domain" : "93",
+    "comment" : {
+      "en" : "To be involved in, to be a factor in."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isRelatedTo",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isRelatedTo"
+    },
+    "domain" : "1",
+    "subproperty" : [ "28", "88", "33", "89" ],
+    "comment" : {
+      "en" : "This property defines a personal relations between two agents."
+    },
+    "attributes" : [ "object", "symmetric", "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacterScope",
+    "inverse" : "0",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasCharacterScope"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines character’s scope as universal good, universal bad or self good."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasSpinOff",
+    "inverse" : "100",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasSpinOff"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links a TV serie to another TV serie in which a secondary character in the first show becomes the protagonist."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "99"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "range" : "24",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isSpinOffOf",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isSpinOffOf"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links a TV serie to another TV serie in which the protagonist played a secondary role."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacterScope",
+    "inverse" : "0",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "hasCharacterScope"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "83",
+    "comment" : {
+      "en" : "This property defines character’s scope as universal good, universal bad or self good."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacterStatus",
+    "inverse" : "96",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hasCharacterStatus"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "83",
+    "comment" : {
+      "en" : "This property defines character’s status as leading, opposing or supporting."
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "106"
+  }, {
+    "range" : "23",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "79",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "95",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isKilledBy",
+    "inverse" : "112",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isKilledBy"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links two agents in which the first one is killed by the second one."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "111"
+  }, {
+    "range" : "95",
+    "domain" : "114",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasEnvironment",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "hasEnvironment"
+    },
+    "superproperty" : [ "50" ],
+    "domain" : "110",
+    "comment" : {
+      "en" : "This property links an agent to an environment."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasPartIn",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasPartIn"
+    },
+    "domain" : "117",
+    "comment" : {
+      "en" : "To be involved in, to be a factor in."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasGeographicOrigin",
+    "inverse" : "119",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasGeographicOrigin"
+    },
+    "superproperty" : [ "65" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines the origin an agent has from a geographic point of view."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isDefinedBy",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "isDefinedBy"
+    },
+    "domain" : "114",
+    "comment" : {
+      "en" : "This property defines the meaning that is attached to a term."
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/defines",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "defines"
+    },
+    "domain" : "40",
+    "comment" : {
+      "en" : "This property define the act of attaching a meaning to a term."
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "121"
+  }, {
+    "range" : "110",
+    "domain" : "114",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacterType",
+    "inverse" : "126",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasCharacterType"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "10",
+    "comment" : {
+      "en" : "This property defines character’s type as hero, antihero, or villain."
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacterRole",
+    "inverse" : "78",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasCharacterRole"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "10",
+    "comment" : {
+      "en" : "This property defines character’s role as protagonist, antagonist or secondary."
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isEnvironmentOf",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "isEnvironmentOf"
+    },
+    "superproperty" : [ "63" ],
+    "domain" : "39",
+    "comment" : {
+      "en" : "This property links an environment to an agent."
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "128"
+  }, {
+    "range" : "91",
+    "domain" : "130",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacterStatus",
+    "inverse" : "96",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hasCharacterStatus"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "59",
+    "comment" : {
+      "en" : "This property defines character’s status as leading, opposing or supporting."
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "131"
+  }, {
+    "range" : "91",
+    "domain" : "103",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "130",
+    "domain" : "103",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasPseudonym",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "137",
+    "label" : {
+      "IRI-based" : "hasPseudonym"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links an agent to its pseudonym."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasBirthDate",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "139",
+    "label" : {
+      "IRI-based" : "hasBirthDate"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property associates an agent to the day of its birth."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasSex",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "141",
+    "label" : {
+      "IRI-based" : "hasSex"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links an agent to its biological sex."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasDeathDate",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "143",
+    "label" : {
+      "IRI-based" : "hasDeathDate"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property associates an agent to the day of its death."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isEthnicGroupOf",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isEthnicGroupOf"
+    },
+    "superproperty" : [ "63" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links an ethnic group to an agent."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacterType",
+    "inverse" : "126",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasCharacterType"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines character’s type as hero, antihero, or villain."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasAlternativeName",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "146",
+    "label" : {
+      "IRI-based" : "hasAlternativeName"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isCharacterOf",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isCharacterOf"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasParent",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasParent"
+    },
+    "superproperty" : [ "33" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property link an agent that is child to another agent."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isCharacterType",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isCharacterType"
+    },
+    "superproperty" : [ "2" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines hero, antihero, and villain as character’s type."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isGeographicOriginOf",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isGeographicOriginOf"
+    },
+    "superproperty" : [ "68" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines the origin referring to an agent from a geographic point of view."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacterStatus",
+    "inverse" : "96",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "hasCharacterStatus"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "98",
+    "comment" : {
+      "en" : "This property defines character’s status as leading, opposing or supporting."
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacterStatus",
+    "inverse" : "96",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "hasCharacterStatus"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "15",
+    "comment" : {
+      "en" : "This property defines character’s status as leading, opposing or supporting."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isProfessionOf",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isProfessionOf"
+    },
+    "superproperty" : [ "63" ],
+    "domain" : "42",
+    "comment" : {
+      "en" : "This property link a profession to an agent."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacterScope",
+    "inverse" : "0",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "hasCharacterScope"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "98",
+    "comment" : {
+      "en" : "This property defines character’s scope as universal good, universal bad or self good."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacterStatus",
+    "inverse" : "96",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasCharacterStatus"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines character’s status as leading, opposing or supporting."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacterStatus",
+    "inverse" : "96",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "hasCharacterStatus"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "19",
+    "comment" : {
+      "en" : "This property defines character’s status as leading, opposing or supporting."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "152"
+  }, {
+    "range" : "41",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isOriginOf",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "isOriginOf"
+    },
+    "superproperty" : [ "63" ],
+    "domain" : "43",
+    "subproperty" : [ "67", "77", "119" ],
+    "comment" : {
+      "en" : "This property defines the origin referring to an agent."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "154"
+  }, {
+    "range" : "41",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155"
+  }, {
+    "range" : "42",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "42",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  }, {
+    "range" : "42",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "range" : "22",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "range" : "37",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isFictionalType",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isFictionalType"
+    },
+    "superproperty" : [ "2" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines fictional and non fictional as character’s fictional type."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasChild",
+    "inverse" : "34",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasChild"
+    },
+    "superproperty" : [ "33" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links an agent that is parent to another agent."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/kills",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "kills"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links two agents in which the first one kills the second one."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasSocialOrigin",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasSocialOrigin"
+    },
+    "superproperty" : [ "65" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines the origin an agent has from a social point of view."
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "162"
+  }, {
+    "range" : "37",
+    "domain" : "123",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "163"
+  }, {
+    "range" : "10",
+    "domain" : "117",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "10",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "10",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "range" : "10",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "range" : "10",
+    "domain" : "73",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "range" : "21",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "21",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "10",
+    "domain" : "93",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "range" : "21",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasNickname",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "145",
+    "label" : {
+      "IRI-based" : "hasNickname"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links an agent to its nickname."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "173"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isCharacterRole",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isCharacterRole"
+    },
+    "superproperty" : [ "2" ],
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property defines protagonist, antagonist and secondary as character’s role."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isSociologicalCharacteristicOf"
+    },
+    "domain" : "1",
+    "subproperty" : [ "49", "174", "68", "175" ],
+    "comment" : {
+      "undefined" : "This property defines a sociological characteristic that refers to an agent."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasLastName",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "135",
+    "label" : {
+      "IRI-based" : "hasLastName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links an agent to its last name."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "176"
+  }, {
+    "range" : "4",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "range" : "4",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "179"
+  }, {
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "180"
+  }, {
+    "range" : "3",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "range" : "4",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "182"
+  }, {
+    "range" : "3",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "183"
+  }, {
+    "range" : "84",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "184"
+  }, {
+    "range" : "84",
+    "domain" : "85",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "185"
+  }, {
+    "range" : "38",
+    "domain" : "90",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "range" : "84",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "60",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "60",
+    "domain" : "98",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "range" : "60",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "10",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "range" : "3",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "192"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "3",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "194"
+  }, {
+    "range" : "12",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "range" : "12",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "196"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacterStatus",
+    "inverse" : "96",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "hasCharacterStatus"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "47",
+    "comment" : {
+      "en" : "This property defines character’s status as leading, opposing or supporting."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "197"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasCharacterScope",
+    "inverse" : "0",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "144",
+    "label" : {
+      "IRI-based" : "hasCharacterScope"
+    },
+    "superproperty" : [ "53" ],
+    "domain" : "59",
+    "comment" : {
+      "en" : "This property defines character’s scope as universal good, universal bad or self good."
+    },
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "198"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasProfession",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasProfession"
+    },
+    "superproperty" : [ "50" ],
+    "domain" : "4",
+    "comment" : {
+      "en" : "This property links an agent to a profession."
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "199"
+  }, {
+    "range" : "22",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasOrigin",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasOrigin"
+    },
+    "superproperty" : [ "50" ],
+    "domain" : "1",
+    "subproperty" : [ "118", "92", "162" ],
+    "comment" : {
+      "en" : "This property defines the origin an agent has."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "65"
+  }, {
+    "range" : "41",
+    "domain" : "103",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "201"
+  }, {
+    "range" : "43",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "202"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/isType",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isType"
+    },
+    "domain" : "1",
+    "subproperty" : [ "78", "126", "0", "80", "96" ],
+    "comment" : {
+      "en" : "This property defines human, animal or supernatural being as typology of character."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "2"
+  }, {
+    "range" : "41",
+    "domain" : "130",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "range" : "41",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "204"
+  }, {
+    "range" : "6",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "range" : "6",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "range" : "43",
+    "domain" : "114",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "207"
+  }, {
+    "range" : "43",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "208"
+  }, {
+    "range" : "73",
+    "domain" : "105",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "209"
+  }, {
+    "range" : "73",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "210"
+  }, {
+    "range" : "73",
+    "domain" : "144",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "211"
+  }, {
+    "range" : "22",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "212"
+  }, {
+    "iri" : "http://www.w3id.org/arco/ontology/content/hasFirstName",
+    "baseIri" : "http://www.w3id.org/arco/ontology/content",
+    "range" : "134",
+    "label" : {
+      "IRI-based" : "hasFirstName"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "This property links an agent to its first name."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "213"
+  }, {
+    "range" : "22",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "214"
+  }, {
+    "range" : "22",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "215"
+  }, {
+    "range" : "22",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "216"
+  } ]
+}

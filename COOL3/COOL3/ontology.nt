@@ -1,0 +1,819 @@
+<http://www.w3id.org/arco/ontology/content> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/arco/ontology/content/defines
+<http://www.w3id.org/arco/ontology/content/defines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/defines> <http://www.w3.org/2000/01/rdf-schema#comment> "This property define the act of attaching a meaning to a term."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasAuthor
+<http://www.w3id.org/arco/ontology/content/hasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasAuthor> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/isAuthorOf> .
+<http://www.w3id.org/arco/ontology/content/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links any written work to its creator or originator."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasBusinessPartner
+<http://www.w3id.org/arco/ontology/content/hasBusinessPartner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasBusinessPartner> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isRelatedTo> .
+<http://www.w3id.org/arco/ontology/content/hasBusinessPartner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.w3id.org/arco/ontology/content/hasBusinessPartner> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines a business relations bwtween two agents."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasCharacter
+<http://www.w3id.org/arco/ontology/content/hasCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasCharacter> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/isCharacterOf> .
+# 
+# http://www.w3id.org/arco/ontology/content/hasCharacterRole
+<http://www.w3id.org/arco/ontology/content/hasCharacterRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasCharacterRole> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasType> .
+<http://www.w3id.org/arco/ontology/content/hasCharacterRole> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/isCharacterRole> .
+<http://www.w3id.org/arco/ontology/content/hasCharacterRole> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines character’s role as protagonist, antagonist or secondary."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasCharacterScope
+<http://www.w3id.org/arco/ontology/content/hasCharacterScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasCharacterScope> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasType> .
+<http://www.w3id.org/arco/ontology/content/hasCharacterScope> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/isCharacterScope> .
+<http://www.w3id.org/arco/ontology/content/hasCharacterScope> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines character’s scope as universal good, universal bad or self good."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasCharacterStatus
+<http://www.w3id.org/arco/ontology/content/hasCharacterStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasCharacterStatus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasType> .
+<http://www.w3id.org/arco/ontology/content/hasCharacterStatus> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/isCharacterStatus> .
+<http://www.w3id.org/arco/ontology/content/hasCharacterStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines character’s status as leading, opposing or supporting."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasCharacterType
+<http://www.w3id.org/arco/ontology/content/hasCharacterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasCharacterType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasType> .
+<http://www.w3id.org/arco/ontology/content/hasCharacterType> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/isCharacterType> .
+<http://www.w3id.org/arco/ontology/content/hasCharacterType> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines character’s type as hero, antihero, or villain."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasChild
+<http://www.w3id.org/arco/ontology/content/hasChild> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasChild> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasRelative> .
+<http://www.w3id.org/arco/ontology/content/hasChild> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/hasParent> .
+<http://www.w3id.org/arco/ontology/content/hasChild> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an agent that is parent to another agent."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasEmployee
+<http://www.w3id.org/arco/ontology/content/hasEmployee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasEmployee> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isRelatedTo> .
+<http://www.w3id.org/arco/ontology/content/hasEmployee> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/hasEmployer> .
+<http://www.w3id.org/arco/ontology/content/hasEmployee> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an employer to its employee."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasEmployer
+<http://www.w3id.org/arco/ontology/content/hasEmployer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasEmployer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isRelatedTo> .
+<http://www.w3id.org/arco/ontology/content/hasEmployer> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an employee to its employer."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasEnvironment
+<http://www.w3id.org/arco/ontology/content/hasEnvironment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasEnvironment> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasSociologicalCharacteristic> .
+<http://www.w3id.org/arco/ontology/content/hasEnvironment> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an agent to an environment."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasEthnicGroup
+<http://www.w3id.org/arco/ontology/content/hasEthnicGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasEthnicGroup> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasSociologicalCharacteristic> .
+<http://www.w3id.org/arco/ontology/content/hasEthnicGroup> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/isEthnicGroupOf> .
+<http://www.w3id.org/arco/ontology/content/hasEthnicGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an agent to an ethnic group."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasEthnicOrigin
+<http://www.w3id.org/arco/ontology/content/hasEthnicOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasEthnicOrigin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasOrigin> .
+<http://www.w3id.org/arco/ontology/content/hasEthnicOrigin> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/isEthnicOriginOf> .
+<http://www.w3id.org/arco/ontology/content/hasEthnicOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the origin an agent has from an ethnic point of view."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasFictionalType
+<http://www.w3id.org/arco/ontology/content/hasFictionalType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasFictionalType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasType> .
+<http://www.w3id.org/arco/ontology/content/hasFictionalType> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/isFictionalType> .
+<http://www.w3id.org/arco/ontology/content/hasFictionalType> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines fictional character’s type as fictional or non fictional."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasGeographicOrigin
+<http://www.w3id.org/arco/ontology/content/hasGeographicOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasGeographicOrigin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasOrigin> .
+<http://www.w3id.org/arco/ontology/content/hasGeographicOrigin> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/isGeographicOriginOf> .
+<http://www.w3id.org/arco/ontology/content/hasGeographicOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the origin an agent has from a geographic point of view."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasOrigin
+<http://www.w3id.org/arco/ontology/content/hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasSociologicalCharacteristic> .
+<http://www.w3id.org/arco/ontology/content/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the origin an agent has."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasParent
+<http://www.w3id.org/arco/ontology/content/hasParent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasParent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasRelative> .
+<http://www.w3id.org/arco/ontology/content/hasParent> <http://www.w3.org/2000/01/rdf-schema#comment> "This property link an agent that is child to another agent."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasPartIn
+<http://www.w3id.org/arco/ontology/content/hasPartIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasPartIn> <http://www.w3.org/2000/01/rdf-schema#comment> "To be involved in, to be a factor in."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasProfession
+<http://www.w3id.org/arco/ontology/content/hasProfession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasProfession> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasSociologicalCharacteristic> .
+<http://www.w3id.org/arco/ontology/content/hasProfession> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an agent to a profession."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasRelative
+<http://www.w3id.org/arco/ontology/content/hasRelative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasRelative> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isRelatedTo> .
+<http://www.w3id.org/arco/ontology/content/hasRelative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.w3id.org/arco/ontology/content/hasRelative> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links two agents connected by blood or marriage."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasRole
+<http://www.w3id.org/arco/ontology/content/hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasRole> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/isRole> .
+<http://www.w3id.org/arco/ontology/content/hasRole> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the role of character in a play."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasSocialOrigin
+<http://www.w3id.org/arco/ontology/content/hasSocialOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasSocialOrigin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasOrigin> .
+<http://www.w3id.org/arco/ontology/content/hasSocialOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3id.org/arco/ontology/content/hasSocialOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the origin an agent has from a social point of view."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasSociologicalCharacteristic
+<http://www.w3id.org/arco/ontology/content/hasSociologicalCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasSociologicalCharacteristic> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf> .
+<http://www.w3id.org/arco/ontology/content/hasSociologicalCharacteristic> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines a sociological characteristic that can be described as belonging to an agent."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasSpinOff
+<http://www.w3id.org/arco/ontology/content/hasSpinOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasSpinOff> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/isSpinOffOf> .
+<http://www.w3id.org/arco/ontology/content/hasSpinOff> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a TV serie to another TV serie in which a secondary character in the first show becomes the protagonist."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasType
+<http://www.w3id.org/arco/ontology/content/hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/hasType> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/isType> .
+<http://www.w3id.org/arco/ontology/content/hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the typology of character depicted as human, animal or supernatural one."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isAuthorOf
+<http://www.w3id.org/arco/ontology/content/isAuthorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isAuthorOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a creator or originator to its written work."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isBasedOn
+<http://www.w3id.org/arco/ontology/content/isBasedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isBasedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3id.org/arco/ontology/content/isBasedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.w3id.org/arco/ontology/content/isBasedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines a character that is based on or inspired to a real or invented person, animal or supernatural being."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isCharacterOf
+<http://www.w3id.org/arco/ontology/content/isCharacterOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3id.org/arco/ontology/content/isCharacterRole
+<http://www.w3id.org/arco/ontology/content/isCharacterRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isCharacterRole> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isType> .
+<http://www.w3id.org/arco/ontology/content/isCharacterRole> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines protagonist, antagonist and secondary as character’s role."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isCharacterScope
+<http://www.w3id.org/arco/ontology/content/isCharacterScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isCharacterScope> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isType> .
+<http://www.w3id.org/arco/ontology/content/isCharacterScope> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines universal good, universal bad and self good as character’s scope."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isCharacterStatus
+<http://www.w3id.org/arco/ontology/content/isCharacterStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isCharacterStatus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isType> .
+<http://www.w3id.org/arco/ontology/content/isCharacterStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines leading, opposing, and supporting as character’s status."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isCharacterType
+<http://www.w3id.org/arco/ontology/content/isCharacterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isCharacterType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isType> .
+<http://www.w3id.org/arco/ontology/content/isCharacterType> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines hero, antihero, and villain as character’s type."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isDefinedBy
+<http://www.w3id.org/arco/ontology/content/isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the meaning that is attached to a term."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isEnvironmentOf
+<http://www.w3id.org/arco/ontology/content/isEnvironmentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isEnvironmentOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf> .
+<http://www.w3id.org/arco/ontology/content/isEnvironmentOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an environment to an agent."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isEthnicGroupOf
+<http://www.w3id.org/arco/ontology/content/isEthnicGroupOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isEthnicGroupOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf> .
+<http://www.w3id.org/arco/ontology/content/isEthnicGroupOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an ethnic group to an agent."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isEthnicOriginOf
+<http://www.w3id.org/arco/ontology/content/isEthnicOriginOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isEthnicOriginOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isOriginOf> .
+<http://www.w3id.org/arco/ontology/content/isEthnicOriginOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the origin referring to an agent from an ethnic point of view."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isFictionalType
+<http://www.w3id.org/arco/ontology/content/isFictionalType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isFictionalType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isType> .
+<http://www.w3id.org/arco/ontology/content/isFictionalType> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines fictional and non fictional as character’s fictional type."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isGeographicOriginOf
+<http://www.w3id.org/arco/ontology/content/isGeographicOriginOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isGeographicOriginOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isOriginOf> .
+<http://www.w3id.org/arco/ontology/content/isGeographicOriginOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the origin referring to an agent from a geographic point of view."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isKilledBy
+<http://www.w3id.org/arco/ontology/content/isKilledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isKilledBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/kills> .
+<http://www.w3id.org/arco/ontology/content/isKilledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links two agents in which the first one is killed by the second one."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isOriginOf
+<http://www.w3id.org/arco/ontology/content/isOriginOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isOriginOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf> .
+<http://www.w3id.org/arco/ontology/content/isOriginOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the origin referring to an agent."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isPlayedBy
+<http://www.w3id.org/arco/ontology/content/isPlayedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isPlayedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/arco/ontology/content/plays> .
+<http://www.w3id.org/arco/ontology/content/isPlayedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines a character that is interpreted by an actor."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isProfessionOf
+<http://www.w3id.org/arco/ontology/content/isProfessionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isProfessionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf> .
+<http://www.w3id.org/arco/ontology/content/isProfessionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property link a profession to an agent."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isRelatedTo
+<http://www.w3id.org/arco/ontology/content/isRelatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isRelatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.w3id.org/arco/ontology/content/isRelatedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines a personal relations between two agents."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isRole
+<http://www.w3id.org/arco/ontology/content/isRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isRole> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines a character by its role in a play."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isSocialOriginOf
+<http://www.w3id.org/arco/ontology/content/isSocialOriginOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isSocialOriginOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/isOriginOf> .
+<http://www.w3id.org/arco/ontology/content/isSocialOriginOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the origin referring to an agent from a social point of view."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf
+<http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines a sociological characteristic that refers to an agent." .
+# 
+# http://www.w3id.org/arco/ontology/content/isSpinOffOf
+<http://www.w3id.org/arco/ontology/content/isSpinOffOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isSpinOffOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a TV serie to another TV serie in which the protagonist played a secondary role."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/isType
+<http://www.w3id.org/arco/ontology/content/isType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/isType> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines human, animal or supernatural being as typology of character."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/kills
+<http://www.w3id.org/arco/ontology/content/kills> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/kills> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links two agents in which the first one kills the second one."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/plays
+<http://www.w3id.org/arco/ontology/content/plays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/arco/ontology/content/plays> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines an actor that interprets a character."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/arco/ontology/content/hasAlternativeName
+<http://www.w3id.org/arco/ontology/content/hasAlternativeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/arco/ontology/content/hasAlternativeName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasName> .
+<http://www.w3id.org/arco/ontology/content/hasAlternativeName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/arco/ontology/content/hasBirthDate
+<http://www.w3id.org/arco/ontology/content/hasBirthDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/arco/ontology/content/hasBirthDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.w3id.org/arco/ontology/content/hasBirthDate> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an agent to the day of its birth."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasDeathDate
+<http://www.w3id.org/arco/ontology/content/hasDeathDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/arco/ontology/content/hasDeathDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.w3id.org/arco/ontology/content/hasDeathDate> <http://www.w3.org/2000/01/rdf-schema#comment> "This property associates an agent to the day of its death."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasFirstName
+<http://www.w3id.org/arco/ontology/content/hasFirstName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/arco/ontology/content/hasFirstName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasName> .
+<http://www.w3id.org/arco/ontology/content/hasFirstName> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an agent to its first name."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasLastName
+<http://www.w3id.org/arco/ontology/content/hasLastName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/arco/ontology/content/hasLastName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasName> .
+<http://www.w3id.org/arco/ontology/content/hasLastName> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an agent to its last name."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasName
+<http://www.w3id.org/arco/ontology/content/hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/arco/ontology/content/hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3id.org/arco/ontology/content/hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an agent to its name."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasNickname
+<http://www.w3id.org/arco/ontology/content/hasNickname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/arco/ontology/content/hasNickname> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasAlternativeName> .
+<http://www.w3id.org/arco/ontology/content/hasNickname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3id.org/arco/ontology/content/hasNickname> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an agent to its nickname."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasPlaceOfBirth
+<http://www.w3id.org/arco/ontology/content/hasPlaceOfBirth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/arco/ontology/content/hasPlaceOfBirth> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an agent to the geografical place in which it was born."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasPlaceOfDeath
+<http://www.w3id.org/arco/ontology/content/hasPlaceOfDeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/arco/ontology/content/hasPlaceOfDeath> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an agent to the geografical place in which it died."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasPlaceOfLiving
+<http://www.w3id.org/arco/ontology/content/hasPlaceOfLiving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/arco/ontology/content/hasPlaceOfLiving> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an agent to the geografical place in which it lives."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasPseudonym
+<http://www.w3id.org/arco/ontology/content/hasPseudonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/arco/ontology/content/hasPseudonym> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/arco/ontology/content/hasAlternativeName> .
+<http://www.w3id.org/arco/ontology/content/hasPseudonym> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3id.org/arco/ontology/content/hasPseudonym> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an agent to its pseudonym."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/hasSex
+<http://www.w3id.org/arco/ontology/content/hasSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/arco/ontology/content/hasSex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3id.org/arco/ontology/content/hasSex> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an agent to its biological sex."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/arco/ontology/content/Actor
+<http://www.w3id.org/arco/ontology/content/Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Person> .
+<http://www.w3id.org/arco/ontology/content/Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a person who’s profession is acting on stage, films, or television."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Agent
+<http://www.w3id.org/arco/ontology/content/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3id.org/arco/ontology/content/Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasProfession> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3id.org/arco/ontology/content/Profession> .
+<http://www.w3id.org/arco/ontology/content/Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasSocialOrigin> .
+_:genid2 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3id.org/arco/ontology/content/SocialOrigin> .
+<http://www.w3id.org/arco/ontology/content/Agent> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics> .
+# 
+# http://www.w3id.org/arco/ontology/content/Animal
+<http://www.w3id.org/arco/ontology/content/Animal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Animal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Agent> .
+<http://www.w3id.org/arco/ontology/content/Animal> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to living organism that feeds on organic matter."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Antagonist
+<http://www.w3id.org/arco/ontology/content/Antagonist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Antagonist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/CharacterRole> .
+<http://www.w3id.org/arco/ontology/content/Antagonist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasCharacterStatus> .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3id.org/arco/ontology/content/Opposing> .
+<http://www.w3id.org/arco/ontology/content/Antagonist> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a character of a work actively opposing the protagonist."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/AntiHero
+<http://www.w3id.org/arco/ontology/content/AntiHero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/AntiHero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/CharacterType> .
+<http://www.w3id.org/arco/ontology/content/AntiHero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasCharacterStatus> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3id.org/arco/ontology/content/CharacterStatus> .
+<http://www.w3id.org/arco/ontology/content/AntiHero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasCharacterRole> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/Antagonist> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/CharacterStatus> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/Protagonist> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/Secondary> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3id.org/arco/ontology/content/AntiHero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasCharacterScope> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3id.org/arco/ontology/content/SelfGood> .
+<http://www.w3id.org/arco/ontology/content/AntiHero> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a leading character in a film, book or play, who is devoid of heroic qualities."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Aristocracy
+<http://www.w3id.org/arco/ontology/content/Aristocracy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Aristocracy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/SocialClass> .
+<http://www.w3id.org/arco/ontology/content/Aristocracy> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/arco/ontology/content/Clergy> .
+<http://www.w3id.org/arco/ontology/content/Aristocracy> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/arco/ontology/content/Commoner> .
+<http://www.w3id.org/arco/ontology/content/Aristocracy> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to the social class aristocrats are recognized to belong to."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Author
+<http://www.w3id.org/arco/ontology/content/Author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Author> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Writer> .
+<http://www.w3id.org/arco/ontology/content/Author> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a writer of any written work."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Character
+<http://www.w3id.org/arco/ontology/content/Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Agent> .
+<http://www.w3id.org/arco/ontology/content/Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasCharacterRole> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3id.org/arco/ontology/content/CharacterRole> .
+<http://www.w3id.org/arco/ontology/content/Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasCharacterType> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3id.org/arco/ontology/content/CharacterType> .
+<http://www.w3id.org/arco/ontology/content/Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasFictionalType> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid15 <http://www.w3.org/2002/07/owl#unionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/FictionalCharacter> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/NonFictionalCharacter> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3id.org/arco/ontology/content/Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasSocialOrigin> .
+_:genid18 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3id.org/arco/ontology/content/SocialOrigin> .
+<http://www.w3id.org/arco/ontology/content/Character> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to an art figure."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/CharacterRole
+<http://www.w3id.org/arco/ontology/content/CharacterRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/CharacterRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Character> .
+<http://www.w3id.org/arco/ontology/content/CharacterRole> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to specific role played or filled by a character."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/CharacterScope
+<http://www.w3id.org/arco/ontology/content/CharacterScope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/CharacterScope> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Character> .
+<http://www.w3id.org/arco/ontology/content/CharacterScope> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to an identifier of a character intention."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/CharacterStatus
+<http://www.w3id.org/arco/ontology/content/CharacterStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/CharacterStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Character> .
+<http://www.w3id.org/arco/ontology/content/CharacterStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to social or professional character position."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/CharacterType
+<http://www.w3id.org/arco/ontology/content/CharacterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/CharacterType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Character> .
+<http://www.w3id.org/arco/ontology/content/CharacterType> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a category of people or things having in common some characteristics."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Clergy
+<http://www.w3id.org/arco/ontology/content/Clergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Clergy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/SocialClass> .
+<http://www.w3id.org/arco/ontology/content/Clergy> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/arco/ontology/content/Commoner> .
+<http://www.w3id.org/arco/ontology/content/Clergy> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to the social class people in religious orders are recognized to belong to."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Commoner
+<http://www.w3id.org/arco/ontology/content/Commoner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Commoner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/SocialClass> .
+<http://www.w3id.org/arco/ontology/content/Commoner> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to the social class people without any other social background are recognized to belong to."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/CulturalProduct
+<http://www.w3id.org/arco/ontology/content/CulturalProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/CulturalProduct> <http://www.w3.org/2000/01/rdf-schema#comment> "Goods and services that include the arts (performing arts, visual arts, architecture), heritage conservation (museums, galleries, libraries), the cultural industries (written media, broadcasting, film, recording), and festivals."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Director
+<http://www.w3id.org/arco/ontology/content/Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Person> .
+<http://www.w3id.org/arco/ontology/content/Director> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to person responsible for leading teams in the artistic design and production of various kinds of visual art."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/EconomicStatus
+<http://www.w3id.org/arco/ontology/content/EconomicStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/EconomicStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics> .
+<http://www.w3id.org/arco/ontology/content/EconomicStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to the status of an agent defining its condition from an economic point of view."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Environment
+<http://www.w3id.org/arco/ontology/content/Environment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Environment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics> .
+<http://www.w3id.org/arco/ontology/content/Environment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/isEnvironmentOf> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3id.org/arco/ontology/content/GeographicOrigin> .
+<http://www.w3id.org/arco/ontology/content/Environment> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to an environment."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/EthnicGroup
+<http://www.w3id.org/arco/ontology/content/EthnicGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/EthnicGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics> .
+<http://www.w3id.org/arco/ontology/content/EthnicGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/defines> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3id.org/arco/ontology/content/EthnicOrigin> .
+<http://www.w3id.org/arco/ontology/content/EthnicGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a grouping of people who share common traits and set of traditions (ancestry, language, history, culture) that allow them to identify themselves as a distinguished group."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/EthnicOrigin
+<http://www.w3id.org/arco/ontology/content/EthnicOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/EthnicOrigin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Origin> .
+<http://www.w3id.org/arco/ontology/content/EthnicOrigin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/isDefinedBy> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3id.org/arco/ontology/content/EthnicGroup> .
+<http://www.w3id.org/arco/ontology/content/EthnicOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to the peculiar trait in the origin of an individual related to its belonging to one or more ethnic groups."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/FictionalCharacter
+<http://www.w3id.org/arco/ontology/content/FictionalCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/FictionalCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Character> .
+<http://www.w3id.org/arco/ontology/content/FictionalCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasPartIn> .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3id.org/arco/ontology/content/FictionalPlot> .
+<http://www.w3id.org/arco/ontology/content/FictionalCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to fictional human or non-human character in a narrative work of art."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/FictionalPlot
+<http://www.w3id.org/arco/ontology/content/FictionalPlot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/FictionalPlot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Plot> .
+<http://www.w3id.org/arco/ontology/content/FictionalPlot> <http://www.w3.org/2000/01/rdf-schema#comment> "Plot based on characters or events that occurs only in stories, plays, or films and never actually existed or happened."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/GeographicOrigin
+<http://www.w3id.org/arco/ontology/content/GeographicOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/GeographicOrigin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Origin> .
+<http://www.w3id.org/arco/ontology/content/GeographicOrigin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasEnvironment> .
+_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3id.org/arco/ontology/content/Environment> .
+<http://www.w3id.org/arco/ontology/content/GeographicOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to the peculiar trait in the origin of an individual related to its geographic provenance."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Hero
+<http://www.w3id.org/arco/ontology/content/Hero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Hero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/CharacterType> .
+<http://www.w3id.org/arco/ontology/content/Hero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasCharacterStatus> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3id.org/arco/ontology/content/CharacterStatus> .
+<http://www.w3id.org/arco/ontology/content/Hero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasCharacterRole> .
+_:genid25 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid26 <http://www.w3.org/2002/07/owl#unionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/Antagonist> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/Protagonist> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3id.org/arco/ontology/content/Hero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasCharacterScope> .
+_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3id.org/arco/ontology/content/UniversalGood> .
+<http://www.w3id.org/arco/ontology/content/Hero> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a character who fights adversity through ingenuity, courage, or strength."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/IllegalProfession
+<http://www.w3id.org/arco/ontology/content/IllegalProfession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/IllegalProfession> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Profession> .
+<http://www.w3id.org/arco/ontology/content/IllegalProfession> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/arco/ontology/content/LegalProfession> .
+<http://www.w3id.org/arco/ontology/content/IllegalProfession> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a profession that has an illegal status."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Leading
+<http://www.w3id.org/arco/ontology/content/Leading> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Leading> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/CharacterStatus> .
+<http://www.w3id.org/arco/ontology/content/Leading> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a character in a narrative that is focused on by the primary storyline."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/LegalProfession
+<http://www.w3id.org/arco/ontology/content/LegalProfession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/LegalProfession> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Profession> .
+<http://www.w3id.org/arco/ontology/content/LegalProfession> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a profession that has a legal status."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/LiteraryWork
+<http://www.w3id.org/arco/ontology/content/LiteraryWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/LiteraryWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/CulturalProduct> .
+<http://www.w3id.org/arco/ontology/content/LiteraryWork> <http://www.w3.org/2000/01/rdf-schema#comment> "Imaginative or creative writing textual work, with or without illustrations, published or nonpublished."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Medium
+<http://www.w3id.org/arco/ontology/content/Medium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Medium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/EconomicStatus> .
+<http://www.w3id.org/arco/ontology/content/Medium> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents an economic status of an agent that is not rich nor poor."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Movie
+<http://www.w3id.org/arco/ontology/content/Movie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Movie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Scenario> .
+<http://www.w3id.org/arco/ontology/content/Movie> <http://www.w3.org/2000/01/rdf-schema#comment> "A recording of moving images that tells a story and that people watch on a screen or television."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/NonFictionalCharacter
+<http://www.w3id.org/arco/ontology/content/NonFictionalCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/NonFictionalCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Character> .
+<http://www.w3id.org/arco/ontology/content/NonFictionalCharacter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasPartIn> .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3id.org/arco/ontology/content/NonFictionalPlot> .
+<http://www.w3id.org/arco/ontology/content/NonFictionalCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a non fictional human or non-human character in a narrative work of art."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/NonFictionalPlot
+<http://www.w3id.org/arco/ontology/content/NonFictionalPlot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/NonFictionalPlot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Plot> .
+<http://www.w3id.org/arco/ontology/content/NonFictionalPlot> <http://www.w3.org/2000/01/rdf-schema#comment> "Plot based on truth and accuracy regarding information, events, or people."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Opposing
+<http://www.w3id.org/arco/ontology/content/Opposing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Opposing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/CharacterStatus> .
+<http://www.w3id.org/arco/ontology/content/Opposing> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a character in a narrative that is focused on by the primary storyline and in opposition to the leading character."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Origin
+<http://www.w3id.org/arco/ontology/content/Origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Origin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics> .
+<http://www.w3id.org/arco/ontology/content/Origin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/isOriginOf> .
+_:genid31 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3id.org/arco/ontology/content/Agent> .
+<http://www.w3id.org/arco/ontology/content/Origin> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/arco/ontology/content/Profession> .
+<http://www.w3id.org/arco/ontology/content/Origin> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/arco/ontology/content/SocialClass> .
+# 
+# http://www.w3id.org/arco/ontology/content/Person
+<http://www.w3id.org/arco/ontology/content/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Agent> .
+<http://www.w3id.org/arco/ontology/content/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a human being regarded as individuals."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Plot
+<http://www.w3id.org/arco/ontology/content/Plot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Plot> <http://www.w3.org/2000/01/rdf-schema#comment> "The main events of a play, novel, film, or similar work, devised and presented by the writer as an interrelated sequence."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Poor
+<http://www.w3id.org/arco/ontology/content/Poor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Poor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/EconomicStatus> .
+<http://www.w3id.org/arco/ontology/content/Poor> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents an economic status of an agent that lacks sufficient money to live at a standard considered comfortable by society."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Profession
+<http://www.w3id.org/arco/ontology/content/Profession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Profession> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics> .
+<http://www.w3id.org/arco/ontology/content/Profession> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/isProfessionOf> .
+_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3id.org/arco/ontology/content/Agent> .
+<http://www.w3id.org/arco/ontology/content/Profession> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/arco/ontology/content/SocialClass> .
+<http://www.w3id.org/arco/ontology/content/Profession> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to the profession or occupation employed by an agent."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Protagonist
+<http://www.w3id.org/arco/ontology/content/Protagonist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Protagonist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/CharacterRole> .
+<http://www.w3id.org/arco/ontology/content/Protagonist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasCharacterStatus> .
+_:genid33 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3id.org/arco/ontology/content/Leading> .
+<http://www.w3id.org/arco/ontology/content/Protagonist> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to the main character of a creative work."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Rich
+<http://www.w3id.org/arco/ontology/content/Rich> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Rich> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/EconomicStatus> .
+<http://www.w3id.org/arco/ontology/content/Rich> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents an economic status of an agent that has a great deal of money or assets."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Scenario
+<http://www.w3id.org/arco/ontology/content/Scenario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Scenario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/CulturalProduct> .
+<http://www.w3id.org/arco/ontology/content/Scenario> <http://www.w3.org/2000/01/rdf-schema#comment> "A written outline of a film, novel, or stage work giving details of the plot and individual scenes."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Screenwriter
+<http://www.w3id.org/arco/ontology/content/Screenwriter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Screenwriter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Writer> .
+<http://www.w3id.org/arco/ontology/content/Screenwriter> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a writer who wrote the script for TV, films, radio, comics or games."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Secondary
+<http://www.w3id.org/arco/ontology/content/Secondary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Secondary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/CharacterRole> .
+<http://www.w3id.org/arco/ontology/content/Secondary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasCharacterStatus> .
+_:genid34 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3id.org/arco/ontology/content/Supporting> .
+<http://www.w3id.org/arco/ontology/content/Secondary> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a minor character necessary for the plot due to the key details he/she reveals."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/SelfGood
+<http://www.w3id.org/arco/ontology/content/SelfGood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/SelfGood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/CharacterScope> .
+<http://www.w3id.org/arco/ontology/content/SelfGood> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to the character personal advantage intention."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/SocialClass
+<http://www.w3id.org/arco/ontology/content/SocialClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/SocialClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics> .
+<http://www.w3id.org/arco/ontology/content/SocialClass> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a grouping of people identifying themselves as belonging to a specific social class within a society. The main social classes are the aristocracy, the clergy and the commoners."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/SocialOrigin
+<http://www.w3id.org/arco/ontology/content/SocialOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/SocialOrigin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Origin> .
+<http://www.w3id.org/arco/ontology/content/SocialOrigin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/isDefinedBy> .
+_:genid35 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3id.org/arco/ontology/content/EconomicStatus> .
+<http://www.w3id.org/arco/ontology/content/SocialOrigin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/isDefinedBy> .
+_:genid36 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3id.org/arco/ontology/content/SocialClass> .
+<http://www.w3id.org/arco/ontology/content/SocialOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to the peculiar trait in the origin of an individual related to its social provenance from the point of view of the social status and the social class defining them at their birth."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics
+<http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to characteristics and features able to describe an agent from a sociological point of view." .
+# 
+# http://www.w3id.org/arco/ontology/content/SupernaturalBeing
+<http://www.w3id.org/arco/ontology/content/SupernaturalBeing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/SupernaturalBeing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Agent> .
+<http://www.w3id.org/arco/ontology/content/SupernaturalBeing> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to kind of being from religion, mythology or folklore."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Supporting
+<http://www.w3id.org/arco/ontology/content/Supporting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Supporting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/CharacterStatus> .
+<http://www.w3id.org/arco/ontology/content/Supporting> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a character in a narrative that is not focused on by the primary storyline."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/TvSerie
+<http://www.w3id.org/arco/ontology/content/TvSerie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/TvSerie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Scenario> .
+<http://www.w3id.org/arco/ontology/content/TvSerie> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of programs created or adapted for television broadcast with a common series title."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/UniversalBad
+<http://www.w3id.org/arco/ontology/content/UniversalBad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/UniversalBad> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/CharacterScope> .
+<http://www.w3id.org/arco/ontology/content/UniversalBad> <http://www.w3.org/2000/01/rdf-schema#comment> "An action that is against the interest of the world, applicable to all cases (humans, animals, enviroment etc.)."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/UniversalGood
+<http://www.w3id.org/arco/ontology/content/UniversalGood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/UniversalGood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/CharacterScope> .
+<http://www.w3id.org/arco/ontology/content/UniversalGood> <http://www.w3.org/2000/01/rdf-schema#comment> "An action that is in the interest of the world, applicable to all cases (humans, animals, enviroment etc.)."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Villain
+<http://www.w3id.org/arco/ontology/content/Villain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Villain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/CharacterType> .
+<http://www.w3id.org/arco/ontology/content/Villain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasCharacterStatus> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3id.org/arco/ontology/content/CharacterStatus> .
+<http://www.w3id.org/arco/ontology/content/Villain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasCharacterRole> .
+_:genid38 <http://www.w3.org/2002/07/owl#allValuesFrom> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid39 <http://www.w3.org/2002/07/owl#unionOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/Antagonist> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/Protagonist> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.w3id.org/arco/ontology/content/Villain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/arco/ontology/content/hasCharacterScope> .
+_:genid42 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3id.org/arco/ontology/content/UniversalBad> .
+<http://www.w3id.org/arco/ontology/content/Villain> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to a character whose evil actions or motives are important to the plot."@en .
+# 
+# http://www.w3id.org/arco/ontology/content/Writer
+<http://www.w3id.org/arco/ontology/content/Writer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/arco/ontology/content/Writer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/arco/ontology/content/Person> .
+<http://www.w3id.org/arco/ontology/content/Writer> <http://www.w3.org/2000/01/rdf-schema#comment> "This class refers to person who uses written words to communicate ideas and to produce works of literature."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid43 <http://www.w3.org/2002/07/owl#members> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/Animal> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/Character> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/Person> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/SupernaturalBeing> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid48 <http://www.w3.org/2002/07/owl#members> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/EthnicOrigin> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/GeographicOrigin> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/SocialOrigin> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid52 <http://www.w3.org/2002/07/owl#members> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/Medium> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/Poor> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/arco/ontology/content/Rich> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

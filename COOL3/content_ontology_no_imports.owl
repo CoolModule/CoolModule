@@ -1,0 +1,892 @@
+@prefix : <http://www.w3id.org/arco/ontology/content/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix a-cont: <http://www.w3id.org/arco/ontology/content/> .
+@base <http://www.w3id.org/arco/ontology/content> .
+
+<http://www.w3id.org/arco/ontology/content> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3id.org/arco/ontology/content/defines
+a-cont:defines rdf:type owl:ObjectProperty ;
+               rdfs:comment "This property define the act of attaching a meaning to a term."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasAuthor
+a-cont:hasAuthor rdf:type owl:ObjectProperty ;
+                 owl:inverseOf a-cont:isAuthorOf ;
+                 rdfs:comment "This property links any written work to its creator or originator."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasBusinessPartner
+a-cont:hasBusinessPartner rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf a-cont:isRelatedTo ;
+                          rdf:type owl:SymmetricProperty ;
+                          rdfs:comment "This property defines a business relations bwtween two agents."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasCharacter
+a-cont:hasCharacter rdf:type owl:ObjectProperty ;
+                    owl:inverseOf a-cont:isCharacterOf .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasCharacterRole
+a-cont:hasCharacterRole rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf a-cont:hasType ;
+                        owl:inverseOf a-cont:isCharacterRole ;
+                        rdfs:comment "This property defines character’s role as protagonist, antagonist or secondary."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasCharacterScope
+a-cont:hasCharacterScope rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf a-cont:hasType ;
+                         owl:inverseOf a-cont:isCharacterScope ;
+                         rdfs:comment "This property defines character’s scope as universal good, universal bad or self good."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasCharacterStatus
+a-cont:hasCharacterStatus rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf a-cont:hasType ;
+                          owl:inverseOf a-cont:isCharacterStatus ;
+                          rdfs:comment "This property defines character’s status as leading, opposing or supporting."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasCharacterType
+a-cont:hasCharacterType rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf a-cont:hasType ;
+                        owl:inverseOf a-cont:isCharacterType ;
+                        rdfs:comment "This property defines character’s type as hero, antihero, or villain."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasChild
+a-cont:hasChild rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf a-cont:hasRelative ;
+                owl:inverseOf a-cont:hasParent ;
+                rdfs:comment "This property links an agent that is parent to another agent."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasEmployee
+a-cont:hasEmployee rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf a-cont:isRelatedTo ;
+                   owl:inverseOf a-cont:hasEmployer ;
+                   rdfs:comment "This property links an employer to its employee."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasEmployer
+a-cont:hasEmployer rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf a-cont:isRelatedTo ;
+                   rdfs:comment "This property links an employee to its employer."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasEnvironment
+a-cont:hasEnvironment rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf a-cont:hasSociologicalCharacteristic ;
+                      rdfs:comment "This property links an agent to an environment."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasEthnicGroup
+a-cont:hasEthnicGroup rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf a-cont:hasSociologicalCharacteristic ;
+                      owl:inverseOf a-cont:isEthnicGroupOf ;
+                      rdfs:comment "This property links an agent to an ethnic group."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasEthnicOrigin
+a-cont:hasEthnicOrigin rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf a-cont:hasOrigin ;
+                       owl:inverseOf a-cont:isEthnicOriginOf ;
+                       rdfs:comment "This property defines the origin an agent has from an ethnic point of view."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasFictionalType
+a-cont:hasFictionalType rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf a-cont:hasType ;
+                        owl:inverseOf a-cont:isFictionalType ;
+                        rdfs:comment "This property defines fictional character’s type as fictional or non fictional."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasGeographicOrigin
+a-cont:hasGeographicOrigin rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf a-cont:hasOrigin ;
+                           owl:inverseOf a-cont:isGeographicOriginOf ;
+                           rdfs:comment "This property defines the origin an agent has from a geographic point of view."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasOrigin
+a-cont:hasOrigin rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf a-cont:hasSociologicalCharacteristic ;
+                 rdfs:comment "This property defines the origin an agent has."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasParent
+a-cont:hasParent rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf a-cont:hasRelative ;
+                 rdfs:comment "This property link an agent that is child to another agent."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasPartIn
+a-cont:hasPartIn rdf:type owl:ObjectProperty ;
+                 rdfs:comment "To be involved in, to be a factor in."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasProfession
+a-cont:hasProfession rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf a-cont:hasSociologicalCharacteristic ;
+                     rdfs:comment "This property links an agent to a profession."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasRelative
+a-cont:hasRelative rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf a-cont:isRelatedTo ;
+                   rdf:type owl:SymmetricProperty ;
+                   rdfs:comment "This property links two agents connected by blood or marriage."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasRole
+a-cont:hasRole rdf:type owl:ObjectProperty ;
+               owl:inverseOf a-cont:isRole ;
+               rdfs:comment "This property defines the role of character in a play."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasSocialOrigin
+a-cont:hasSocialOrigin rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf a-cont:hasOrigin ;
+                       rdf:type owl:FunctionalProperty ;
+                       rdfs:comment "This property defines the origin an agent has from a social point of view."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasSociologicalCharacteristic
+a-cont:hasSociologicalCharacteristic rdf:type owl:ObjectProperty ;
+                                     owl:inverseOf a-cont:isSociologicalCharacteristicOf ;
+                                     rdfs:comment "This property defines a sociological characteristic that can be described as belonging to an agent."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasSpinOff
+a-cont:hasSpinOff rdf:type owl:ObjectProperty ;
+                  owl:inverseOf a-cont:isSpinOffOf ;
+                  rdfs:comment "This property links a TV serie to another TV serie in which a secondary character in the first show becomes the protagonist."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasType
+a-cont:hasType rdf:type owl:ObjectProperty ;
+               owl:inverseOf a-cont:isType ;
+               rdfs:comment "This property defines the typology of character depicted as human, animal or supernatural one."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isAuthorOf
+a-cont:isAuthorOf rdf:type owl:ObjectProperty ;
+                  rdfs:comment "This property links a creator or originator to its written work."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isBasedOn
+a-cont:isBasedOn rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ,
+                          owl:InverseFunctionalProperty ;
+                 rdfs:comment "This property defines a character that is based on or inspired to a real or invented person, animal or supernatural being."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isCharacterOf
+a-cont:isCharacterOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3id.org/arco/ontology/content/isCharacterRole
+a-cont:isCharacterRole rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf a-cont:isType ;
+                       rdfs:comment "This property defines protagonist, antagonist and secondary as character’s role."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isCharacterScope
+a-cont:isCharacterScope rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf a-cont:isType ;
+                        rdfs:comment "This property defines universal good, universal bad and self good as character’s scope."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isCharacterStatus
+a-cont:isCharacterStatus rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf a-cont:isType ;
+                         rdfs:comment "This property defines leading, opposing, and supporting as character’s status."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isCharacterType
+a-cont:isCharacterType rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf a-cont:isType ;
+                       rdfs:comment "This property defines hero, antihero, and villain as character’s type."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isDefinedBy
+a-cont:isDefinedBy rdf:type owl:ObjectProperty ;
+                   rdfs:comment "This property defines the meaning that is attached to a term."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isEnvironmentOf
+a-cont:isEnvironmentOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf a-cont:isSociologicalCharacteristicOf ;
+                       rdfs:comment "This property links an environment to an agent."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isEthnicGroupOf
+a-cont:isEthnicGroupOf rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf a-cont:isSociologicalCharacteristicOf ;
+                       rdfs:comment "This property links an ethnic group to an agent."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isEthnicOriginOf
+a-cont:isEthnicOriginOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf a-cont:isOriginOf ;
+                        rdfs:comment "This property defines the origin referring to an agent from an ethnic point of view."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isFictionalType
+a-cont:isFictionalType rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf a-cont:isType ;
+                       rdfs:comment "This property defines fictional and non fictional as character’s fictional type."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isGeographicOriginOf
+a-cont:isGeographicOriginOf rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf a-cont:isOriginOf ;
+                            rdfs:comment "This property defines the origin referring to an agent from a geographic point of view."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isKilledBy
+a-cont:isKilledBy rdf:type owl:ObjectProperty ;
+                  owl:inverseOf a-cont:kills ;
+                  rdfs:comment "This property links two agents in which the first one is killed by the second one."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isOriginOf
+a-cont:isOriginOf rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf a-cont:isSociologicalCharacteristicOf ;
+                  rdfs:comment "This property defines the origin referring to an agent."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isPlayedBy
+a-cont:isPlayedBy rdf:type owl:ObjectProperty ;
+                  owl:inverseOf a-cont:plays ;
+                  rdfs:comment "This property defines a character that is interpreted by an actor."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isProfessionOf
+a-cont:isProfessionOf rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf a-cont:isSociologicalCharacteristicOf ;
+                      rdfs:comment "This property link a profession to an agent."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isRelatedTo
+a-cont:isRelatedTo rdf:type owl:ObjectProperty ,
+                            owl:SymmetricProperty ;
+                   rdfs:comment "This property defines a personal relations between two agents."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isRole
+a-cont:isRole rdf:type owl:ObjectProperty ;
+              rdfs:comment "This property defines a character by its role in a play."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isSocialOriginOf
+a-cont:isSocialOriginOf rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf a-cont:isOriginOf ;
+                        rdfs:comment "This property defines the origin referring to an agent from a social point of view."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf
+a-cont:isSociologicalCharacteristicOf rdf:type owl:ObjectProperty ;
+                                      rdfs:comment "This property defines a sociological characteristic that refers to an agent." .
+
+
+###  http://www.w3id.org/arco/ontology/content/isSpinOffOf
+a-cont:isSpinOffOf rdf:type owl:ObjectProperty ;
+                   rdfs:comment "This property links a TV serie to another TV serie in which the protagonist played a secondary role."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/isType
+a-cont:isType rdf:type owl:ObjectProperty ;
+              rdfs:comment "This property defines human, animal or supernatural being as typology of character."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/kills
+a-cont:kills rdf:type owl:ObjectProperty ;
+             rdfs:comment "This property links two agents in which the first one kills the second one."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/plays
+a-cont:plays rdf:type owl:ObjectProperty ;
+             rdfs:comment "This property defines an actor that interprets a character."@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3id.org/arco/ontology/content/hasAlternativeName
+a-cont:hasAlternativeName rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf a-cont:hasName ;
+                          rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasBirthDate
+a-cont:hasBirthDate rdf:type owl:DatatypeProperty ;
+                    rdfs:range xsd:dateTime ;
+                    rdfs:comment "This property associates an agent to the day of its birth."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasDeathDate
+a-cont:hasDeathDate rdf:type owl:DatatypeProperty ;
+                    rdfs:range xsd:dateTime ;
+                    rdfs:comment "This property associates an agent to the day of its death."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasFirstName
+a-cont:hasFirstName rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf a-cont:hasName ;
+                    rdfs:comment "This property links an agent to its first name."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasLastName
+a-cont:hasLastName rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf a-cont:hasName ;
+                   rdfs:comment "This property links an agent to its last name."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasName
+a-cont:hasName rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:string ;
+               rdfs:comment "This property links an agent to its name."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasNickname
+a-cont:hasNickname rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf a-cont:hasAlternativeName ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "This property links an agent to its nickname."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasPlaceOfBirth
+a-cont:hasPlaceOfBirth rdf:type owl:DatatypeProperty ;
+                       rdfs:comment "This property links an agent to the geografical place in which it was born."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasPlaceOfDeath
+a-cont:hasPlaceOfDeath rdf:type owl:DatatypeProperty ;
+                       rdfs:comment "This property links an agent to the geografical place in which it died."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasPlaceOfLiving
+a-cont:hasPlaceOfLiving rdf:type owl:DatatypeProperty ;
+                        rdfs:comment "This property links an agent to the geografical place in which it lives."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasPseudonym
+a-cont:hasPseudonym rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf a-cont:hasAlternativeName ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "This property links an agent to its pseudonym."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/hasSex
+a-cont:hasSex rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:string ;
+              rdfs:comment "This property links an agent to its biological sex."@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3id.org/arco/ontology/content/Actor
+a-cont:Actor rdf:type owl:Class ;
+             rdfs:subClassOf a-cont:Person ;
+             rdfs:comment "This class refers to a person who’s profession is acting on stage, films, or television."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Agent
+a-cont:Agent rdf:type owl:Class ;
+             rdfs:subClassOf owl:Thing ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty a-cont:hasProfession ;
+                               owl:someValuesFrom a-cont:Profession
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty a-cont:hasSocialOrigin ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass a-cont:SocialOrigin
+                             ] ;
+             owl:disjointWith a-cont:SociologicalCharacteristics .
+
+
+###  http://www.w3id.org/arco/ontology/content/Animal
+a-cont:Animal rdf:type owl:Class ;
+              rdfs:subClassOf a-cont:Agent ;
+              rdfs:comment "This class refers to living organism that feeds on organic matter."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Antagonist
+a-cont:Antagonist rdf:type owl:Class ;
+                  rdfs:subClassOf a-cont:CharacterRole ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty a-cont:hasCharacterStatus ;
+                                    owl:allValuesFrom a-cont:Opposing
+                                  ] ;
+                  rdfs:comment "This class refers to a character of a work actively opposing the protagonist."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/AntiHero
+a-cont:AntiHero rdf:type owl:Class ;
+                rdfs:subClassOf a-cont:CharacterType ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty a-cont:hasCharacterStatus ;
+                                  owl:someValuesFrom a-cont:CharacterStatus
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty a-cont:hasCharacterRole ;
+                                  owl:allValuesFrom [ rdf:type owl:Class ;
+                                                      owl:unionOf ( a-cont:Antagonist
+                                                                    a-cont:CharacterStatus
+                                                                    a-cont:Protagonist
+                                                                    a-cont:Secondary
+                                                                  )
+                                                    ]
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty a-cont:hasCharacterScope ;
+                                  owl:allValuesFrom a-cont:SelfGood
+                                ] ;
+                rdfs:comment "This class refers to a leading character in a film, book or play, who is devoid of heroic qualities."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Aristocracy
+a-cont:Aristocracy rdf:type owl:Class ;
+                   rdfs:subClassOf a-cont:SocialClass ;
+                   owl:disjointWith a-cont:Clergy ,
+                                    a-cont:Commoner ;
+                   rdfs:comment "This class refers to the social class aristocrats are recognized to belong to."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Author
+a-cont:Author rdf:type owl:Class ;
+              rdfs:subClassOf a-cont:Writer ;
+              rdfs:comment "This class refers to a writer of any written work."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Character
+a-cont:Character rdf:type owl:Class ;
+                 rdfs:subClassOf a-cont:Agent ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty a-cont:hasCharacterRole ;
+                                   owl:someValuesFrom a-cont:CharacterRole
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty a-cont:hasCharacterType ;
+                                   owl:someValuesFrom a-cont:CharacterType
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty a-cont:hasFictionalType ;
+                                   owl:allValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( a-cont:FictionalCharacter
+                                                                     a-cont:NonFictionalCharacter
+                                                                   )
+                                                     ]
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty a-cont:hasSocialOrigin ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass a-cont:SocialOrigin
+                                 ] ;
+                 rdfs:comment "This class refers to an art figure."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/CharacterRole
+a-cont:CharacterRole rdf:type owl:Class ;
+                     rdfs:subClassOf a-cont:Character ;
+                     rdfs:comment "This class refers to specific role played or filled by a character."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/CharacterScope
+a-cont:CharacterScope rdf:type owl:Class ;
+                      rdfs:subClassOf a-cont:Character ;
+                      rdfs:comment "This class refers to an identifier of a character intention."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/CharacterStatus
+a-cont:CharacterStatus rdf:type owl:Class ;
+                       rdfs:subClassOf a-cont:Character ;
+                       rdfs:comment "This class refers to social or professional character position."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/CharacterType
+a-cont:CharacterType rdf:type owl:Class ;
+                     rdfs:subClassOf a-cont:Character ;
+                     rdfs:comment "This class refers to a category of people or things having in common some characteristics."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Clergy
+a-cont:Clergy rdf:type owl:Class ;
+              rdfs:subClassOf a-cont:SocialClass ;
+              owl:disjointWith a-cont:Commoner ;
+              rdfs:comment "This class refers to the social class people in religious orders are recognized to belong to."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Commoner
+a-cont:Commoner rdf:type owl:Class ;
+                rdfs:subClassOf a-cont:SocialClass ;
+                rdfs:comment "This class refers to the social class people without any other social background are recognized to belong to."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/CulturalProduct
+a-cont:CulturalProduct rdf:type owl:Class ;
+                       rdfs:comment "Goods and services that include the arts (performing arts, visual arts, architecture), heritage conservation (museums, galleries, libraries), the cultural industries (written media, broadcasting, film, recording), and festivals."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Director
+a-cont:Director rdf:type owl:Class ;
+                rdfs:subClassOf a-cont:Person ;
+                rdfs:comment "This class refers to person responsible for leading teams in the artistic design and production of various kinds of visual art."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/EconomicStatus
+a-cont:EconomicStatus rdf:type owl:Class ;
+                      rdfs:subClassOf a-cont:SociologicalCharacteristics ;
+                      rdfs:comment "This class refers to the status of an agent defining its condition from an economic point of view."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Environment
+a-cont:Environment rdf:type owl:Class ;
+                   rdfs:subClassOf a-cont:SociologicalCharacteristics ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty a-cont:isEnvironmentOf ;
+                                     owl:someValuesFrom a-cont:GeographicOrigin
+                                   ] ;
+                   rdfs:comment "This class refers to an environment."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/EthnicGroup
+a-cont:EthnicGroup rdf:type owl:Class ;
+                   rdfs:subClassOf a-cont:SociologicalCharacteristics ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty a-cont:defines ;
+                                     owl:someValuesFrom a-cont:EthnicOrigin
+                                   ] ;
+                   rdfs:comment "This class refers to a grouping of people who share common traits and set of traditions (ancestry, language, history, culture) that allow them to identify themselves as a distinguished group."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/EthnicOrigin
+a-cont:EthnicOrigin rdf:type owl:Class ;
+                    rdfs:subClassOf a-cont:Origin ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty a-cont:isDefinedBy ;
+                                      owl:someValuesFrom a-cont:EthnicGroup
+                                    ] ;
+                    rdfs:comment "This class refers to the peculiar trait in the origin of an individual related to its belonging to one or more ethnic groups."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/FictionalCharacter
+a-cont:FictionalCharacter rdf:type owl:Class ;
+                          rdfs:subClassOf a-cont:Character ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty a-cont:hasPartIn ;
+                                            owl:allValuesFrom a-cont:FictionalPlot
+                                          ] ;
+                          rdfs:comment "This class refers to fictional human or non-human character in a narrative work of art."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/FictionalPlot
+a-cont:FictionalPlot rdf:type owl:Class ;
+                     rdfs:subClassOf a-cont:Plot ;
+                     rdfs:comment "Plot based on characters or events that occurs only in stories, plays, or films and never actually existed or happened."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/GeographicOrigin
+a-cont:GeographicOrigin rdf:type owl:Class ;
+                        rdfs:subClassOf a-cont:Origin ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty a-cont:hasEnvironment ;
+                                          owl:allValuesFrom a-cont:Environment
+                                        ] ;
+                        rdfs:comment "This class refers to the peculiar trait in the origin of an individual related to its geographic provenance."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Hero
+a-cont:Hero rdf:type owl:Class ;
+            rdfs:subClassOf a-cont:CharacterType ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty a-cont:hasCharacterStatus ;
+                              owl:someValuesFrom a-cont:CharacterStatus
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty a-cont:hasCharacterRole ;
+                              owl:allValuesFrom [ rdf:type owl:Class ;
+                                                  owl:unionOf ( a-cont:Antagonist
+                                                                a-cont:Protagonist
+                                                              )
+                                                ]
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty a-cont:hasCharacterScope ;
+                              owl:allValuesFrom a-cont:UniversalGood
+                            ] ;
+            rdfs:comment "This class refers to a character who fights adversity through ingenuity, courage, or strength."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/IllegalProfession
+a-cont:IllegalProfession rdf:type owl:Class ;
+                         rdfs:subClassOf a-cont:Profession ;
+                         owl:disjointWith a-cont:LegalProfession ;
+                         rdfs:comment "This class refers to a profession that has an illegal status."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Leading
+a-cont:Leading rdf:type owl:Class ;
+               rdfs:subClassOf a-cont:CharacterStatus ;
+               rdfs:comment "This class refers to a character in a narrative that is focused on by the primary storyline."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/LegalProfession
+a-cont:LegalProfession rdf:type owl:Class ;
+                       rdfs:subClassOf a-cont:Profession ;
+                       rdfs:comment "This class refers to a profession that has a legal status."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/LiteraryWork
+a-cont:LiteraryWork rdf:type owl:Class ;
+                    rdfs:subClassOf a-cont:CulturalProduct ;
+                    rdfs:comment "Imaginative or creative writing textual work, with or without illustrations, published or nonpublished."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Medium
+a-cont:Medium rdf:type owl:Class ;
+              rdfs:subClassOf a-cont:EconomicStatus ;
+              rdfs:comment "This class represents an economic status of an agent that is not rich nor poor."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Movie
+a-cont:Movie rdf:type owl:Class ;
+             rdfs:subClassOf a-cont:Scenario ;
+             rdfs:comment "A recording of moving images that tells a story and that people watch on a screen or television."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/NonFictionalCharacter
+a-cont:NonFictionalCharacter rdf:type owl:Class ;
+                             rdfs:subClassOf a-cont:Character ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty a-cont:hasPartIn ;
+                                               owl:allValuesFrom a-cont:NonFictionalPlot
+                                             ] ;
+                             rdfs:comment "This class refers to a non fictional human or non-human character in a narrative work of art."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/NonFictionalPlot
+a-cont:NonFictionalPlot rdf:type owl:Class ;
+                        rdfs:subClassOf a-cont:Plot ;
+                        rdfs:comment "Plot based on truth and accuracy regarding information, events, or people."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Opposing
+a-cont:Opposing rdf:type owl:Class ;
+                rdfs:subClassOf a-cont:CharacterStatus ;
+                rdfs:comment "This class refers to a character in a narrative that is focused on by the primary storyline and in opposition to the leading character."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Origin
+a-cont:Origin rdf:type owl:Class ;
+              rdfs:subClassOf a-cont:SociologicalCharacteristics ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty a-cont:isOriginOf ;
+                                owl:allValuesFrom a-cont:Agent
+                              ] ;
+              owl:disjointWith a-cont:Profession ,
+                               a-cont:SocialClass .
+
+
+###  http://www.w3id.org/arco/ontology/content/Person
+a-cont:Person rdf:type owl:Class ;
+              rdfs:subClassOf a-cont:Agent ;
+              rdfs:comment "This class refers to a human being regarded as individuals."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Plot
+a-cont:Plot rdf:type owl:Class ;
+            rdfs:comment "The main events of a play, novel, film, or similar work, devised and presented by the writer as an interrelated sequence."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Poor
+a-cont:Poor rdf:type owl:Class ;
+            rdfs:subClassOf a-cont:EconomicStatus ;
+            rdfs:comment "This class represents an economic status of an agent that lacks sufficient money to live at a standard considered comfortable by society."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Profession
+a-cont:Profession rdf:type owl:Class ;
+                  rdfs:subClassOf a-cont:SociologicalCharacteristics ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty a-cont:isProfessionOf ;
+                                    owl:allValuesFrom a-cont:Agent
+                                  ] ;
+                  owl:disjointWith a-cont:SocialClass ;
+                  rdfs:comment "This class refers to the profession or occupation employed by an agent."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Protagonist
+a-cont:Protagonist rdf:type owl:Class ;
+                   rdfs:subClassOf a-cont:CharacterRole ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty a-cont:hasCharacterStatus ;
+                                     owl:allValuesFrom a-cont:Leading
+                                   ] ;
+                   rdfs:comment "This class refers to the main character of a creative work."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Rich
+a-cont:Rich rdf:type owl:Class ;
+            rdfs:subClassOf a-cont:EconomicStatus ;
+            rdfs:comment "This class represents an economic status of an agent that has a great deal of money or assets."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Scenario
+a-cont:Scenario rdf:type owl:Class ;
+                rdfs:subClassOf a-cont:CulturalProduct ;
+                rdfs:comment "A written outline of a film, novel, or stage work giving details of the plot and individual scenes."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Screenwriter
+a-cont:Screenwriter rdf:type owl:Class ;
+                    rdfs:subClassOf a-cont:Writer ;
+                    rdfs:comment "This class refers to a writer who wrote the script for TV, films, radio, comics or games."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Secondary
+a-cont:Secondary rdf:type owl:Class ;
+                 rdfs:subClassOf a-cont:CharacterRole ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty a-cont:hasCharacterStatus ;
+                                   owl:allValuesFrom a-cont:Supporting
+                                 ] ;
+                 rdfs:comment "This class refers to a minor character necessary for the plot due to the key details he/she reveals."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/SelfGood
+a-cont:SelfGood rdf:type owl:Class ;
+                rdfs:subClassOf a-cont:CharacterScope ;
+                rdfs:comment "This class refers to the character personal advantage intention."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/SocialClass
+a-cont:SocialClass rdf:type owl:Class ;
+                   rdfs:subClassOf a-cont:SociologicalCharacteristics ;
+                   rdfs:comment "This class refers to a grouping of people identifying themselves as belonging to a specific social class within a society. The main social classes are the aristocracy, the clergy and the commoners."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/SocialOrigin
+a-cont:SocialOrigin rdf:type owl:Class ;
+                    rdfs:subClassOf a-cont:Origin ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty a-cont:isDefinedBy ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass a-cont:EconomicStatus
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty a-cont:isDefinedBy ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass a-cont:SocialClass
+                                    ] ;
+                    rdfs:comment "This class refers to the peculiar trait in the origin of an individual related to its social provenance from the point of view of the social status and the social class defining them at their birth."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics
+a-cont:SociologicalCharacteristics rdf:type owl:Class ;
+                                   rdfs:comment "This class refers to characteristics and features able to describe an agent from a sociological point of view." .
+
+
+###  http://www.w3id.org/arco/ontology/content/SupernaturalBeing
+a-cont:SupernaturalBeing rdf:type owl:Class ;
+                         rdfs:subClassOf a-cont:Agent ;
+                         rdfs:comment "This class refers to kind of being from religion, mythology or folklore."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Supporting
+a-cont:Supporting rdf:type owl:Class ;
+                  rdfs:subClassOf a-cont:CharacterStatus ;
+                  rdfs:comment "This class refers to a character in a narrative that is not focused on by the primary storyline."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/TvSerie
+a-cont:TvSerie rdf:type owl:Class ;
+               rdfs:subClassOf a-cont:Scenario ;
+               rdfs:comment "A group of programs created or adapted for television broadcast with a common series title."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/UniversalBad
+a-cont:UniversalBad rdf:type owl:Class ;
+                    rdfs:subClassOf a-cont:CharacterScope ;
+                    rdfs:comment "An action that is against the interest of the world, applicable to all cases (humans, animals, enviroment etc.)."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/UniversalGood
+a-cont:UniversalGood rdf:type owl:Class ;
+                     rdfs:subClassOf a-cont:CharacterScope ;
+                     rdfs:comment "An action that is in the interest of the world, applicable to all cases (humans, animals, enviroment etc.)."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Villain
+a-cont:Villain rdf:type owl:Class ;
+               rdfs:subClassOf a-cont:CharacterType ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty a-cont:hasCharacterStatus ;
+                                 owl:someValuesFrom a-cont:CharacterStatus
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty a-cont:hasCharacterRole ;
+                                 owl:allValuesFrom [ rdf:type owl:Class ;
+                                                     owl:unionOf ( a-cont:Antagonist
+                                                                   a-cont:Protagonist
+                                                                 )
+                                                   ]
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty a-cont:hasCharacterScope ;
+                                 owl:allValuesFrom a-cont:UniversalBad
+                               ] ;
+               rdfs:comment "This class refers to a character whose evil actions or motives are important to the plot."@en .
+
+
+###  http://www.w3id.org/arco/ontology/content/Writer
+a-cont:Writer rdf:type owl:Class ;
+              rdfs:subClassOf a-cont:Person ;
+              rdfs:comment "This class refers to person who uses written words to communicate ideas and to produce works of literature."@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( a-cont:Animal
+                a-cont:Character
+                a-cont:Person
+                a-cont:SupernaturalBeing
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( a-cont:EthnicOrigin
+                a-cont:GeographicOrigin
+                a-cont:SocialOrigin
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( a-cont:Medium
+                a-cont:Poor
+                a-cont:Rich
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
