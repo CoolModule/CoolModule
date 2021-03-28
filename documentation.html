@@ -109,11 +109,10 @@
 								<h3>Identifying logical components.</h3>
 								<p>Starting from a collection of original requirement stories able to answer our questions, we identified in each of them the logical components necessary to correctly formulating our competency questions. In order to transform our story in CQs, we firstly analyzed it in order to highlight the events, classes, individuals (named or anonymous ones), relations and logical implications within it.</p>
 
-								<div class="col-md-6">
-									<img src="img/cqColored1.png" class="img-responsive">
-								</div>
-								<div class="col-md-6">
-									<img src="img/cqColored2.png" class="img-responsive">
+								<div class="col-md-12" align="center">
+									<img src="img/cqColored1.png" class="img-responsive" style="width:80%;">
+								<br>
+									<img src="img/cqColored2.png" class="img-responsive" style="width:80%;">
 								</div>
 								<br><br><br>
 								<p>Then, we analyzed each of them more in depth in order to understand how to formalize their most interesting aspects in ontological language.</p>
@@ -145,7 +144,12 @@
 									These are more or less equally divided in the description of the two aspects that appeared to us most worthy of further study: on the one hand the description of the narratological role of the characters and on the other the modeling of their sociological characteristics.</p>
 
 								<h3>Relevant examples.</h3>
-								<p><i>[Insert some relevant examples about our classes] I think we can directly insert the closeup from the graph that concerns only the classes</i></p>
+								<div class="col-md-12" align="center">
+									<img src="img/class_ex.png" class="img-responsive">
+									<span class="img-desc"><h5>Img.</h5>Example of classes related to Character</span><br><br>
+									<img src="img/class_ex2.png" class="img-responsive">
+									<span class="img-desc"><h5>Img.</h5>Example of classes related to Socialogical Characteristics</span><br>
+								</div>
 
 								<h3>Tools and methods.</h3>
 								<p>The whole process of building our modular ontology was carried on through the ontology editor and knowledge management system ‘<a href="https://github.com/protegeproject/protege" target="_blank">Protégé</a>’. As a free, open-source system providing an interface to define ontologies and different reasoning tools to test its correctness, Protégé has been a significant tool in the development of our work. Nonetheless, despite its effectiveness in supporting the ontology building process itself, the impossibility to edit our data in a shared environment created not minor difficulties in handling the whole process of editing and definition.</p>
@@ -157,7 +161,12 @@
 									For what concerns property characteristics,, they are almost totally missing in ArCo. For this reason, we decided to maintain them only in those cases that seemed necessary to the property definition in itself, and mainly regarding properties of ‘symmetric’ kind. </p>
 
 								<h3>Relevant examples.</h3>
-								<p><i>[Insert come relevant examples about our classes and properties]</i></p>
+								<div class="col-md-12" align="center">
+									<img src="img/restriction_ex.png" class="img-responsive">
+									<span class="img-desc"><h5>Img.</h5>Example of classes related to Character</span><br><br>
+									<img src="img/restriction_ex2.png" class="img-responsive">
+									<span class="img-desc"><h5>Img.</h5>Example of classes related to Social Origin</span><br>
+								</div>
 
 								<h1>6:</h1><h2>Connecting to ArCo’s network: imports and equivalences.</h2>
 								<p>A step we knew from the beginning to be likely to generate some difficulties was the connection of our module with the other one within the ArCo’s network.
@@ -179,7 +188,10 @@
 									In carrying on this step, we operated again through Protégé, by realizing a sort of new ontology made only by named individuals modeled through the entries of our imported content module. Then, we exported the result as an RDF/XML file where named individuals were described by sets of triples.</p>
 
 								<h3>Relevant example.</h3>
-								<p><i>[Insert relevant example of individuals]</i></p>
+								<div class="col-md-12" align="center">
+									<img src="img/import_ex.png" class="img-responsive">
+									<span class="img-desc"><h5>Img.</h5>Example of classes related to ArCo's imports</span><br>
+								</div>
 
 								<h1>8:</h1><h2>Checking the consistency of the model: executing SPARQL queries on the dataset.</h2>
 								<p>The named individual dataset was fundamental in order to check the consistency of the model we had created against its application to real data. By using our classes and properties in the description of individuals, we applied them to a practical example that could be queried in order to understand whether our ontology was consistent and coherent with our initial purpose.<br>
