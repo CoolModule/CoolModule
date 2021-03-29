@@ -1,0 +1,1654 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasProfession"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Profession"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SelfGood"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterScope"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterRole"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterRole"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterType"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid15"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasFictionalType"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/arco/ontology/content/FictionalCharacter"
+    }, {
+      "@id" : "http://www.w3id.org/arco/ontology/content/NonFictionalCharacter"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SocialOrigin"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasSocialOrigin"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isEnvironmentOf"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/GeographicOrigin"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SocialOrigin"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasSocialOrigin"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/defines"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/EthnicOrigin"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isDefinedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/EthnicGroup"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/FictionalPlot"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasPartIn"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Environment"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasEnvironment"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterStatus"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterStatus"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid26"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterRole"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/arco/ontology/content/Antagonist"
+    }, {
+      "@id" : "http://www.w3id.org/arco/ontology/content/Protagonist"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/UniversalGood"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterScope"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Opposing"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterStatus"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/arco/ontology/denotative-description/basedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Scenario"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/NonFictionalPlot"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasPartIn"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isOriginOf"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/arco/ontology/denotative-description/isIncludedIn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Scenario"
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Agent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isProfessionOf"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Leading"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterStatus"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/arco/ontology/denotative-description/includes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Plot"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Supporting"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterStatus"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/EconomicStatus"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isDefinedBy"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SocialClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isDefinedBy"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterStatus"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterStatus"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/arco/ontology/denotative-description/basedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Scenario"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterStatus"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterStatus"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid43"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterRole"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/arco/ontology/content/Antagonist"
+    }, {
+      "@id" : "http://www.w3id.org/arco/ontology/content/Protagonist"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/UniversalBad"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterScope"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/arco/ontology/content/Animal"
+    }, {
+      "@id" : "http://www.w3id.org/arco/ontology/content/Character"
+    }, {
+      "@id" : "http://www.w3id.org/arco/ontology/content/Person"
+    }, {
+      "@id" : "http://www.w3id.org/arco/ontology/content/SupernaturalBeing"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterRole"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/arco/ontology/content/EthnicOrigin"
+    }, {
+      "@id" : "http://www.w3id.org/arco/ontology/content/GeographicOrigin"
+    }, {
+      "@id" : "http://www.w3id.org/arco/ontology/content/SocialOrigin"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/arco/ontology/content/Medium"
+    }, {
+      "@id" : "http://www.w3id.org/arco/ontology/content/Poor"
+    }, {
+      "@id" : "http://www.w3id.org/arco/ontology/content/Rich"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/arco/ontology/content/Antagonist"
+    }, {
+      "@id" : "http://www.w3id.org/arco/ontology/content/CharacterStatus"
+    }, {
+      "@id" : "http://www.w3id.org/arco/ontology/content/Protagonist"
+    }, {
+      "@id" : "http://www.w3id.org/arco/ontology/content/Secondary"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3id.org/arco/ontology/content/Movie"
+    }, {
+      "@id" : "http://www.w3id.org/arco/ontology/content/Scenario"
+    }, {
+      "@id" : "http://www.w3id.org/arco/ontology/content/TvSeries"
+    } ]
+  } ]
+}, {
+  "@id" : "http://dati.beniculturali.it/cis/CulturalEntity",
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CulturalProduct"
+  } ]
+}, {
+  "@id" : "http://dati.gov.it/onto/dcatapit#Agent",
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Agent"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description"
+  }, {
+    "@id" : "https://w3id.org/arco/ontology/denotative-description"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a person who’s profession is acting on stage, films, or television."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Person"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/italia/onto/l0/Agent"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Animal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to living organism that feeds on organic matter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Agent"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Antagonist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a character of a work actively opposing the protagonist."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterRole"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/AntiHero",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a leading character in a film, book or play, who is devoid of heroic qualities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterType"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Aristocracy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to the social class aristocrats are recognized to belong to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SocialClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Clergy"
+  }, {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Commoner"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Author",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a writer of any written work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Writer"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to an art figure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Agent"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/CharacterRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to specific role played or filled by a character."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Character"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/CharacterScope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to an identifier of a character intention."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Character"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/CharacterStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to social or professional character position."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Character"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/CharacterType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a category of people or things having in common some characteristics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Character"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Clergy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to the social class people in religious orders are recognized to belong to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SocialClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Commoner"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Commoner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to the social class people without any other social background are recognized to belong to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SocialClass"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/CulturalProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Goods and services that include the arts (performing arts, visual arts, architecture), heritage conservation (museums, galleries, libraries), the cultural industries (written media, broadcasting, film, recording), and festivals."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Director",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to person responsible for leading teams in the artistic design and production of various kinds of visual art."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Person"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/EconomicStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to the status of an agent defining its condition from an economic point of view."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Environment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to an environment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics"
+  }, {
+    "@id" : "_:genid19"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/arco/ontology/denotative-description/Environment"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/EthnicGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a grouping of people who share common traits and set of traditions (ancestry, language, history, culture) that allow them to identify themselves as a distinguished group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics"
+  }, {
+    "@id" : "_:genid20"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/EthnicOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to the peculiar trait in the origin of an individual related to its belonging to one or more ethnic groups."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Origin"
+  }, {
+    "@id" : "_:genid21"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/FictionalCharacter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to fictional human or non-human character in a narrative work of art."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Character"
+  }, {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/FictionalPlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Plot based on characters or events that occurs only in stories, plays, or films and never actually existed or happened."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Plot"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/GeographicOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to the peculiar trait in the origin of an individual related to its geographic provenance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Origin"
+  }, {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Hero",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a character who fights adversity through ingenuity, courage, or strength."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterType"
+  }, {
+    "@id" : "_:genid24"
+  }, {
+    "@id" : "_:genid25"
+  }, {
+    "@id" : "_:genid29"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/IllegalProfession",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a profession that has an illegal status."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Profession"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/LegalProfession"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Leading",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a character in a narrative that is focused on by the primary storyline."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterStatus"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/LegalProfession",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a profession that has a legal status."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Profession"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Medium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents an economic status of an agent that is not rich nor poor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/EconomicStatus"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Movie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A recording of moving images that tells a story and that people watch on a screen or television."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CulturalProduct"
+  }, {
+    "@id" : "_:genid30"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/NonFictionalCharacter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a non fictional human or non-human character in a narrative work of art."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Character"
+  }, {
+    "@id" : "_:genid31"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/NonFictionalPlot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Plot based on truth and accuracy regarding information, events, or people."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Plot"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Opposing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a character in a narrative that is focused on by the primary storyline and in opposition to the leading character."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterStatus"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Origin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics"
+  }, {
+    "@id" : "_:genid32"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Profession"
+  }, {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SocialClass"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a human being regarded as individuals."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Agent"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Plot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The main events of a play, novel, film, or similar work, devised and presented by the writer as an interrelated sequence."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid33"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Poor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents an economic status of an agent that lacks sufficient money to live at a standard considered comfortable by society."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/EconomicStatus"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Profession",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to the profession or occupation employed by an agent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics"
+  }, {
+    "@id" : "_:genid34"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SocialClass"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://w3id.org/arco/ontology/context-description/Profession"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Protagonist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to the main character of a creative work."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterRole"
+  }, {
+    "@id" : "_:genid35"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Rich",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents an economic status of an agent that has a great deal of money or assets."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/EconomicStatus"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Scenario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A written outline of a film, novel, or stage work giving details of the plot and individual scenes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CulturalProduct"
+  }, {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Screenwriter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a writer who wrote the script for TV, films, radio, comics or games."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Writer"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Secondary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a minor character necessary for the plot due to the key details he/she reveals."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterRole"
+  }, {
+    "@id" : "_:genid37"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/SelfGood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to the character personal advantage intention."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterScope"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/SocialClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a grouping of people identifying themselves as belonging to a specific social class within a society. The main social classes are the aristocracy, the clergy and the commoners."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/SocialOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to the peculiar trait in the origin of an individual related to its social provenance from the point of view of the social status and the social class defining them at their birth."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Origin"
+  }, {
+    "@id" : "_:genid38"
+  }, {
+    "@id" : "_:genid39"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/SociologicalCharacteristics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This class refers to characteristics and features able to describe an agent from a sociological point of view."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/SupernaturalBeing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to kind of being from religion, mythology or folklore."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Agent"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Supporting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a character in a narrative that is not focused on by the primary storyline."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterStatus"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/TvSeries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A group of programs created or adapted for television broadcast with a common series title."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CulturalProduct"
+  }, {
+    "@id" : "_:genid40"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/UniversalBad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An action that is against the interest of the world, applicable to all cases (humans, animals, enviroment etc.)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterScope"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/UniversalGood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An action that is in the interest of the world, applicable to all cases (humans, animals, enviroment etc.)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterScope"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Villain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to a character whose evil actions or motives are important to the plot."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/CharacterType"
+  }, {
+    "@id" : "_:genid41"
+  }, {
+    "@id" : "_:genid42"
+  }, {
+    "@id" : "_:genid46"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/Writer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class refers to person who uses written words to communicate ideas and to produce works of literature."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/Person"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/defines",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property define the act of attaching a meaning to a term."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasAlternativeName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasName"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasAuthor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links any written work to its creator or originator."
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isAuthorOf"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasBirthDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property associates an agent to the day of its birth."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasBusinessPartner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines a business relations bwtween two agents."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isRelatedTo"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isCharacterOf"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines character’s role as protagonist, antagonist or secondary."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasType"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isCharacterRole"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterScope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines character’s scope as universal good, universal bad or self good."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasType"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isCharacterScope"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines character’s status as leading, opposing or supporting."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasType"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isCharacterStatus"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasCharacterType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines character’s type as hero, antihero, or villain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasType"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isCharacterType"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasChild",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an agent that is parent to another agent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasRelative"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasParent"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasDeathDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property associates an agent to the day of its death."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasEmployee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an employer to its employee."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isRelatedTo"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasEmployer"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasEmployer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an employee to its employer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isRelatedTo"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasEnvironment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an agent to an environment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasSociologicalCharacteristic"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasEthnicGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an agent to an ethnic group."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasSociologicalCharacteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isEthnicGroupOf"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasEthnicOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines the origin an agent has from an ethnic point of view."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasOrigin"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isEthnicOriginOf"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasFictionalType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines fictional character’s type as fictional or non fictional."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasType"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isFictionalType"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasFirstName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an agent to its first name."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasName"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasGeographicOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines the origin an agent has from a geographic point of view."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasOrigin"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isGeographicOriginOf"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasLastName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an agent to its last name."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasName"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an agent to its name."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasNickname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an agent to its nickname."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasAlternativeName"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines the origin an agent has."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasSociologicalCharacteristic"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasParent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property link an agent that is child to another agent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasRelative"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasPartIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "To be involved in, to be a factor in."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasPlaceOfBirth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an agent to the geografical place in which it was born."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasPlaceOfDeath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an agent to the geografical place in which it died."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasPlaceOfLiving",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an agent to the geografical place in which it lives."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasProfession",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an agent to a profession."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasSociologicalCharacteristic"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasPseudonym",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an agent to its pseudonym."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasAlternativeName"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasRelative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links two agents connected by blood or marriage."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isRelatedTo"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines the role of character in a play."
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isRole"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasSex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an agent to its biological sex."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasSocialOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines the origin an agent has from a social point of view."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/hasOrigin"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasSociologicalCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines a sociological characteristic that can be described as belonging to an agent."
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasSpinOff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links a TV serie to another TV serie in which a secondary character in the first show becomes the protagonist."
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isSpinOffOf"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/hasType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines the typology of character depicted as human, animal or supernatural one."
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isType"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isAuthorOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links a creator or originator to its written work."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isBasedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines a character that is based on or inspired to a real or invented person, animal or supernatural being."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isCharacterOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isCharacterRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines protagonist, antagonist and secondary as character’s role."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isType"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isCharacterScope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines universal good, universal bad and self good as character’s scope."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isType"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isCharacterStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines leading, opposing, and supporting as character’s status."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isType"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isCharacterType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines hero, antihero, and villain as character’s type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isType"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isDefinedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines the meaning that is attached to a term."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isEnvironmentOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an environment to an agent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isEthnicGroupOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links an ethnic group to an agent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isEthnicOriginOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines the origin referring to an agent from an ethnic point of view."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isOriginOf"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isFictionalType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines fictional and non fictional as character’s fictional type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isType"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isGeographicOriginOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines the origin referring to an agent from a geographic point of view."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isOriginOf"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isKilledBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links two agents in which the first one is killed by the second one."
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/kills"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isOriginOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines the origin referring to an agent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isPlayedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines a character that is interpreted by an actor."
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/plays"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isProfessionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property link a profession to an agent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isRelatedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines a personal relations between two agents."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines a character by its role in a play."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isSocialOriginOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines the origin referring to an agent from a social point of view."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3id.org/arco/ontology/content/isOriginOf"
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isSociologicalCharacteristicOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property defines a sociological characteristic that refers to an agent."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isSpinOffOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links a TV serie to another TV serie in which the protagonist played a secondary role."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/isType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines human, animal or supernatural being as typology of character."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/kills",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links two agents in which the first one kills the second one."
+  } ]
+}, {
+  "@id" : "http://www.w3id.org/arco/ontology/content/plays",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines an actor that interprets a character."
+  } ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/denotative-description/basedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The relation that links the subject, that is the scenario, to a cultural property."
+  } ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/denotative-description/includes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The relation that links the subject, that is the scenario, to a cultural property."
+  } ]
+}, {
+  "@id" : "https://w3id.org/arco/ontology/denotative-description/isIncludedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The relation that connects the plot to the scenario."
+  } ]
+} ]
