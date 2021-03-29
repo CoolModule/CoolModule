@@ -255,10 +255,6 @@ figure {
   font-weight: 500;
 }
 
-.btn-light btn:hover {
-	color: #33CC00;
-}
-
 .card {
 	padding: 10px;
 }
