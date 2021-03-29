@@ -176,7 +176,7 @@ figure {
 }
 
 .title-word {
-	color:#00994d;
+	color:#33CC00;
 	font-size: 1em;
 	font-family: 'Shadows Into Light Two', cursive;
 }
@@ -200,7 +200,7 @@ figure {
 }
 
 .index-button a {
-  color: #444;
+  color: #33CC00;
   font-size: 1.3em;
   text-decoration: none;
   display: inline-block;
@@ -241,22 +241,20 @@ figure {
 	color:#00b300;
 }
 
-/*.btn-success {
-    color: black;
-    /* color: #fff;
-    background-color: #f2f2f2;
-    border-color: black;
-    font-family: 'Playfair Display', serif;
+.btn-success {
+    color: #fff;
+    background-color: #33CC00;
+    border-color: #4cae4c;
+    font-weight: 500;
 }
-.btn-success:hover {
-	background-color: #8c8c8c;
+
+.btn-info {
+	color: #fff;
+    background-color: #33CC00;
+    border-color: #4cae4c;
+    font-weight: 500;
 }
-.btn-success:active {
-	background-color: #8c8c8c;
-}
-.btn-success:focus {
-	background-color: #8c8c8c;
-} */
+
 .card {
 	padding: 10px;
 }

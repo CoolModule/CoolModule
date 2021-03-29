@@ -383,7 +383,109 @@
 									<h2>Other sources</h2>
 									<h3>Reliability checking</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec augue ante. Pellentesque at ante et purus imperdiet bibendum. Etiam laoreet et est at viverra. Maecenas pharetra sodales velit, in congue nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam congue euismod eros, vitae porta mauris tincidunt at. Phasellus convallis laoreet lectus, quis lacinia felis suscipit vitae. Aliquam ac ullamcorper quam. Proin gravida ac ante non convallis. Etiam luctus ex vel convallis bibendum.</p>
-								</div>
+									</div>
+									<div class="entry-content_project clearfix">
+		    					<div class="card col-md-3">
+										<div class="card-body">
+		    									<h4 class="card-title" align="center">Wikidata query 1:</h4>
+		    									<p class="card-text">Which are non-American Breaking Bad characters who are drugdealers?</p>
+													<div class="col text-center">
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal0">Run</button>
+													</div>
+
+													<div class="modal" id="myModal0">
+		  											<div class="modal-dialog modal-dialog-centered">
+		    											<div class="modal-content">
+			      										<div class="modal-header">
+			        										<h3 class="modal-title">How many characters not-white are employed in illegal professions?</h3>
+			      										</div>
+			      										<div class="modal-body">
+			        										<p>SELECT ?character <br>
+																		 WHERE { <br>
+		    													 	 &nbsp;&nbsp;&nbsp;&nbsp;<br>
+		    														 &nbsp;&nbsp;&nbsp;&nbsp;?profession rdf:type cont:IllegalProfession .<br>
+																		 MINUS {<br>
+		        									 			 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasEthnicOrigin dataset:White .<br>
+																	   }<br>
+		 														     } GROUP BY ?character</p>
+																		 <h4>Outcome:</h4>
+																		 <p>URI...</p>
+			      										</div>
+			      										<div class="modal-footer">
+			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+			      										</div>
+		    											</div>
+		  											</div>
+													</div>
+
+		  							</div>
+		    					</div>
+									<div class="card col-md-3">
+												<div class="card-body">
+		    									<h4 class="card-title" align="center">Query 2:</h4>
+		    									<p class="card-text">Which female characters have both an occupation and a child?</p>
+													<div class="col text-center">
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal1">Run</button>
+													</div>
+
+													<div class="modal" id="myModal1">
+		  											<div class="modal-dialog modal-dialog-centered">
+		    											<div class="modal-content">
+			      										<div class="modal-header">
+			        										<h3 class="modal-title">Which female characters have both an occupation and a child?</h3>
+			      										</div>
+			      										<div class="modal-body">
+																	<p>SELECT ?character <br>
+																		WHERE {<br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasSex "female"^^rdfs:Literal . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasProfession ?profession . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasChild ?child . <br>
+																		}</p>
+																		<h4>Outcome:</h4>
+																		<p>URI...</p>
+			      										</div>
+			      										<div class="modal-footer">
+			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+			      										</div>
+		    											</div>
+		  											</div>
+													</div>
+		  									</div>
+										 	</div>
+									<div class="card col-md-3">
+										<div class="card-body">
+		    									<h4 class="card-title" align="center">Query 3:</h4>
+		    									<p class="card-text">Which characters have professions somewhat related to drug?</p>
+													<div class="col text-center">
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal2">Run</button>
+													</div>
+
+													<div class="modal" id="myModal2">
+		  											<div class="modal-dialog modal-dialog-centered">
+		    											<div class="modal-content">
+			      										<div class="modal-header">
+			        										<h3 class="modal-title">Which characters have professions somewhat related to drug?</h3>
+			      										</div>
+			      										<div class="modal-body">
+																	<p>SELECT ?character <br>
+																		WHERE {<br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasProfession ?profession . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?profession rdfs:label ?profName . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;FILTER regex(?profName, "drug", "i") . <br>
+																		}</p>
+																		<h4>Outcome:</h4>
+																		<p>URI...</p>
+			      										</div>
+			      										<div class="modal-footer">
+			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+			      										</div>
+		    											</div>
+		  											</div>
+													</div>
+
+		  							</div>
+									</div>
+								
 
 								<div class="entry-content_project clearfix" align="justify" id="arcoSpinOff">
 									<h2><b>A</b>rCo’s spin-off (a proposal)</h2>
