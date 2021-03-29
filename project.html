@@ -69,7 +69,7 @@
 									<li><a href="#ontology">The Data</a></li>
 									<li><a href="#queries">SPARQL Queries</a></li>
 									<li><a href="#reliabilityChecking">Other sources</a></li>
-									<li><a href="arcoSpinOff">ArCo’s spin-off</a></li>
+									<li><a href="#arcoSpinOff">ArCo’s spin-off</a></li>
 								</ul>
 						</div>
 					</aside>
@@ -383,12 +383,14 @@
 									<h2>Other sources</h2>
 									<h3>Reliability checking</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec augue ante. Pellentesque at ante et purus imperdiet bibendum. Etiam laoreet et est at viverra. Maecenas pharetra sodales velit, in congue nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam congue euismod eros, vitae porta mauris tincidunt at. Phasellus convallis laoreet lectus, quis lacinia felis suscipit vitae. Aliquam ac ullamcorper quam. Proin gravida ac ante non convallis. Etiam luctus ex vel convallis bibendum.</p>
-									</div>
-									<div class="entry-content_project clearfix">
+								</div>
+
+								<!-- Query Cards -->
+								<div class="entry-content_project clearfix">
 		    					<div class="card col-md-3">
 										<div class="card-body">
-		    									<h4 class="card-title" align="center">Wikidata query 1:</h4>
-		    									<p class="card-text">Which are non-American Breaking Bad characters who are drugdealers?</p>
+		    									<h4 class="card-title" align="center">Wikidata Query 1:</h4>
+		    									<p class="card-text">All Breaking Bad non-American characters who are drug dealers.</p>
 													<div class="col text-center">
 		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal0">Run</button>
 													</div>
@@ -397,19 +399,20 @@
 		  											<div class="modal-dialog modal-dialog-centered">
 		    											<div class="modal-content">
 			      										<div class="modal-header">
-			        										<h3 class="modal-title">How many characters not-white are employed in illegal professions?</h3>
+			        										<h3 class="modal-title">All Breaking Bad non-American characters who are drug dealers.</h3>
 			      										</div>
 			      										<div class="modal-body">
-			        										<p>SELECT ?character <br>
+			        										<p>SELECT ?item ?itemLabel  <br>
 																		 WHERE { <br>
-		    													 	 &nbsp;&nbsp;&nbsp;&nbsp;<br>
-		    														 &nbsp;&nbsp;&nbsp;&nbsp;?profession rdf:type cont:IllegalProfession .<br>
+		    													 	 &nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 .<br>
+		    														 &nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P106 wd:Q10384029 .<br>
 																		 MINUS {<br>
-		        									 			 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasEthnicOrigin dataset:White .<br>
-																	   }<br>
-		 														     } GROUP BY ?character</p>
-																		 <h4>Outcome:</h4>
-																		 <p>URI...</p>
+		        									 			 &nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P27 wd:Q30 .<br>
+																	 }<br>
+																	 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }<br>
+		 														   }</p>
+																	<h4>Result:</h4>
+																		 <p><a href="https://www.wikidata.org/wiki/Q5620660" target="_blank">https://www.wikidata.org/wiki/Q5620660</a></p>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -422,7 +425,7 @@
 		    					</div>
 									<div class="card col-md-3">
 												<div class="card-body">
-		    									<h4 class="card-title" align="center">Query 2:</h4>
+		    									<h4 class="card-title" align="center">Wikidata Query 2:</h4>
 		    									<p class="card-text">Which female characters have both an occupation and a child?</p>
 													<div class="col text-center">
 		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal1">Run</button>
@@ -454,7 +457,7 @@
 										 	</div>
 									<div class="card col-md-3">
 										<div class="card-body">
-		    									<h4 class="card-title" align="center">Query 3:</h4>
+		    									<h4 class="card-title" align="center">Wikidata Query 3:</h4>
 		    									<p class="card-text">Which characters have professions somewhat related to drug?</p>
 													<div class="col text-center">
 		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal2">Run</button>
@@ -485,7 +488,176 @@
 
 		  							</div>
 									</div>
-								
+									<div class="card col-md-3">
+												<div class="card-body">
+		    									<h4 class="card-title" align="center">Wikidata Query 4:</h4>
+		    									<p class="card-text">Who are the fictional characters that are not protagonist?</p>
+													<div class="col text-center">
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal3">Run</button>
+													</div>
+
+													<div class="modal" id="myModal3">
+		  											<div class="modal-dialog modal-dialog-centered">
+		    											<div class="modal-content">
+			      										<div class="modal-header">
+			        										<h3 class="modal-title">Who are the fictional characters that are not protagonist?</h3>
+			      										</div>
+			      										<div class="modal-body">
+																	<p>SELECT ?FictionalCharacter <br>
+																		WHERE {<br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?FictionalCharacter ref:type cont:character .  <br>
+																		MINUS {<br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?FictionalCharacter rdf:type cont:Protagonist . <br>
+																		}<br>
+																		}</p>
+																		<h4>Outcome:</h4>
+																		<p>URI...</p>
+			      										</div>
+			      										<div class="modal-footer">
+			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+			      										</div>
+		    											</div>
+		  											</div>
+													</div>
+
+		  									</div>
+											</div>
+									<div class="card col-md-3">
+												<div class="card-body">
+		    									<h4 class="card-title" align="center">Wikidata Query 5:</h4>
+		    									<p class="card-text">Who are the antiheroes that have work relationship the villain?</p>
+													<div class="col text-center">
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal4">Run</button>
+													</div>
+
+													<div class="modal" id="myModal4">
+		  											<div class="modal-dialog modal-dialog-centered">
+		    											<div class="modal-content">
+			      										<div class="modal-header">
+			        										<h3 class="modal-title">Who are the antiheroes that have work relationship the villain?</h3>
+			      										</div>
+			      										<div class="modal-body">
+																	<p>SELECT ?antihero <br>
+																		WHERE {<br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?antihero rdf:type cont:AntiHero .<br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?villain rdf:type cont:Villain . <br>
+																		{?antihero cont:hasBusinessPartner ?villain } UNION {?antihero cont:hasEmployer ?villain } <br>
+																		}</p>
+																		<h4>Outcome:</h4>
+																		<p>URI...</p>
+			      										</div>
+			      										<div class="modal-footer">
+			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+			      										</div>
+		    											</div>
+		  											</div>
+													</div>
+
+		  									</div>
+											</div>
+									<div class="card col-md-3">
+												<div class="card-body">
+		    									<h4 class="card-title" align="center">Wikidata Query 6:</h4>
+		    									<p class="card-text">Who are the opposing characters with scope not universal good?</p>
+													<div class="col text-center">
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal5">Run</button>
+													</div>
+
+													<div class="modal" id="myModal5">
+		  											<div class="modal-dialog modal-dialog-centered">
+		    											<div class="modal-content">
+			      										<div class="modal-header">
+			        										<h3 class="modal-title">Who are the opposing characters with scope not universal good?</h3>
+			      										</div>
+			      										<div class="modal-body">
+																	<p>SELECT ?character <br>
+																		WHERE {<br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:Opposing . <br>
+		        												MINUS {<br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;?characterScope rdf:type cont:UniversalGood . <br>
+																		}<br>
+																		}</p>
+																		<h4>Outcome:</h4>
+																		<p>URI...</p>
+			      										</div>
+			      										<div class="modal-footer">
+			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+			      										</div>
+		    											</div>
+		  											</div>
+													</div>
+
+		  									</div>
+									 		</div>
+							 		<div class="card col-md-3">
+										<div class="card-body">
+		    									<h4 class="card-title" align="center">Wikidata Query 7:</h4>
+		    									<p class="card-text">Who are the characters that has been killed by protagonist?</p>
+													<div class="col text-center">
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal6">Run</button>
+													</div>
+
+													<div class="modal" id="myModal6">
+		  											<div class="modal-dialog modal-dialog-centered">
+		    											<div class="modal-content">
+			      										<div class="modal-header">
+			        										<h3 class="modal-title">Who are the characters that has been killed by protagonist?</h3>
+			      										</div>
+			      										<div class="modal-body">
+																	<p>SELECT ?character <br>
+																		WHERE {<br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:Character .<br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?protagonist rdf:type cont:Protagonist . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasBeenKilledBy ?Protagonist . <br>
+																		}</p>
+																		<h4>Outcome:</h4>
+																		<p>URI...</p>
+			      										</div>
+			      										<div class="modal-footer">
+			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+			      										</div>
+		    											</div>
+		  											</div>
+													</div>
+
+		  									</div>
+									</div>
+									<div class="card col-md-3">
+										<div class="card-body">
+		    									<h4 class="card-title" align="center">Wikidata Query 8:</h4>
+		    									<p class="card-text">Which are antihero's sociological characteristics?</p>
+													<div class="col text-center">
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal7">Run</button>
+													</div>
+
+													<div class="modal" id="myModal7">
+		  											<div class="modal-dialog modal-dialog-centered">
+		    											<div class="modal-content">
+			      										<div class="modal-header">
+			        										<h3 class="modal-title">Which are antihero's sociological characteristics?</h3>
+			      										</div>
+			      										<div class="modal-body">
+																	<p>?sociologicalCharacteristics <br>
+																		WHERE {<br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:AntiHero . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?sociologicalCharacteristics rdf:type cont:SociologicalCharacteristics . <br>
+																		} GROUP BY ?sociologicalCharacteristics</p>
+																		<h4>Outcome:</h4>
+																		<p>URI...</p>
+			      										</div>
+			      										<div class="modal-footer">
+			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+			      										</div>
+		    											</div>
+		  											</div>
+													</div>
+
+		  									</div>
+									</div>
+								</div>
+								<!-- End Query cards -->
+
+
 
 								<div class="entry-content_project clearfix" align="justify" id="arcoSpinOff">
 									<h2><b>A</b>rCo’s spin-off (a proposal)</h2>
