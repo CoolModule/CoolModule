@@ -392,10 +392,10 @@
 		    									<h4 class="card-title" align="center">Wikidata Query 1:</h4>
 		    									<p class="card-text">All Breaking Bad non-American characters who are drug dealers.</p>
 													<div class="col text-center">
-		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal0">Run</button>
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal0bis">Run</button>
 													</div>
 
-													<div class="modal" id="myModal0">
+													<div class="modal" id="myModal0bis">
 		  											<div class="modal-dialog modal-dialog-centered">
 		    											<div class="modal-content">
 			      										<div class="modal-header">
@@ -406,10 +406,10 @@
 																		 WHERE { <br>
 		    													 	 &nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 .<br>
 		    														 &nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P106 wd:Q10384029 .<br>
-																		 MINUS {<br>
-		        									 			 &nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P27 wd:Q30 .<br>
-																	 }<br>
-																	 SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }<br>
+																		 &nbsp;&nbsp;&nbsp;&nbsp;MINUS {<br>
+		        									 			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P27 wd:Q30 .<br>
+																	   &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+																	   &nbsp;&nbsp;&nbsp;&nbsp;SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }<br>
 		 														   }</p>
 																	<h4>Result:</h4>
 																		 <p><a href="https://www.wikidata.org/wiki/Q5620660" target="_blank">https://www.wikidata.org/wiki/Q5620660</a></p>
@@ -426,26 +426,28 @@
 									<div class="card col-md-3">
 												<div class="card-body">
 		    									<h4 class="card-title" align="center">Wikidata Query 2:</h4>
-		    									<p class="card-text">Which female characters have both an occupation and a child?</p>
+		    									<p class="card-text">All female characters in Breaking Bad who have an occupation and a child.</p>
 													<div class="col text-center">
-		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal1">Run</button>
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal1bis">Run</button>
 													</div>
 
-													<div class="modal" id="myModal1">
+													<div class="modal" id="myModal1bis">
 		  											<div class="modal-dialog modal-dialog-centered">
 		    											<div class="modal-content">
 			      										<div class="modal-header">
-			        										<h3 class="modal-title">Which female characters have both an occupation and a child?</h3>
+			        										<h3 class="modal-title">All female characters in Breaking Bad who have an occupation and a child.</h3>
 			      										</div>
 			      										<div class="modal-body">
-																	<p>SELECT ?character <br>
+																	<p>SELECT ?item ?itemLabel <br>
 																		WHERE {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasSex "female"^^rdfs:Literal . <br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasProfession ?profession . <br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasChild ?child . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;??item wdt:P21 wd:Q6581072 . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P106 ?occupation . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P40 ?child <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }<br>
 																		}</p>
-																		<h4>Outcome:</h4>
-																		<p>URI...</p>
+																		<h4>Result:</h4>
+																		<p><a href="https://www.wikidata.org/wiki/Q6586283" target="_blank">https://www.wikidata.org/wiki/Q6586283</a></p>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -458,26 +460,34 @@
 									<div class="card col-md-3">
 										<div class="card-body">
 		    									<h4 class="card-title" align="center">Wikidata Query 3:</h4>
-		    									<p class="card-text">Which characters have professions somewhat related to drug?</p>
+		    									<p class="card-text">All Breaking Bad characters who have an occupation related to drugs.</p>
 													<div class="col text-center">
-		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal2">Run</button>
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal2bis">Run</button>
 													</div>
 
-													<div class="modal" id="myModal2">
+													<div class="modal" id="myModal2bis">
 		  											<div class="modal-dialog modal-dialog-centered">
 		    											<div class="modal-content">
 			      										<div class="modal-header">
-			        										<h3 class="modal-title">Which characters have professions somewhat related to drug?</h3>
+			        										<h3 class="modal-title">All Breaking Bad characters who have an occupation related to drugs.</h3>
 			      										</div>
 			      										<div class="modal-body">
-																	<p>SELECT ?character <br>
+																	<p>SELECT ?item ?itemLabel <br>
 																		WHERE {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasProfession ?profession . <br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?profession rdfs:label ?profName . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P106 ?profession . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;?profession rdfs:label ?profName . <br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;FILTER regex(?profName, "drug", "i") . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }<br>
 																		}</p>
-																		<h4>Outcome:</h4>
-																		<p>URI...</p>
+																		<h4>Result:</h4>
+																		<ul>
+																			<li><a href="https://www.wikidata.org/wiki/Q23554" target="_blank">https://www.wikidata.org/wiki/Q23554</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q5620660" target="_blank">https://www.wikidata.org/wiki/Q5620660</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q6186746" target="_blank">https://www.wikidata.org/wiki/Q6186746</a></li>
+																			<li><a href="http://www.wikidata.org/entity/Q66458863" target="_blank">http://www.wikidata.org/entity/Q66458863</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q70728096" target="_blank">https://www.wikidata.org/wiki/Q70728096</a></li>
+																		</ul>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -491,27 +501,48 @@
 									<div class="card col-md-3">
 												<div class="card-body">
 		    									<h4 class="card-title" align="center">Wikidata Query 4:</h4>
-		    									<p class="card-text">Who are the fictional characters that are not protagonist?</p>
+		    									<p class="card-text">All Breaking Bad character who have narrative role not protagonist.</p>
 													<div class="col text-center">
-		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal3">Run</button>
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal3bis">Run</button>
 													</div>
 
-													<div class="modal" id="myModal3">
+													<div class="modal" id="myModal3bis">
 		  											<div class="modal-dialog modal-dialog-centered">
 		    											<div class="modal-content">
 			      										<div class="modal-header">
-			        										<h3 class="modal-title">Who are the fictional characters that are not protagonist?</h3>
+			        										<h3 class="modal-title">All Breaking Bad character who have narrative role not protagonist.</h3>
 			      										</div>
 			      										<div class="modal-body">
-																	<p>SELECT ?FictionalCharacter <br>
+																	<p>SELECT ?item ?itemLabel <br>
 																		WHERE {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?FictionalCharacter ref:type cont:character .  <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;wd:Q16888407 wdt:P279 wd:Q15632617 . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;wd:Q15632617 wdt:P279 wd:Q95074 . <br>
 																		MINUS {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?FictionalCharacter rdf:type cont:Protagonist . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P5800 wd:Q215972 . <br>
 																		}<br>
+																		SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } <br>
 																		}</p>
-																		<h4>Outcome:</h4>
-																		<p>URI...</p>
+																		<h4>Result:</h4>
+																		<ul>
+																			<li><a href="https://www.wikidata.org/wiki/Q5620660" target="_blank">https://www.wikidata.org/wiki/Q5620660</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q5648455" target="_blank">https://www.wikidata.org/wiki/Q5648455</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q6586283" target="_blank">https://www.wikidata.org/wiki/Q6586283</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q7154377" target="_blank"> https://www.wikidata.org/wiki/Q7154377</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q11787314" target="_blank">https://www.wikidata.org/wiki/Q11787314</a></li>
+																			<li><a href="http://www.wikidata.org/entity/Q16578433" target="_blank">http://www.wikidata.org/entity/Q16578433</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q15992576" target="_blank">https://www.wikidata.org/wiki/Q15992576</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q16002669" target="_blank">https://www.wikidata.org/wiki/Q16002669</a></li>
+																			<li><a href="http://www.wikidata.org/entity/Q18184257" target="_blank">http://www.wikidata.org/entity/Q18184257</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q18186705" target="_blank">https://www.wikidata.org/wiki/Q18186705</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q56254374" target="_blank">https://www.wikidata.org/wiki/Q56254374</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q59878220" target="_blank">https://www.wikidata.org/wiki/Q59878220</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q62623790" target="_blank">https://www.wikidata.org/wiki/Q62623790</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q66458863" target="_blank">https://www.wikidata.org/wiki/Q66458863</a></li>
+																			<li><a href="http://www.wikidata.org/entity/Q66458925" target="_blank">http://www.wikidata.org/entity/Q66458925</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q70728096" target="_blank">https://www.wikidata.org/wiki/Q70728096</a></li>
+																			<li><a href="http://www.wikidata.org/entity/Q23554" target="_blank">http://www.wikidata.org/entity/Q23554</a></li>
+																		</ul>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -525,26 +556,27 @@
 									<div class="card col-md-3">
 												<div class="card-body">
 		    									<h4 class="card-title" align="center">Wikidata Query 5:</h4>
-		    									<p class="card-text">Who are the antiheroes that have work relationship the villain?</p>
+		    									<p class="card-text">All Breaking Bad characters who have work relationship with other characters.</p>
 													<div class="col text-center">
-		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal4">Run</button>
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal4bis">Run</button>
 													</div>
 
-													<div class="modal" id="myModal4">
+													<div class="modal" id="myModal4bis">
 		  											<div class="modal-dialog modal-dialog-centered">
 		    											<div class="modal-content">
 			      										<div class="modal-header">
-			        										<h3 class="modal-title">Who are the antiheroes that have work relationship the villain?</h3>
+			        										<h3 class="modal-title">All Breaking Bad characters who have work relationship with other characters.</h3>
 			      										</div>
 			      										<div class="modal-body">
-																	<p>SELECT ?antihero <br>
+																	<p>SELECT ?item ?itemLabel <br>
 																		WHERE {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?antihero rdf:type cont:AntiHero .<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?villain rdf:type cont:Villain . <br>
-																		{?antihero cont:hasBusinessPartner ?villain } UNION {?antihero cont:hasEmployer ?villain } <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 .<br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?otherItem wdt:P31 wd:Q16888407 . <br>
+																		{ ?item wdt:P1416 ?otherItem} UNION { ?item wdt:P108 ?otherItem} <br>
+																		SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } <br>
 																		}</p>
-																		<h4>Outcome:</h4>
-																		<p>URI...</p>
+																		<h4>Result:</h4>
+																		<p><a href="https://www.wikidata.org/wiki/Q23554" target="_blank">https://www.wikidata.org/wiki/Q23554</a></p>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -558,27 +590,26 @@
 									<div class="card col-md-3">
 												<div class="card-body">
 		    									<h4 class="card-title" align="center">Wikidata Query 6:</h4>
-		    									<p class="card-text">Who are the opposing characters with scope not universal good?</p>
+		    									<p class="card-text">All Breaking Bad characters who are against some character (and who).</p>
 													<div class="col text-center">
-		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal5">Run</button>
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal5bis">Run</button>
 													</div>
 
-													<div class="modal" id="myModal5">
+													<div class="modal" id="myModal5bis">
 		  											<div class="modal-dialog modal-dialog-centered">
 		    											<div class="modal-content">
 			      										<div class="modal-header">
-			        										<h3 class="modal-title">Who are the opposing characters with scope not universal good?</h3>
+			        										<h3 class="modal-title">All Breaking Bad characters who are against some character (and who).</h3>
 			      										</div>
 			      										<div class="modal-body">
-																	<p>SELECT ?character <br>
+																	<p>SELECT ?item ?itemLabel ?character ?characterLabel <br>
 																		WHERE {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:Opposing . <br>
-		        												MINUS {<br>
-																		&nbsp;&nbsp;&nbsp;&nbsp;?characterScope rdf:type cont:UniversalGood . <br>
-																		}<br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P7047 ?character
+		        												SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } {<br>
 																		}</p>
 																		<h4>Outcome:</h4>
-																		<p>URI...</p>
+																		<p><a href="https://www.wikidata.org/wiki/Q6186746" target="_blank">https://www.wikidata.org/wiki/Q6186746</a> against <a href="https://www.wikidata.org/wiki/Q5620660" target="_blank">https://www.wikidata.org/wiki/Q5620660</a>.</p>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -592,26 +623,32 @@
 							 		<div class="card col-md-3">
 										<div class="card-body">
 		    									<h4 class="card-title" align="center">Wikidata Query 7:</h4>
-		    									<p class="card-text">Who are the characters that has been killed by protagonist?</p>
+		    									<p class="card-text">All Breaking Bad characters who are killed by another character, and by who.</p>
 													<div class="col text-center">
-		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal6">Run</button>
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal6bis">Run</button>
 													</div>
 
-													<div class="modal" id="myModal6">
+													<div class="modal" id="myModal6bis">
 		  											<div class="modal-dialog modal-dialog-centered">
 		    											<div class="modal-content">
 			      										<div class="modal-header">
-			        										<h3 class="modal-title">Who are the characters that has been killed by protagonist?</h3>
+			        										<h3 class="modal-title">All Breaking Bad characters who are killed by another character, and by who</h3>
 			      										</div>
 			      										<div class="modal-body">
-																	<p>SELECT ?character <br>
+																	<p>SELECT ?item ?itemLabel ?otherItem ?otherItemLabel<br>
 																		WHERE {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:Character .<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?protagonist rdf:type cont:Protagonist . <br>
-																		&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasBeenKilledBy ?Protagonist . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 .<br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp; ?otherItem wdt:P31 wd:Q16888407 . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp; ?item wdt:P157 ?otherItem . <br>
+																		SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } <br>
 																		}</p>
-																		<h4>Outcome:</h4>
-																		<p>URI...</p>
+																		<h4>Result:</h4>
+																		<ul>
+																			<li><a href="https://www.wikidata.org/wiki/Q16578433" target="_blank">https://www.wikidata.org/wiki/Q16578433</a> killed by <a href="https://www.wikidata.org/wiki/Q23554" target="_blank">https://www.wikidata.org/wiki/Q23554</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q18186705" target="_blank">https://www.wikidata.org/wiki/Q18186705</a> killed by <a href="https://www.wikidata.org/wiki/Q23554" target="_blank">https://www.wikidata.org/wiki/Q23554</a> </li>
+																			<li><a href="https://www.wikidata.org/wiki/Q56254374" target="_blank">https://www.wikidata.org/wiki/Q56254374</a> killed by <a href="https://www.wikidata.org/wiki/Q5648455" target="_blank">https://www.wikidata.org/wiki/Q5648455</a></li>
+																			<li><a href="https://www.wikidata.org/wiki/Q16002669" target="_blank">https://www.wikidata.org/wiki/Q16002669</a> killed by <a href="https://www.wikidata.org/wiki/Q6186746" target="_blank">https://www.wikidata.org/wiki/Q6186746</a></li>
+																		</ul>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -625,25 +662,31 @@
 									<div class="card col-md-3">
 										<div class="card-body">
 		    									<h4 class="card-title" align="center">Wikidata Query 8:</h4>
-		    									<p class="card-text">Which are antihero's sociological characteristics?</p>
+		    									<p class="card-text">All Breaking Bad protagonist sociological characteristics.</p>
 													<div class="col text-center">
-		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal7">Run</button>
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal7bis">Run</button>
 													</div>
 
-													<div class="modal" id="myModal7">
+													<div class="modal" id="myModal7bis">
 		  											<div class="modal-dialog modal-dialog-centered">
 		    											<div class="modal-content">
 			      										<div class="modal-header">
-			        										<h3 class="modal-title">Which are antihero's sociological characteristics?</h3>
+			        										<h3 class="modal-title">All Breaking Bad protagonist sociological characteristics.</h3>
 			      										</div>
 			      										<div class="modal-body">
-																	<p>?sociologicalCharacteristics <br>
+																	<p>SELECT item ?itemLabel ?occupationLabel ?citizenshipLabel ?partnerLabel ?languageLabel <br>
 																		WHERE {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:AntiHero . <br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?sociologicalCharacteristics rdf:type cont:SociologicalCharacteristics . <br>
-																		} GROUP BY ?sociologicalCharacteristics</p>
-																		<h4>Outcome:</h4>
-																		<p>URI...</p>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P5800 wd:Q215972 . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;?otherItem wdt:P31 wd:Q16888407 . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P106 ?occupation . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P27 ?citizenship . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P1412 ?language . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;{?item wdt:P26 ?partner} UNION {?item wdt:P451 ?partner} <br>
+																		SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } <br>
+																		}</p>
+																		<h4>Result:</h4>
+																		<p><a href="https://www.wikidata.org/wiki/Q6186746" target="_blank">https://www.wikidata.org/wiki/Q6186746</a> hasOccupation: drug dealer, has citizenship: USA, has partner: Jane Margolis, has language: English.</p>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
