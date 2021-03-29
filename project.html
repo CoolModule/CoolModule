@@ -466,49 +466,6 @@
 
 		  									</div>
 									</div>
-
-									<div class="card col-md-3">
-										<div class="card-body">
-		    									<h4 class="card-title" align="center">Query 9:</h4>
-		    									<p class="card-text">Which are the character with most business partner relationships?</p>
-													<div class="col text-center">
-		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal8">Run</button>
-													</div>
-
-													<div class="modal" id="myModal8">
-		  											<div class="modal-dialog modal-dialog-centered">
-		    											<div class="modal-content">
-			      										<div class="modal-header">
-			        										<h3 class="modal-title">Which are the character with most business partner relationships?</h3>
-			      										</div>
-			      										<div class="modal-body">
-																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
-																		 PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
-																		 <br>
-																		 SELECT ?characterOne (count (distinct ?characterTwo) as ?count) <br>
-																		 WHERE {<br>
-		        												 &nbsp;&nbsp;&nbsp;&nbsp;?characterOne cont:hasBusinessPartner ?characterTwo . <br>
-																	 } <br>
-																	 GROUP BY ?characterOne <br>
-																	 ORDER BY DESC(?count)</p>
-																		<h4>Result:</h4>
-																		<p>dataset:Tod_Alquist &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "5"^^xsd:integer <br>
-																			 dataset:Lydia_Rodarte-Quayle &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "4"^^xsd:integer <br>
-																			 dataset:Jack_Welker &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "2"^^xsd:integer <br>
-																			 dataset:Mike_Ehrmantraut &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2"^^xsd:integer <br>
-																			 dataset:Saul_Goodman &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "2"^^xsd:integer <br>
-																			 dataset:Jesse_Pinkman &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "1"^^xsd:integer <br>
-																			 dataset:Skyler_White &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "1"^^xsd:integer <br>
-																			 dataset:Walter_White &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "1"^^xsd:integer</p>
-			      										</div>
-			      										<div class="modal-footer">
-			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-			      										</div>
-		    											</div>
-		  											</div>
-													</div>
-										</div>
-									</div>
 								</div>
 								<!-- End Query cards -->
 
@@ -839,37 +796,6 @@
 													</div>
 
 		  									</div>
-									</div>
-									<div class="card-bis col-md-3">
-										<div class="card-body-bis">
-		    									<h4 class="card-title" align="center">Wikidata Query 9:</h4>
-		    									<p class="card-text">All the character with most business partner relationships</p>
-													<div class="col text-center">
-		    										<button class="btn btn-light" data-toggle="modal" data-target="#myModal8bis">Run</button>
-													</div>
-
-													<div class="modal" id="myModal8bis">
-		  											<div class="modal-dialog modal-dialog-centered">
-		    											<div class="modal-content">
-			      										<div class="modal-header">
-			        										<h3 class="modal-title">All the character with most business partner relationships</h3>
-			      										</div>
-			      										<div class="modal-body">
-																	<p>* Adapted query from original query 9 *</p>
-																	<p>SELECT <br>
-																		 WHERE { <br>
-																		 &nbsp;&nbsp;&nbsp;&nbsp;
-																		 }</p>
-																	<h4>Result:</h4>
-																	<p><a href="#"></a></p>
-			      										</div>
-			      										<div class="modal-footer">
-			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-			      										</div>
-		    											</div>
-		  											</div>
-													</div>
-										</div>
 									</div>
 								</div>
 								<!-- End Query cards -->
