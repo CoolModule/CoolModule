@@ -402,6 +402,7 @@
 			        										<h3 class="modal-title">All Breaking Bad non-American characters who are drug dealers.</h3>
 			      										</div>
 			      										<div class="modal-body">
+																	<p>* Adapted query from original query 1 *</p> <br>
 			        										<p>SELECT ?item ?itemLabel  <br>
 																		 WHERE { <br>
 		    													 	 &nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 .<br>
@@ -409,7 +410,7 @@
 																		 &nbsp;&nbsp;&nbsp;&nbsp;MINUS {<br>
 		        									 			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P27 wd:Q30 .<br>
 																	   &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-																	   &nbsp;&nbsp;&nbsp;&nbsp;SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }<br>
+																	   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }<br>
 		 														   }</p>
 																	<h4>Result:</h4>
 																		 <p><a href="https://www.wikidata.org/wiki/Q5620660" target="_blank">https://www.wikidata.org/wiki/Q5620660</a></p>
@@ -438,13 +439,14 @@
 			        										<h3 class="modal-title">All female characters in Breaking Bad who have an occupation and a child.</h3>
 			      										</div>
 			      										<div class="modal-body">
+																	<p>* Adapted query from original query 2 *</p> <br>
 																	<p>SELECT ?item ?itemLabel <br>
 																		WHERE {<br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 . <br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;??item wdt:P21 wd:Q6581072 . <br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P106 ?occupation . <br>
-																		&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P40 ?child <br>
-																		&nbsp;&nbsp;&nbsp;&nbsp;SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }<br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P40 ?child . <br>
+																		SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }<br>
 																		}</p>
 																		<h4>Result:</h4>
 																		<p><a href="https://www.wikidata.org/wiki/Q6586283" target="_blank">https://www.wikidata.org/wiki/Q6586283</a></p>
@@ -472,13 +474,14 @@
 			        										<h3 class="modal-title">All Breaking Bad characters who have an occupation related to drugs.</h3>
 			      										</div>
 			      										<div class="modal-body">
+																	<p>* Adapted query from original query 3 *</p> <br>
 																	<p>SELECT ?item ?itemLabel <br>
 																		WHERE {<br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 . <br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P106 ?profession . <br>
 																		&nbsp;&nbsp;&nbsp;&nbsp;?profession rdfs:label ?profName . <br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;FILTER regex(?profName, "drug", "i") . <br>
-																		&nbsp;&nbsp;&nbsp;&nbsp;SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }<br>
+																		SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }<br>
 																		}</p>
 																		<h4>Result:</h4>
 																		<ul>
@@ -513,6 +516,7 @@
 			        										<h3 class="modal-title">All Breaking Bad character who have narrative role not protagonist.</h3>
 			      										</div>
 			      										<div class="modal-body">
+																	<p>* Adapted query from original query 4 *</p> <br>
 																	<p>SELECT ?item ?itemLabel <br>
 																		WHERE {<br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 . <br>
@@ -568,6 +572,7 @@
 			        										<h3 class="modal-title">All Breaking Bad characters who have work relationship with other characters.</h3>
 			      										</div>
 			      										<div class="modal-body">
+																	<p>* Adapted query from original query 5 *</p> <br>
 																	<p>SELECT ?item ?itemLabel <br>
 																		WHERE {<br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 .<br>
@@ -590,6 +595,7 @@
 									<div class="card col-md-3">
 												<div class="card-body">
 		    									<h4 class="card-title" align="center">Wikidata Query 6:</h4>
+													<p>* Adapted query from original query 6 *</p> <br>
 		    									<p class="card-text">All Breaking Bad characters who are against some character (and who).</p>
 													<div class="col text-center">
 		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal5bis">Run</button>
@@ -605,7 +611,7 @@
 																	<p>SELECT ?item ?itemLabel ?character ?characterLabel <br>
 																		WHERE {<br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 . <br>
-																		&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P7047 ?character
+																		&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P7047 ?character . <br>
 		        												SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } {<br>
 																		}</p>
 																		<h4>Outcome:</h4>
@@ -635,6 +641,7 @@
 			        										<h3 class="modal-title">All Breaking Bad characters who are killed by another character, and by who</h3>
 			      										</div>
 			      										<div class="modal-body">
+																	<p>* Adapted query from original query 7 *</p> <br>
 																	<p>SELECT ?item ?itemLabel ?otherItem ?otherItemLabel<br>
 																		WHERE {<br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 .<br>
@@ -674,6 +681,7 @@
 			        										<h3 class="modal-title">All Breaking Bad protagonist sociological characteristics.</h3>
 			      										</div>
 			      										<div class="modal-body">
+																	<p>* Adapted query from original query 8 *</p> <br>
 																	<p>SELECT item ?itemLabel ?occupationLabel ?citizenshipLabel ?partnerLabel ?languageLabel <br>
 																		WHERE {<br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?item wdt:P31 wd:Q16888407 . <br>
