@@ -64,12 +64,15 @@
 								<h1>Process:</h1>
 									<ul>
 										<li><a href="#1">Defining our purpose</a>
-										<li><a href="#competencyQuestion">Competency Questions</a></li>
-										<li><a href="#knowledgeGraph">Knowledge Graph</a></li>
-										<li><a href="#ontology">The Data</a></li>
-										<li><a href="#queries">SPARQL Queries</a></li>
-										<li><a href="#reliabilityChecking">Other sources</a></li>
-										<li><a href="arcoSpinOff">ArCo’s spin-off</a></li>
+										<li><a href="#2">Defining competency questions</a></li>
+										<li><a href="#3">Building a conceptual model</a></li>
+										<li><a href="#4">Transforming the conceptual model</a></li>
+										<li><a href="#5">Managing the peculiarities</a></li>
+										<li><a href="#6">Connecting to ArCo’s network</a></li>
+										<li><a href="#7">Creating a dataset</a></li>
+										<li><a href="#8">Checking the consistency</a></li>
+										<li><a href="#9">Checking the reliability</a></li>
+										<li><a href="#10">Other sources</a></li>
 									</ul>
 							</div>
 					</aside>
@@ -95,167 +98,164 @@
 										<h3>Disclaimer: why using ArCo for content description. </h3>
 										<p>As we underlined in the About section, ArCo’s ontology network is mainly dedicated to the formal description of the catalographic aspect of cultural properties, firstly aimed at developing an ontology language for the ICCD standard of description. For this reason, it may seem unrealistic to use it in order to describe their content and even more the content of such a complex property as a TV series. Nonetheless, we truly believe that content description needs to be taken in consideration in order to represent the knowledge of new multimedial cultural products that are becoming more and more relevant within our contemporary culture. The whole project is about understanding whether this fundamental aspect could be implemented in ArCo, and in demonstrating this we were open to every possible outcoming.<br>
 										The most effective solution in our opinion has been the one more deeply shown in the last section of our project (ArCo’s spin-off): while working on content description is quite complicated as ArCo is at the moment, the realization of a new ontology module wholly dedicated to that could take ArCo on a totally new direction in the perspective of modeling not only the ‘outside’ but also the ‘inside’ of cultural properties - that is, maybe, their most tricky and at the same time interesting part.</p>
-								</div>		
-
-					</div>
-					<hr>
-
-					<main class="col-md-12">
-						<article class="post post-1">
-
-							<div class="entry-content clearfix" align="justify">
-								<h1>1:</h1><h2>Defining our purpose - understanding whether it would be possible to describe a cultural property content through ArCo.</h2>
-								<h3>Defining a cultural property: Breaking Bad TV series.</h3>
-								<p>The purpose of the project is to define and deliver a new provision of knowledge related to the content description of a cultural property through a knowledge graph based on ArCo.
-									Specifically, we were interested in understanding whether it would have been possible to use ArCo’s ontology network to describe a TV series, a property that, due to its own multidimensional nature, highlights the need for deeper and more specific extraction of information. <br>
-									The specific point of reference in our approach to TV series was Breaking Bad, a show by Vince Gilligan that has become famous all over the world for being one of the most innovative series in terms of content and parallel plots. Thanks to these same features, it has been the perfect starting point to model a knowledge graph able to describe the content of any cultural property depicting a plot and some characters. </p>
-
-								<h3>Modeling the content: from Breaking Bad to all cultural properties.</h3>
-								<p>Starting from the Breaking Bad example, we thus tried to understand which traits of the specific item could have been extrapolated and formalized in order to be meaningfully applied in the description of content in general.
-									Analyzing the TV series different features, we found in the classification and description of characters the most interesting and richest field of research.<br>
-									Hence, we used this subject as reference to model the description of content in ArCo starting from cultural properties characters. </p>
-
-								<h3>Disclaimer: why using ArCo for content description. </h3>
-								<p>As we underlined in the About section, ArCo’s ontology network is mainly dedicated to the formal description of the catalographic aspect of cultural properties, firstly aimed at developing an ontology language for the ICCD standard of description. For this reason, it may seem unrealistic to use it in order to describe their content and even more the content of such a complex property as a TV series. Nonetheless, we truly believe that content description needs to be taken in consideration in order to represent the knowledge of new multimedial cultural products that are becoming more and more relevant within our contemporary culture. The whole project is about understanding whether this fundamental aspect could be implemented in ArCo, and in demonstrating this we were open to every possible outcoming.<br>
-								The most effective solution in our opinion has been the one more deeply shown in the last section of our project (ArCo’s spin-off): while working on content description is quite complicated as ArCo is at the moment, the realization of a new ontology module wholly dedicated to that could take ArCo on a totally new direction in the perspective of modeling not only the ‘outside’ but also the ‘inside’ of cultural properties - that is, maybe, their most tricky and at the same time interesting part.</p>
-
-								<h1>2:</h1><h2>Defining some competency questions related to the chosen theme.</h2>
-								<p>In order to develop the new content module - the eighth within ArCo’s network - we adapted to our purposes the so-called method eXtreme Design, the same used for ArCo’s network (link). <br>
-									Firstly then, we focused on the competency questions related to Breaking Bad that would have guided us on highlighting and analysing the most relevant features of our cultural property.
-									The CQs results listed a range of different characteristics our module needed to take into account in order to effectively model it.</p>
-
-								<h3>Our CQs.</h3>
-								<p>Our competency questions came from a previous knowledge of the TV series. Being informed and passionate about Breaking Bad, we started from some well-known declarations about it and its content and transformed them in competency questions. <br>
-									Initially, we formulated a great variety of questions in natural language that helped us in identifying the most different aspects of Breaking Bad that seemed worthy of interest to us. Nonetheless, those that attracted our attention the most - and also those that had not yet been covered by almost any ontology - concerned all the characters in the series and their destinies within the narrated content:
-									<ul class="ul">
-										<li>How many non-white characters are employed in illegal occupations?</li>
-										<li>Which female characters have both an occupation and a child?</li>
-										<li>Which are the characters that have an occupation somewhat related to drugs?</li>
-										<li>How many characters are depicted in the TV series? How many of them are alive at the end of the story?</li>
-										<li>Which are the characters that have been killed by other characters?</li>
-										<li>Who is the protagonist? Who are the fictional characters that are not the protagonist?</li>
-										<li>How are the relationships between the characters? What is their narratological role?</li>
-										<li>Which are their sociological characteristics? </li>
-									</ul>
-								</p>
-
-								<h3>Identifying logical components.</h3>
-								<p>Starting from a collection of original requirement stories able to answer our questions, we identified in each of them the logical components necessary to correctly formulating our competency questions. In order to transform our story in CQs, we firstly analyzed it in order to highlight the events, classes, individuals (named or anonymous ones), relations and logical implications within it.</p>
-
-								<div class="col-md-12" align="center">
-									<img src="img/cqColored1.png" class="img-responsive" style="width:80%;">
-								<br>
-									<img src="img/cqColored2.png" class="img-responsive" style="width:80%;">
-								</div>
-								<br><br><br>
-								<p>Then, we analyzed each of them more in depth in order to understand how to formalize their most interesting aspects in ontological language.</p>
-
-								<img src="img/CQexampleAll.png" class="img-responsive">
-
-								<p>The process helped us in better understanding which classes and properties we would have needed to insert in our ontology in order to model our cultural property. The given example shows, particularly, how we ended up in defining the ‘Origin’ and ‘Profession’ classes (and their subclasses).</p>
-
-								<h3>What CQs highlighted: narratological and sociological aspects in character description.</h3>
-								<p>As results of our competency questions analysis, we understood the two directions we needed to deepen for the description of content and characters in particular. On the one hand, one of the most relevant aspects of characters is their narratological role within the series. On the other hand, a topic of main interest in contemporary time is related to how characters in movies or TV series are able to represent our own reality or conversely are influenced by it. Hence, the second part of our research is dedicated to developing ontology entries able to describe their sociological characteristics and those traits able to disclose sociological implication in their representation.</p>
-
-								<h1>3:</h1><h2>Building a conceptual model based on CQs.</h2>
-								<p>After having used the CQs to understand the main aspects of interest in our cultural property and before formalizing them in the abstraction of a dedicated ontology, we carried on an additional step in the classification of the features we would have needed to deal with. Indeed, in order to understand in depth the relationships and interactions between the different narratological and sociological characteristics of our characters, we developed a conceptual model in natural language so that we could give a clearer visual representation of them and underline their features.</p>
-
-								<img src="img/KnowledgeGraph.png" class="img-responsive"><br>
-
-								<p>Starting from a wide and detailed graph able to cover the complex richness of the subject, we went a step ahead in the direction of abstraction and managed to realize a theoretical model where classes and subclasses of our future ontology were clearly defined and classified.</p>
-
-								<img src="img/KnowledgeGraphCloseUp.png" class="img-responsive">
-
-								<h3>Tools and methods.</h3>
-								<p>In sketching our initial models we favoured a visual representation of ideas, realizing our graphs through the Yed web application.</p>
-
-								<h1>4:</h1><h2>Transforming the conceptual model into an ontology: creating classes and properties in formal languages.</h2>
-								<p>With all classes, subclasses and properties clearly linked, we were finally ready to translate the concepts expressed in natural language into a formal one.</p>
-
-								<h3>The ontology data.</h3>
-								<p>Our ontology counts 60 Classes, 51 Object properties and 12 Data properties, all specifically thought for the modeling of a cultural property content and particularly for the description of the characters.<br>
-									These are more or less equally divided in the description of the two aspects that appeared to us most worthy of further study: on the one hand the description of the narratological role of the characters and on the other the modeling of their sociological characteristics.</p>
-
-								<h3>Relevant examples.</h3>
-								<div class="col-md-12" align="center">
-									<img src="img/class_ex.png" class="img-responsive">
-									<span class="img-desc"><h5>Img.</h5>Example of classes related to Character</span><br><br>
-									<img src="img/class_ex2.png" class="img-responsive">
-									<span class="img-desc"><h5>Img.</h5>Example of classes related to Socialogical Characteristics</span><br>
 								</div>
 
-								<h3>Tools and methods.</h3>
-								<p>The whole process of building our modular ontology was carried on through the ontology editor and knowledge management system ‘<a href="https://github.com/protegeproject/protege" target="_blank">Protégé</a>’. As a free, open-source system providing an interface to define ontologies and different reasoning tools to test its correctness, Protégé has been a significant tool in the development of our work. Nonetheless, despite its effectiveness in supporting the ontology building process itself, the impossibility to edit our data in a shared environment created not minor difficulties in handling the whole process of editing and definition.</p>
+								<div class="entry-content_project clearfix" align="justify" id="2">
+									<h1>2:</h1><h2>Defining some competency questions related to the chosen theme.</h2>
+									<p>In order to develop the new content module - the eighth within ArCo’s network - we adapted to our purposes the so-called method eXtreme Design, the same used for ArCo’s network (link). <br>
+										Firstly then, we focused on the competency questions related to Breaking Bad that would have guided us on highlighting and analysing the most relevant features of our cultural property.
+										The CQs results listed a range of different characteristics our module needed to take into account in order to effectively model it.</p>
 
-								<h1>5:</h1><h2>Managing the peculiarities: adding property characteristics and class restrictions.</h2>
-								<p>After having defined all the classes and properties of our ontology, more clarifications about both of them were added. <br>
-									This process handled the task, where it was needed, of the placement on the one hand of some class restrictions in order to better define their application to real entities, and on the other one on property characteristics able to define the type of relationship they represent.
-									The first process was carried out following ArCo’s method of defining class restrictions. Our restrictions are thus modeled in order to emulate the ones of already existent classes in the network, in order to favour the expected imports and relationships between our module and the others in ArCo.<br>
-									For what concerns property characteristics,, they are almost totally missing in ArCo. For this reason, we decided to maintain them only in those cases that seemed necessary to the property definition in itself, and mainly regarding properties of ‘symmetric’ kind. </p>
+									<h3>Our CQs.</h3>
+									<p>Our competency questions came from a previous knowledge of the TV series. Being informed and passionate about Breaking Bad, we started from some well-known declarations about it and its content and transformed them in competency questions. <br>
+										Initially, we formulated a great variety of questions in natural language that helped us in identifying the most different aspects of Breaking Bad that seemed worthy of interest to us. Nonetheless, those that attracted our attention the most - and also those that had not yet been covered by almost any ontology - concerned all the characters in the series and their destinies within the narrated content:
+										<ul class="ul">
+											<li>How many non-white characters are employed in illegal occupations?</li>
+											<li>Which female characters have both an occupation and a child?</li>
+											<li>Which are the characters that have an occupation somewhat related to drugs?</li>
+											<li>How many characters are depicted in the TV series? How many of them are alive at the end of the story?</li>
+											<li>Which are the characters that have been killed by other characters?</li>
+											<li>Who is the protagonist? Who are the fictional characters that are not the protagonist?</li>
+											<li>How are the relationships between the characters? What is their narratological role?</li>
+											<li>Which are their sociological characteristics? </li>
+										</ul>
+									</p>
 
-								<h3>Relevant examples.</h3>
-								<div class="col-md-12" align="center">
-									<img src="img/restriction_ex.png" class="img-responsive">
-									<span class="img-desc"><h5>Img.</h5>Example of classes related to Character</span><br><br>
-									<img src="img/restriction_ex2.png" class="img-responsive">
-									<span class="img-desc"><h5>Img.</h5>Example of classes related to Social Origin</span><br>
+									<h3>Identifying logical components.</h3>
+									<p>Starting from a collection of original requirement stories able to answer our questions, we identified in each of them the logical components necessary to correctly formulating our competency questions. In order to transform our story in CQs, we firstly analyzed it in order to highlight the events, classes, individuals (named or anonymous ones), relations and logical implications within it.</p>
+
+									<div class="col-md-12" align="center">
+										<img src="img/cqColored1.png" class="img-responsive" style="width:80%;">
+									<br>
+										<img src="img/cqColored2.png" class="img-responsive" style="width:80%;">
+									</div>
+									<br><br><br>
+									<p>Then, we analyzed each of them more in depth in order to understand how to formalize their most interesting aspects in ontological language.</p>
+
+									<img src="img/CQexampleAll.png" class="img-responsive">
+
+									<p>The process helped us in better understanding which classes and properties we would have needed to insert in our ontology in order to model our cultural property. The given example shows, particularly, how we ended up in defining the ‘Origin’ and ‘Profession’ classes (and their subclasses).</p>
+
+									<h3>What CQs highlighted: narratological and sociological aspects in character description.</h3>
+									<p>As results of our competency questions analysis, we understood the two directions we needed to deepen for the description of content and characters in particular. On the one hand, one of the most relevant aspects of characters is their narratological role within the series. On the other hand, a topic of main interest in contemporary time is related to how characters in movies or TV series are able to represent our own reality or conversely are influenced by it. Hence, the second part of our research is dedicated to developing ontology entries able to describe their sociological characteristics and those traits able to disclose sociological implication in their representation.</p>
 								</div>
 
-								<h1>6:</h1><h2>Connecting to ArCo’s network: imports and equivalences.</h2>
-								<p>A step we knew from the beginning to be likely to generate some difficulties was the connection of our module with the other one within the ArCo’s network.
-									From a general perspective, we imagined our ontology as the eighth module of ArCo’s network, and hence as a self-standing, independently working section of the whole project. Nonetheless, we felt the necessity to try to link it even more deeply within the structure of the network and with other modules that could show some points of contact with our module. <br>
-									In lights of the Content description’s needs, we decide to import three modules from ArCo:
-									<ul class="ul">
-										<li>the core module: as a way to link the content to the top-level of description within the network;</li>
-										<li>the denotative-description module: to handle the necessity to link the content to the more general level of description of a cultural property;</li>
-										<li>the context module: to supply some boundaries with the concepts relating the content with the context.</li>
-									</ul>
-									The choice of importing each of them was pondered on the possibility on the one hand to use some of their classes for the description of the content and on the other one to realize equivalences between some of our classes and theirs.</p>
+								<div class="entry-content_project clearfix" align="justify" id="3">
+									<h1>3:</h1><h2>Building a conceptual model based on CQs.</h2>
+									<p>After having used the CQs to understand the main aspects of interest in our cultural property and before formalizing them in the abstraction of a dedicated ontology, we carried on an additional step in the classification of the features we would have needed to deal with. Indeed, in order to understand in depth the relationships and interactions between the different narratological and sociological characteristics of our characters, we developed a conceptual model in natural language so that we could give a clearer visual representation of them and underline their features.</p>
 
-								<h3>Class equivalences.</h3>
-								<p><i>[Insert examples about equivalences we made]</i></p>
+									<img src="img/KnowledgeGraph.png" class="img-responsive"><br>
 
-								<h1>7:</h1><h2>Creating a dataset: populating our ontology named individuals related to our cultural property in order to realize a knowledge graph.</h2>
-								<p>Once we built our ontology, we used it to create a dataset populated with named individuals derived from the chosen cultural property.
-									Most of them were characters from Breaking Bad, but we also inserted individuals related to nationalities, ethnic groups, cultural products and professions. All of them were aimed at depicting the TV series world in the light of the most interesting aspects for our research.
-									In carrying on this step, we operated again through Protégé, by realizing a sort of new ontology made only by named individuals modeled through the entries of our imported content module. Then, we exported the result as an RDF/XML file where named individuals were described by sets of triples.</p>
+									<p>Starting from a wide and detailed graph able to cover the complex richness of the subject, we went a step ahead in the direction of abstraction and managed to realize a theoretical model where classes and subclasses of our future ontology were clearly defined and classified.</p>
 
-								<h3>Relevant example.</h3>
-								<div class="col-md-12" align="center">
-									<img src="img/import_ex.png" class="img-responsive">
-									<span class="img-desc"><h5>Img.</h5>Example of classes related to ArCo's imports</span><br>
+									<img src="img/KnowledgeGraphCloseUp.png" class="img-responsive">
+
+									<h3>Tools and methods.</h3>
+									<p>In sketching our initial models we favoured a visual representation of ideas, realizing our graphs through the Yed web application.</p>
 								</div>
 
-								<h1>8:</h1><h2>Checking the consistency of the model: executing SPARQL queries on the dataset.</h2>
-								<p>The named individual dataset was fundamental in order to check the consistency of the model we had created against its application to real data. By using our classes and properties in the description of individuals, we applied them to a practical example that could be queried in order to understand whether our ontology was consistent and coherent with our initial purpose.<br>
-									Starting from the competency questions we listed at the beginning of the research, we translated them in a formal language to realize a set of SPARQL queries to be run on the dataset. They are built in different ways and on different difficulty levels, aiming at plumbing some of the relevant aspects present in our model.</p>
+								<div class="entry-content_project clearfix" align="justify" id="4">
+									<h1>4:</h1><h2>Transforming the conceptual model into an ontology: creating classes and properties in formal languages.</h2>
+									<p>With all classes, subclasses and properties clearly linked, we were finally ready to translate the concepts expressed in natural language into a formal one.</p>
 
-								<h3>Tools and methods.</h3>
-								<p>Running SPARQL queries on our dataset required the use of Apache Jena Fuseki, an application that allowed us to create a local SPARQL end-point to run formal queries on our datasets.<br>
-									At this level, our process was structurally iterative. Given the complexity of the cultural property object of our research, and the potentially infinite breadth that a dataset dedicated to it could assume, we have worked to add named individuals to our dataset from time to time, according to the needs of the queries. In this way we were able to create a dataset which, although incomplete for the description of the entire TV series in its complexity, proved to be equally significant and efficient for our purposes: that is, to test the consistency of the module itself and its ability to respond to our initial CQs.</p>
+									<h3>The ontology data.</h3>
+									<p>Our ontology counts 60 Classes, 51 Object properties and 12 Data properties, all specifically thought for the modeling of a cultural property content and particularly for the description of the characters.<br>
+										These are more or less equally divided in the description of the two aspects that appeared to us most worthy of further study: on the one hand the description of the narratological role of the characters and on the other the modeling of their sociological characteristics.</p>
 
-								<h3>Results.</h3>
-								<p>In conclusion, we were satisfied with the dataset responses to our SPARQL queries. We were able to obtain correct and significant results for each of them, succeeding in representing and managing the knowledge on Breaking Bad in a way that adheres to our purpose.</p>
+									<h3>Relevant examples.</h3>
+									<div class="col-md-12" align="center">
+										<img src="img/class_ex.png" class="img-responsive">
+										<span class="img-desc"><h5>Img.</h5>Example of classes related to Character</span><br><br>
+										<img src="img/class_ex2.png" class="img-responsive">
+										<span class="img-desc"><h5>Img.</h5>Example of classes related to Socialogical Characteristics</span><br>
+									</div>
 
-								<h1>9:</h1><h2>Checking the reliability of the model: comparing our results to authoritative data from Wikidata.</h2>
-								<p>Despite the satisfactory answers of our ontology applied to the concrete example of the chosen cultural property, we decided to carry out a further step in our research, in order to avoid a too self-referential structure of the application of the model on real data.<br>
-									Thus, we decided to conduct further SPARQL queries as similar as possible to ours on much larger and more authoritative databases such as the one consisting of data from the Wikidata Ontology Project dedicated to Breaking Bad and its characters.<br>
-									Through Wikidata’s SPARQL end-point we had the opportunity to access a large amount of data represented through the ‘bottom-up’ language of Wikipedia-based ontology. Finally, we compared the results of these searches with the results obtained from the queries on our dataset.</p>
+									<h3>Tools and methods.</h3>
+									<p>The whole process of building our modular ontology was carried on through the ontology editor and knowledge management system ‘<a href="https://github.com/protegeproject/protege" target="_blank">Protégé</a>’. As a free, open-source system providing an interface to define ontologies and different reasoning tools to test its correctness, Protégé has been a significant tool in the development of our work. Nonetheless, despite its effectiveness in supporting the ontology building process itself, the impossibility to edit our data in a shared environment created not minor difficulties in handling the whole process of editing and definition.</p>
+								</div>
 
-								<h3>Relevant example.</h3>
-								<p><i>[Insert relevant example]</i></p>
+								<div class="entry-content_project clearfix" align="justify" id="5">
+									<h1>5:</h1><h2>Managing the peculiarities: adding property characteristics and class restrictions.</h2>
+									<p>After having defined all the classes and properties of our ontology, more clarifications about both of them were added. <br>
+										This process handled the task, where it was needed, of the placement on the one hand of some class restrictions in order to better define their application to real entities, and on the other one on property characteristics able to define the type of relationship they represent.
+										The first process was carried out following ArCo’s method of defining class restrictions. Our restrictions are thus modeled in order to emulate the ones of already existent classes in the network, in order to favour the expected imports and relationships between our module and the others in ArCo.<br>
+										For what concerns property characteristics,, they are almost totally missing in ArCo. For this reason, we decided to maintain them only in those cases that seemed necessary to the property definition in itself, and mainly regarding properties of ‘symmetric’ kind. </p>
 
-								<h3>Results.</h3>
-								<p>Unfortunately, the points of contact between our ontology and Wikidata data were only partial. It was possible to make comparisons between the results only in the case of queries referring to the profession of the characters, their sex or, in some cases, the ethnic group they belong to. The information regarding the narratological role of the characters is almost absent in Wikidata, while it is richer from the point of view of the interpretation of the actors and the episodes of the TV series.<br>
-								Despite the difficulty in comparing the results, we still believe that this distance between our ontology and the largest RDF database in the world on information relevant to our cultural property is, however, a symptom of how much research on character descriptions is still at an early stage and, at the same time, worthy of being conducted.<br>
-								The results of the test on the reliability of our module have highlighted the originality of our work and the potential for its possible expansion.</p>
+									<h3>Relevant examples.</h3>
+									<div class="col-md-12" align="center">
+										<img src="img/restriction_ex.png" class="img-responsive">
+										<span class="img-desc"><h5>Img.</h5>Example of classes related to Character</span><br><br>
+										<img src="img/restriction_ex2.png" class="img-responsive">
+										<span class="img-desc"><h5>Img.</h5>Example of classes related to Social Origin</span><br>
+									</div>
+								</div>
 
-								<h1>10:</h1><h2>Conclusion.</h2>
-								<p> <i>[Insert conclusion after second ceck]</i></p>
+								<div class="entry-content_project clearfix" align="justify" id="6">
+									<h1>6:</h1><h2>Connecting to ArCo’s network: imports and equivalences.</h2>
+									<p>A step we knew from the beginning to be likely to generate some difficulties was the connection of our module with the other one within the ArCo’s network.
+										From a general perspective, we imagined our ontology as the eighth module of ArCo’s network, and hence as a self-standing, independently working section of the whole project. Nonetheless, we felt the necessity to try to link it even more deeply within the structure of the network and with other modules that could show some points of contact with our module. <br>
+										In lights of the Content description’s needs, we decide to import three modules from ArCo:
+										<ul class="ul">
+											<li>the core module: as a way to link the content to the top-level of description within the network;</li>
+											<li>the denotative-description module: to handle the necessity to link the content to the more general level of description of a cultural property;</li>
+											<li>the context module: to supply some boundaries with the concepts relating the content with the context.</li>
+										</ul>
+										The choice of importing each of them was pondered on the possibility on the one hand to use some of their classes for the description of the content and on the other one to realize equivalences between some of our classes and theirs.</p>
 
-							</div>
+									<h3>Class equivalences.</h3>
+									<p><i>[Insert examples about equivalences we made]</i></p>
+								</div>
+
+								<div class="entry-content_project clearfix" align="justify" id="7">
+									<h1>7:</h1><h2>Creating a dataset: populating our ontology named individuals related to our cultural property in order to realize a knowledge graph.</h2>
+									<p>Once we built our ontology, we used it to create a dataset populated with named individuals derived from the chosen cultural property.
+										Most of them were characters from Breaking Bad, but we also inserted individuals related to nationalities, ethnic groups, cultural products and professions. All of them were aimed at depicting the TV series world in the light of the most interesting aspects for our research.
+										In carrying on this step, we operated again through Protégé, by realizing a sort of new ontology made only by named individuals modeled through the entries of our imported content module. Then, we exported the result as an RDF/XML file where named individuals were described by sets of triples.</p>
+
+									<h3>Relevant example.</h3>
+									<div class="col-md-12" align="center">
+										<img src="img/import_ex.png" class="img-responsive">
+										<span class="img-desc"><h5>Img.</h5>Example of classes related to ArCo's imports</span><br>
+									</div>
+								</div>
+
+								<div class="entry-content_project clearfix" align="justify" id="8">
+									<h1>8:</h1><h2>Checking the consistency of the model: executing SPARQL queries on the dataset.</h2>
+									<p>The named individual dataset was fundamental in order to check the consistency of the model we had created against its application to real data. By using our classes and properties in the description of individuals, we applied them to a practical example that could be queried in order to understand whether our ontology was consistent and coherent with our initial purpose.<br>
+										Starting from the competency questions we listed at the beginning of the research, we translated them in a formal language to realize a set of SPARQL queries to be run on the dataset. They are built in different ways and on different difficulty levels, aiming at plumbing some of the relevant aspects present in our model.</p>
+
+									<h3>Tools and methods.</h3>
+									<p>Running SPARQL queries on our dataset required the use of Apache Jena Fuseki, an application that allowed us to create a local SPARQL end-point to run formal queries on our datasets.<br>
+										At this level, our process was structurally iterative. Given the complexity of the cultural property object of our research, and the potentially infinite breadth that a dataset dedicated to it could assume, we have worked to add named individuals to our dataset from time to time, according to the needs of the queries. In this way we were able to create a dataset which, although incomplete for the description of the entire TV series in its complexity, proved to be equally significant and efficient for our purposes: that is, to test the consistency of the module itself and its ability to respond to our initial CQs.</p>
+
+									<h3>Results.</h3>
+									<p>In conclusion, we were satisfied with the dataset responses to our SPARQL queries. We were able to obtain correct and significant results for each of them, succeeding in representing and managing the knowledge on Breaking Bad in a way that adheres to our purpose.</p>
+								</div>
+
+								<div class="entry-content_project clearfix" align="justify" id="9">
+									<h1>9:</h1><h2>Checking the reliability of the model: comparing our results to authoritative data from Wikidata.</h2>
+									<p>Despite the satisfactory answers of our ontology applied to the concrete example of the chosen cultural property, we decided to carry out a further step in our research, in order to avoid a too self-referential structure of the application of the model on real data.<br>
+										Thus, we decided to conduct further SPARQL queries as similar as possible to ours on much larger and more authoritative databases such as the one consisting of data from the Wikidata Ontology Project dedicated to Breaking Bad and its characters.<br>
+										Through Wikidata’s SPARQL end-point we had the opportunity to access a large amount of data represented through the ‘bottom-up’ language of Wikipedia-based ontology. Finally, we compared the results of these searches with the results obtained from the queries on our dataset.</p>
+
+									<h3>Relevant example.</h3>
+									<p><i>[Insert relevant example]</i></p>
+
+									<h3>Results.</h3>
+									<p>Unfortunately, the points of contact between our ontology and Wikidata data were only partial. It was possible to make comparisons between the results only in the case of queries referring to the profession of the characters, their sex or, in some cases, the ethnic group they belong to. The information regarding the narratological role of the characters is almost absent in Wikidata, while it is richer from the point of view of the interpretation of the actors and the episodes of the TV series.<br>
+									Despite the difficulty in comparing the results, we still believe that this distance between our ontology and the largest RDF database in the world on information relevant to our cultural property is, however, a symptom of how much research on character descriptions is still at an early stage and, at the same time, worthy of being conducted.<br>
+									The results of the test on the reliability of our module have highlighted the originality of our work and the potential for its possible expansion.</p>
+								</div>
+
+								<div class="entry-content_project clearfix" align="justify" id="10">
+									<h1>10:</h1><h2>Conclusion.</h2>
+									<p> <i>[Insert conclusion after second ceck]</i></p>
+								</div>
+
 						</article>
 					</main>
+					<hr>
+
 				</div>
 			</div>
 		</div>
