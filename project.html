@@ -125,7 +125,11 @@
 			        										<h3 class="modal-title">How many characters not-white are employed in illegal professions?</h3>
 			      										</div>
 			      										<div class="modal-body">
-			        										<p>SELECT ?character <br>
+			        										<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
+																		 PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		 PREFIX rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns# &#62; <br>
+																		 <br>
+																		 SELECT ?character <br>
 																		 WHERE { <br>
 		    													 	 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasProfession ?profession .<br>
 		    														 &nbsp;&nbsp;&nbsp;&nbsp;?profession rdf:type cont:IllegalProfession .<br>
@@ -133,8 +137,9 @@
 		        									 			 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasEthnicOrigin dataset:White .<br>
 																	   }<br>
 		 														     } GROUP BY ?character</p>
-																		 <h4>Outcome:</h4>
-																		 <p>URI...</p>
+																		 <h4>Result:</h4>
+																		 <p>dataset:Gus_Fring <br>
+																			  dataset:Hector_Salamanca</p>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -160,14 +165,18 @@
 			        										<h3 class="modal-title">Which female characters have both an occupation and a child?</h3>
 			      										</div>
 			      										<div class="modal-body">
-																	<p>SELECT ?character <br>
-																		WHERE {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasSex "female"^^rdfs:Literal . <br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasProfession ?profession . <br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasChild ?child . <br>
-																		}</p>
-																		<h4>Outcome:</h4>
-																		<p>URI...</p>
+																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
+																		 PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		 PREFIX rdfs: &#60;http://www.w3.org/2000/01/rdf-schema# &#62; <br>
+																		 <br>
+																		 SELECT ?character <br>
+																		 WHERE {<br>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasSex "female"^^rdfs:Literal . <br>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasProfession ?profession . <br>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasChild ?child . <br>
+																		 }</p>
+																		<h4>Result:</h4>
+																		<p>dataset:Skyler_White</p>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -192,14 +201,25 @@
 			        										<h3 class="modal-title">Which characters have professions somewhat related to drug?</h3>
 			      										</div>
 			      										<div class="modal-body">
-																	<p>SELECT ?character <br>
-																		WHERE {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasProfession ?profession . <br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?profession rdfs:label ?profName . <br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;FILTER regex(?profName, "drug", "i") . <br>
-																		}</p>
+																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
+																		 PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		 PREFIX rdfs: &#60;http://www.w3.org/2000/01/rdf-schema# &#62; <br>
+																		 <br>
+																		 SELECT ?character <br>
+																		 WHERE {<br>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasProfession ?profession . <br>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;?profession rdfs:label ?profName . <br>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;FILTER regex(?profName, "drug", "i") . <br>
+																		 }</p>
 																		<h4>Outcome:</h4>
-																		<p>URI...</p>
+																		<p>dataset:Gus_Fring <br>
+																			 dataset:Walter_White <br>
+																			 dataset:Hector_Salamanca <br>
+																			 dataset:Lydia_Rodarte-Quayle <br>
+																			 dataset:Jack_Welker <br>
+																			 dataset:Jesse_Pinkman <br>
+																			 dataset:Hank_Schrader <br>
+																			 dataset:Tod_Alquist</p>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -225,15 +245,30 @@
 			        										<h3 class="modal-title">Who are the fictional characters that are not protagonist?</h3>
 			      										</div>
 			      										<div class="modal-body">
-																	<p>SELECT ?FictionalCharacter <br>
+																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
+																		PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		PREFIX rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns# &#62; <br>
+																		<br>
+																		SELECT ?FictionalCharacter <br>
 																		WHERE {<br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?FictionalCharacter ref:type cont:character .  <br>
 																		MINUS {<br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?FictionalCharacter rdf:type cont:Protagonist . <br>
 																		}<br>
 																		}</p>
-																		<h4>Outcome:</h4>
-																		<p>URI...</p>
+																		<h4>Result:</h4>
+																		<p>dataset:Jane_Margolis <br>
+																			dataset:Skyler_White <br>
+																			dataset:Walter_White_Jr. <br>
+																			dataset:Tod_Alquist <br>
+																			dataset:Hank_Schrader <br>
+																			dataset:Marie_Schrader <br>
+																			dataset:Hector_Salamanca <br>
+																			dataset:Lydia_Rodarte-Quayle <br>
+																			dataset:Gus_Fring <br>
+																			dataset:Saul_Goodman <br>
+																			dataset:Mike_Ehrmantraut <br>
+																			dataset:Jack_Welker</p>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -259,14 +294,20 @@
 			        										<h3 class="modal-title">Who are the antiheroes that have work relationship the villain?</h3>
 			      										</div>
 			      										<div class="modal-body">
-																	<p>SELECT ?antihero <br>
+																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
+																		PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		PREFIX rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns# &#62; <br>
+																		<br>
+																		SELECT ?antihero <br>
 																		WHERE {<br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?antihero rdf:type cont:AntiHero .<br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?villain rdf:type cont:Villain . <br>
 																		{?antihero cont:hasBusinessPartner ?villain } UNION {?antihero cont:hasEmployer ?villain } <br>
 																		}</p>
-																		<h4>Outcome:</h4>
-																		<p>URI...</p>
+																		<h4>Result:</h4>
+																		<p>dataset:Jesse_Pinkman <br>
+																			dataset:Walter_White <br>
+																			dataset:Mike_Ehrmantraut</p>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -292,15 +333,22 @@
 			        										<h3 class="modal-title">Who are the opposing characters with scope not universal good?</h3>
 			      										</div>
 			      										<div class="modal-body">
-																	<p>SELECT ?character <br>
+																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
+																		PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		PREFIX rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns# &#62; <br>
+																		<br>
+																		SELECT ?character <br>
 																		WHERE {<br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:Opposing . <br>
 		        												MINUS {<br>
 																		&nbsp;&nbsp;&nbsp;&nbsp;?characterScope rdf:type cont:UniversalGood . <br>
 																		}<br>
 																		}</p>
-																		<h4>Outcome:</h4>
-																		<p>URI...</p>
+																		<h4>Result:</h4>
+																		<p>dataset:Gus_Fring <br>
+																			dataset:Hank_Schrader <br>
+																			dataset:Hector_Salamanca <br>
+																			dataset:Mike_Ehrmantraut</p>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -326,14 +374,20 @@
 			        										<h3 class="modal-title">Who are the characters that has been killed by protagonist?</h3>
 			      										</div>
 			      										<div class="modal-body">
-																	<p>SELECT ?character <br>
+																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
+																		PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		PREFIX rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns# &#62; <br>
+																		<br>
+																		SELECT ?character <br>
 																		WHERE {<br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:Character .<br>
 		        												&nbsp;&nbsp;&nbsp;&nbsp;?protagonist rdf:type cont:Protagonist . <br>
 																		&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasBeenKilledBy ?Protagonist . <br>
 																		}</p>
-																		<h4>Outcome:</h4>
-																		<p>URI...</p>
+																		<h4>Result:</h4>
+																		<p>dataset:Jack_Welker	<br>
+																			dataset:Lydia_Rodarte-Quayle <br>
+																			dataset:Tod_Alquist</p>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -359,13 +413,35 @@
 			        										<h3 class="modal-title">Which are antihero's sociological characteristics?</h3>
 			      										</div>
 			      										<div class="modal-body">
-																	<p>?sociologicalCharacteristics <br>
-																		WHERE {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:AntiHero . <br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?sociologicalCharacteristics rdf:type cont:SociologicalCharacteristics . <br>
-																		} GROUP BY ?sociologicalCharacteristics</p>
-																		<h4>Outcome:</h4>
-																		<p>URI...</p>
+																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
+																		 PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		 PREFIX rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns# &#62; <br>
+																		 <br>
+																		 SELECT ?sociologicalCharacteristics <br>
+																		 WHERE {<br>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:AntiHero . <br>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;?sociologicalCharacteristics rdf:type cont:SociologicalCharacteristics . <br>
+																		 } GROUP BY ?sociologicalCharacteristics</p>
+																		<h4>Result:</h4>
+																		<p>dataset:USA <br>
+																			dataset:Chemist <br>
+																			dataset:Mexico <br>
+																			dataset:LatinAmerican <br>
+																			dataset:Meth_manufacturer <br>
+																			dataset:Restaurant_owner <br>
+																			dataset:Drug_money_manager <br>
+																			dataset:Cleaner <br>
+																			dataset:Car_wash_manager <br>
+																			dataset:High_school_Chemistry_teacher <br>
+																			dataset:Short_story_writer <br>
+																			dataset:Lawyer <br>
+																			dataset:White <br>
+																			dataset:Chile <br>
+																			dataset:DEA_agent <br>
+																			dataset:Latino <br>
+																			dataset:Car_wash_cashier <br>
+																			dataset:Drug_dealer	<br>
+																			dataset:Industrial_laundry_owner</p>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
@@ -375,6 +451,49 @@
 													</div>
 
 		  									</div>
+									</div>
+
+									<div class="card col-md-3">
+										<div class="card-body">
+		    									<h4 class="card-title" align="center">Query 9:</h4>
+		    									<p class="card-text">Which are the character with most business partner relationships?</p>
+													<div class="col text-center">
+		    										<button class="btn btn-success" data-toggle="modal" data-target="#myModal8">Run</button>
+													</div>
+
+													<div class="modal" id="myModal8">
+		  											<div class="modal-dialog modal-dialog-centered">
+		    											<div class="modal-content">
+			      										<div class="modal-header">
+			        										<h3 class="modal-title">Which are the character with most business partner relationships?</h3>
+			      										</div>
+			      										<div class="modal-body">
+																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
+																		 PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		 <br>
+																		 SELECT ?characterOne (count (distinct ?characterTwo) as ?count) <br>
+																		 WHERE {<br>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;?characterOne cont:hasBusinessPartner ?characterTwo . <br>
+																	 } <br>
+																	 GROUP BY ?characterOne <br>
+																	 ORDER BY DESC(?count)</p>
+																		<h4>Result:</h4>
+																		<p>dataset:Tod_Alquist &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "5"^^xsd:integer <br>
+																			 dataset:Lydia_Rodarte-Quayle &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "4"^^xsd:integer <br>
+																			 dataset:Jack_Welker &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "2"^^xsd:integer <br>
+																			 dataset:Mike_Ehrmantraut &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2"^^xsd:integer <br>
+																			 dataset:Saul_Goodman &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "2"^^xsd:integer <br>
+																			 dataset:Jesse_Pinkman &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "1"^^xsd:integer <br>
+																			 dataset:Skyler_White &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "1"^^xsd:integer <br>
+																			 dataset:Walter_White &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "1"^^xsd:integer</p>
+			      										</div>
+			      										<div class="modal-footer">
+			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+			      										</div>
+		    											</div>
+		  											</div>
+													</div>
+										</div>
 									</div>
 								</div>
 								<!-- End Query cards -->
