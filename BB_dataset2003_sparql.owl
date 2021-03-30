@@ -1,0 +1,652 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#"
+     xml:base="http://www.semanticweb.org/ontologies/2021/2/BB_dataset"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:a-cont="http://www.w3id.org/arco/ontology/content#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:context-description="https://w3id.org/arco/ontology/context-description/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset">
+        <owl:imports rdf:resource="http://www.w3id.org/arco/ontology/content"/>
+    </owl:Ontology>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Better_Call_Saul -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Better_Call_Saul">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#TvSeries"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Better Call Saul</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Breaking_Bad -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Breaking_Bad">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#TvSeries"/>
+        <a-cont:hasAuthor rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Vince_Gilligan"/>
+        <a-cont:hasPeriodOfTime rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2008-2013</a-cont:hasPeriodOfTime>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breaking Bad</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Car_wash_cashier -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Car_wash_cashier">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#LegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Car wash cashier</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Car_wash_manager -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Car_wash_manager">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#LegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Car wash manager</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Chemist -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Chemist">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#LegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemist</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Chile -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Chile">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#GeographicOrigin"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chile</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Cleaner -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Cleaner">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#IllegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cleaner</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Criminal_group_leader -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Criminal_group_leader">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#IllegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Profession"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Criminal group leader</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#DEA_agent -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#DEA_agent">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#LegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drug Enforcement Administration</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_dealer -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_dealer">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#IllegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Profession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drug dealer</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_manufacturer -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_manufacturer">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#IllegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Profession"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drug manufacturer</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_money_manager -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_money_manager">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#IllegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Profession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drug money manager</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#El_Camino -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#El_Camino">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Movie"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">El Camino</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Gus_Fring -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Gus_Fring">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Antagonist"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Character"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Opposing"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#UniversalBad"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Villain"/>
+        <a-cont:hasEthnicGroup rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#LatinAmerican"/>
+        <a-cont:hasEthnicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Latino"/>
+        <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Chile"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_money_manager"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Industrial_laundry_owner"/>
+        <a-cont:hasAlternativeName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Chicken Man</a-cont:hasAlternativeName>
+        <a-cont:hasAlternativeName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Chilean</a-cont:hasAlternativeName>
+        <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gustavo</a-cont:hasFirstName>
+        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Fring</a-cont:hasLastName>
+        <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gustavo Fring</a-cont:hasName>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Hank_Schrader -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Hank_Schrader">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Antagonist"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Character"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Hero"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Opposing"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#UniversalGood"/>
+        <a-cont:hasEthnicGroup rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasEthnicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#DEA_agent"/>
+        <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Skyler_White"/>
+        <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White_Jr."/>
+        <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Hank</a-cont:hasFirstName>
+        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Schrader</a-cont:hasLastName>
+        <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Hank Scharder</a-cont:hasName>
+        <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Head_of_logistics -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Head_of_logistics">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#LegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Profession"/>
+        <rdfs:label>Head of logistics</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Hector_Salamanca -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Hector_Salamanca">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#AntiHero"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Character"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Opposing"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Secondary"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#UniversalBad"/>
+        <a-cont:hasEthnicGroup rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#LatinAmerican"/>
+        <a-cont:hasEthnicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Latino"/>
+        <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Mexico"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_dealer"/>
+        <a-cont:kills rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Gus_Fring"/>
+        <a-cont:kills rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Hector_Salamanca"/>
+        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Hector Salamanca</a-cont:hasName>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#High_school_Chemistry_teacher -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#High_school_Chemistry_teacher">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#LegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Highschool chemistry teacher</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Industrial_laundry_owner -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Industrial_laundry_owner">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#LegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Industrial laundry owner</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jack_Welker -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jack_Welker">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Character"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Secondary"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#UniversalBad"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Villain"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Lydia_Rodarte-Quayle"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Tod_Alquist"/>
+        <a-cont:hasEthnicGroup rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasEthnicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Criminal_group_leader"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_dealer"/>
+        <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Tod_Alquist"/>
+        <a-cont:kills rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Hank_Schrader"/>
+        <a-cont:hasAlternativeName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Uncle Jack</a-cont:hasAlternativeName>
+        <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Jack</a-cont:hasFirstName>
+        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Welker</a-cont:hasLastName>
+        <a-cont:hasName>Kack Welker</a-cont:hasName>
+        <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Welker</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jane_Margolis -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jane_Margolis">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Character"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Secondary"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SelfGood"/>
+        <a-cont:hasEthnicGroup rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasEthnicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#tattoo_artist"/>
+        <a-cont:isRelatedTo rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jesse_Pinkman"/>
+        <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Jane</a-cont:hasFirstName>
+        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</a-cont:hasGender>
+        <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Margolis</a-cont:hasLastName>
+        <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Jane Margolis</a-cont:hasName>
+        <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jesse_Pinkman -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jesse_Pinkman">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#AntiHero"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Character"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Protagonist"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SelfGood"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Supporting"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White"/>
+        <a-cont:hasEmployer rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Gus_Fring"/>
+        <a-cont:hasEthnicGroup rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasEthnicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_dealer"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Meth_manufacturer"/>
+        <a-cont:kills rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Tod_Alquist"/>
+        <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Jesse</a-cont:hasFirstName>
+        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pinkman</a-cont:hasLastName>
+        <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Jesse Bruce Pinkman</a-cont:hasName>
+        <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#LatinAmerican -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#LatinAmerican">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#EthnicGroup"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latin American</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Latino -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Latino">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Lawyer -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Lawyer">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#LegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lawyer</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Lydia_Rodarte-Quayle -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Lydia_Rodarte-Quayle">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Character"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Secondary"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Gus_Fring"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jack_Welker"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Tod_Alquist"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White"/>
+        <a-cont:hasEthnicGroup rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasEthnicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_dealer"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Head_of_logistics"/>
+        <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lydia</a-cont:hasFirstName>
+        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</a-cont:hasGender>
+        <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Rodarte-Quayle</a-cont:hasLastName>
+        <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lydia Rodarte-Quayle</a-cont:hasName>
+        <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Houston, TX, USA</a-cont:hasPlaceOfLiving>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lydia Rodarte-Quayle</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Marie_Schrader -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Marie_Schrader">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Character"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Secondary"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SelfGood"/>
+        <a-cont:hasEthnicGroup rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasEthnicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Radiographer"/>
+        <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Hank_Schrader"/>
+        <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Skyler_White"/>
+        <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White"/>
+        <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White_Jr."/>
+        <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Marie</a-cont:hasFirstName>
+        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</a-cont:hasGender>
+        <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Schrader</a-cont:hasLastName>
+        <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Marie Schrader</a-cont:hasName>
+        <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Meth_manufacturer -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Meth_manufacturer">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#IllegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meth manifacturer</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Mexico -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Mexico">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#GeographicOrigin"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mexico</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Mike_Ehrmantraut -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Mike_Ehrmantraut">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Character"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Opposing"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Secondary"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#UniversalBad"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Villain"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jesse_Pinkman"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White"/>
+        <a-cont:hasEmployer rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Gus_Fring"/>
+        <a-cont:hasEthnicGroup rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasEthnicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Cleaner"/>
+        <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Michael</a-cont:hasFirstName>
+        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Erhmantraut</a-cont:hasLastName>
+        <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Michael Erhmantraut</a-cont:hasName>
+        <a-cont:hasNickname rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Mike</a-cont:hasNickname>
+        <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Radiographer -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Radiographer">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#LegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Profession"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiographer</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Restaurant_owner -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Restaurant_owner">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#LegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restaurant owner</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Saul_Goodman -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Saul_Goodman">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#AntiHero"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Character"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Secondary"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SelfGood"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jesse_Pinkman"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White"/>
+        <a-cont:hasEthnicGroup rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasEthnicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Lawyer"/>
+        <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">James</a-cont:hasFirstName>
+        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">McGill</a-cont:hasLastName>
+        <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">James Morgan McGill</a-cont:hasName>
+        <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
+        <a-cont:hasPseudonym rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Saul Goodman</a-cont:hasPseudonym>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Saving_monet_for_family -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Saving_monet_for_family">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SelfGood"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Short_story_writer -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Short_story_writer">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#LegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Short story writer</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Skyler_White -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Skyler_White">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Character"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Secondary"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SelfGood"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Supporting"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White"/>
+        <a-cont:hasChild rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White_Jr."/>
+        <a-cont:hasEthnicGroup rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasEthnicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Car_wash_manager"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Short_story_writer"/>
+        <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White"/>
+        <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Skyler</a-cont:hasFirstName>
+        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</a-cont:hasGender>
+        <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">White</a-cont:hasLastName>
+        <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Skyler White</a-cont:hasName>
+        <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Tod_Alquist -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Tod_Alquist">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Character"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Secondary"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Villain"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jack_Welker"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jesse_Pinkman"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Lydia_Rodarte-Quayle"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Mike_Ehrmantraut"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White"/>
+        <a-cont:hasEthnicGroup rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasEthnicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_manufacturer"/>
+        <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jack_Welker"/>
+        <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Tod</a-cont:hasFirstName>
+        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Alquist</a-cont:hasLastName>
+        <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Tod Alquist</a-cont:hasName>
+        <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#GeographicOrigin"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USA</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">United States of America</rdfs:seeAlso>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Vince_Gilligan -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Vince_Gilligan">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Author"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Person"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#AntiHero"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Character"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Leading"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Protagonist"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SelfGood"/>
+        <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jesse_Pinkman"/>
+        <a-cont:hasChild rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White_Jr."/>
+        <a-cont:hasEmployer rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Gus_Fring"/>
+        <a-cont:hasEthnicGroup rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasEthnicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White"/>
+        <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Car_wash_cashier"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Chemist"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_dealer"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#High_school_Chemistry_teacher"/>
+        <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Meth_manufacturer"/>
+        <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Hank_Schrader"/>
+        <a-cont:kills rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jack_Welker"/>
+        <a-cont:kills rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Lydia_Rodarte-Quayle"/>
+        <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Walter</a-cont:hasFirstName>
+        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">White</a-cont:hasLastName>
+        <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Walter Hartwell White Sr.</a-cont:hasName>
+        <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
+        <a-cont:hasPseudonym rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Heisenberg</a-cont:hasPseudonym>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White_Jr. -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White_Jr.">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Character"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Hero"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Secondary"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Supporting"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#UniversalGood"/>
+        <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA"/>
+        <a-cont:hasParent rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Skyler_White"/>
+        <a-cont:hasParent rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White"/>
+        <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Walter Jr.</a-cont:hasFirstName>
+        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">White</a-cont:hasLastName>
+        <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Walter Junior White</a-cont:hasName>
+        <a-cont:hasNickname rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Junior</a-cont:hasNickname>
+        <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#White">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#EthnicGroup"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#EthnicOrigin"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#SociologicalCharacteristics"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/2/BB_dataset#tattoo_artist -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#tattoo_artist">
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#LegalProfession"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Profession"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tattoo artist</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
