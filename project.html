@@ -142,15 +142,15 @@
 			      										</div>
 			      										<div class="modal-body">
 			        										<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
-																		 PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		 PREFIX a-cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
 																		 PREFIX rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns# &#62; <br>
 																		 <br>
 																		 SELECT ?character <br>
 																		 WHERE { <br>
-		    													 	 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasProfession ?profession .<br>
-		    														 &nbsp;&nbsp;&nbsp;&nbsp;?profession rdf:type cont:IllegalProfession .<br>
+		    													 	 &nbsp;&nbsp;&nbsp;&nbsp;?character a-cont:hasProfession ?profession .<br>
+		    														 &nbsp;&nbsp;&nbsp;&nbsp;?profession rdf:type a-cont:IllegalProfession .<br>
 																		 MINUS {<br>
-		        									 			 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasEthnicOrigin dataset:White .<br>
+		        									 			 &nbsp;&nbsp;&nbsp;&nbsp;?character a-cont:hasEthnicOrigin dataset:White .<br>
 																	   }<br>
 		 														     } GROUP BY ?character</p>
 																		 <h4>Result:</h4>
@@ -182,14 +182,14 @@
 			      										</div>
 			      										<div class="modal-body">
 																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
-																		 PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		 PREFIX a-cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
 																		 PREFIX rdfs: &#60;http://www.w3.org/2000/01/rdf-schema# &#62; <br>
 																		 <br>
 																		 SELECT ?character <br>
 																		 WHERE {<br>
-		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasSex "female"^^rdfs:Literal . <br>
-		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasProfession ?profession . <br>
-		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasChild ?child . <br>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character a-cont:hasSex "female"^^rdfs:Literal . <br>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character a-cont:hasProfession ?profession . <br>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character a-cont:hasChild ?child . <br>
 																		 }</p>
 																		<h4>Result:</h4>
 																		<p>dataset:Skyler_White</p>
@@ -218,12 +218,12 @@
 			      										</div>
 			      										<div class="modal-body">
 																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
-																		 PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		 PREFIX a-cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
 																		 PREFIX rdfs: &#60;http://www.w3.org/2000/01/rdf-schema# &#62; <br>
 																		 <br>
 																		 SELECT ?character <br>
 																		 WHERE {<br>
-		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasProfession ?profession . <br>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character a-cont:hasProfession ?profession . <br>
 		        												 &nbsp;&nbsp;&nbsp;&nbsp;?profession rdfs:label ?profName . <br>
 		        												 &nbsp;&nbsp;&nbsp;&nbsp;FILTER regex(?profName, "drug", "i") . <br>
 																		 }</p>
@@ -262,14 +262,14 @@
 			      										</div>
 			      										<div class="modal-body">
 																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
-																		PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		PREFIX a-cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
 																		PREFIX rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns# &#62; <br>
 																		<br>
 																		SELECT ?FictionalCharacter <br>
 																		WHERE {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?FictionalCharacter ref:type cont:character .  <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?FictionalCharacter ref:type a-cont:character .  <br>
 																		MINUS {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?FictionalCharacter rdf:type cont:Protagonist . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?FictionalCharacter rdf:type a-cont:Protagonist . <br>
 																		}<br>
 																		}</p>
 																		<h4>Result:</h4>
@@ -311,14 +311,14 @@
 			      										</div>
 			      										<div class="modal-body">
 																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
-																		PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		PREFIX a-cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
 																		PREFIX rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns# &#62; <br>
 																		<br>
 																		SELECT ?antihero <br>
 																		WHERE {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?antihero rdf:type cont:AntiHero .<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?villain rdf:type cont:Villain . <br>
-																		&nbsp;&nbsp;&nbsp;&nbsp;{?antihero cont:hasBusinessPartner ?villain } UNION {?antihero cont:hasEmployer ?villain } <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?antihero rdf:type a-cont:AntiHero .<br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?villain rdf:type a-cont:Villain . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;{?antihero a-cont:hasBusinessPartner ?villain } UNION {?antihero a-cont:hasEmployer ?villain } <br>
 																		}</p>
 																		<h4>Result:</h4>
 																		<p>dataset:Jesse_Pinkman <br>
@@ -350,14 +350,14 @@
 			      										</div>
 			      										<div class="modal-body">
 																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
-																		PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		PREFIX a-cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
 																		PREFIX rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns# &#62; <br>
 																		<br>
 																		SELECT ?character <br>
 																		WHERE {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:Opposing . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type a-cont:Opposing . <br>
 		        												MINUS {<br>
-																		&nbsp;&nbsp;&nbsp;&nbsp;?characterScope rdf:type cont:UniversalGood . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;?characterScope rdf:type a-cont:UniversalGood . <br>
 																		}<br>
 																		}</p>
 																		<h4>Result:</h4>
@@ -391,14 +391,14 @@
 			      										</div>
 			      										<div class="modal-body">
 																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
-																		PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		PREFIX a-cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
 																		PREFIX rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns# &#62; <br>
 																		<br>
 																		SELECT ?character <br>
 																		WHERE {<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:Character .<br>
-		        												&nbsp;&nbsp;&nbsp;&nbsp;?protagonist rdf:type cont:Protagonist . <br>
-																		&nbsp;&nbsp;&nbsp;&nbsp;?character cont:hasBeenKilledBy ?Protagonist . <br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type a-cont:Character .<br>
+		        												&nbsp;&nbsp;&nbsp;&nbsp;?protagonist rdf:type a-cont:Protagonist . <br>
+																		&nbsp;&nbsp;&nbsp;&nbsp;?character a-cont:hasBeenKilledBy ?Protagonist . <br>
 																		}</p>
 																		<h4>Result:</h4>
 																		<p>dataset:Jack_Welker	<br>
@@ -430,13 +430,13 @@
 			      										</div>
 			      										<div class="modal-body">
 																	<p>PREFIX dataset: &#60;http://www.semanticweb.org/ontologies/2021/2/BB_dataset# &#62; <br>
-																		 PREFIX cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
+																		 PREFIX a-cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
 																		 PREFIX rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns# &#62; <br>
 																		 <br>
 																		 SELECT ?sociologicalCharacteristics <br>
 																		 WHERE {<br>
-		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type cont:AntiHero . <br>
-		        												 &nbsp;&nbsp;&nbsp;&nbsp;?sociologicalCharacteristics rdf:type cont:SociologicalCharacteristics . <br>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type a-cont:AntiHero . <br>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;?sociologicalCharacteristics rdf:type a-cont:SociologicalCharacteristics . <br>
 																		 } GROUP BY ?sociologicalCharacteristics</p>
 																		<h4>Result:</h4>
 																		<p>dataset:USA <br>
