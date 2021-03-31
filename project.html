@@ -152,7 +152,7 @@
 																		 MINUS {<br>
 		        									 			 &nbsp;&nbsp;&nbsp;&nbsp;?character a-cont:hasEthnicOrigin dataset:White .<br>
 																	   }<br>
-		 														     } GROUP BY ?character</p>
+		 														     }</p>
 																		 <h4>Result:</h4>
 																		 <p>dataset:Gus_Fring <br>
 																			  dataset:Hector_Salamanca</p>
@@ -423,8 +423,8 @@
 													</div>
 
 													<div class="modal" id="myModal7">
-		  											<div class="modal-dialog modal-dialog-centered">
-		    											<div class="modal-content">
+		  											<div class="modal-lg modal-dialog modal-dialog-centered">
+		    											<div class="modal-content"  style="width: fit-content">
 			      										<div class="modal-header">
 			        										<h3 class="modal-title">Which are antihero's sociological characteristics?</h3>
 			      										</div>
@@ -433,31 +433,98 @@
 																		 PREFIX a-cont: &#60;http://www.w3id.org/arco/ontology/content# &#62; <br>
 																		 PREFIX rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns# &#62; <br>
 																		 <br>
-																		 SELECT ?sociologicalCharacteristics <br>
+																		 SELECT * <br>
 																		 WHERE {<br>
-		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type a-cont:AntiHero . <br>
-		        												 &nbsp;&nbsp;&nbsp;&nbsp;?sociologicalCharacteristics rdf:type a-cont:SociologicalCharacteristics . <br>
-																		 } GROUP BY ?sociologicalCharacteristics</p>
+		        												 &nbsp;&nbsp;&nbsp;&nbsp;?character rdf:type a-cont:AntiHero ;<br>
+																		a-cont:hasProfession ?Profession ;<br>
+																		a-cont:hasGeographicOrigin ?GeographicOrigin ;<br>
+																		a-cont:hasEthnicOrigin ?EthnicOrigin ;<br>
+																		a-cont:hasEthnicGroup ?EthnicGroup . <br>
+																		 } ORDER BY ?character</p>
 																		<h4>Result:</h4>
-																		<p>dataset:USA <br>
-																			dataset:Chemist <br>
-																			dataset:Mexico <br>
-																			dataset:LatinAmerican <br>
-																			dataset:Meth_manufacturer <br>
-																			dataset:Restaurant_owner <br>
-																			dataset:Drug_money_manager <br>
-																			dataset:Cleaner <br>
-																			dataset:Car_wash_manager <br>
-																			dataset:High_school_Chemistry_teacher <br>
-																			dataset:Short_story_writer <br>
-																			dataset:Lawyer <br>
-																			dataset:White <br>
-																			dataset:Chile <br>
-																			dataset:DEA_agent <br>
-																			dataset:Latino <br>
-																			dataset:Car_wash_cashier <br>
-																			dataset:Drug_dealer	<br>
-																			dataset:Industrial_laundry_owner</p>
+															<table class="table">
+																<thead>
+																<tr>
+																	<th scope="col">character</th>
+																	<th scope="col">Profession</th>
+																	<th scope="col">GeographicOrigin</th>
+																	<th scope="col">EthnicOrigin</th>
+																	<th scope="col">EthnicGroup</th>
+																</tr>
+																</thead>
+																<tbody>
+																<tr>
+																	<td>dataset:Hector_Salamanca</td>
+																	<td>dataset:Drug_dealer</td>
+																	<td>dataset:Mexico</td>
+																	<td>dataset:Latino</td>
+																	<td>dataset:LatinAmerican</td>
+																</tr>
+																<tr>
+																	<td>dataset:Jesse_Pinkman</td>
+																	<td>dataset:Drug_dealer</td>
+																	<td>dataset:USA</td>
+																	<td>dataset:White</td>
+																	<td>dataset:White</td>
+																</tr>
+																<tr>
+																	<td>dataset:Jesse_Pinkman</td>
+																	<td>dataset:Meth_manufacturer</td>
+																	<td>dataset:USA</td>
+																	<td>dataset:White</td>
+																	<td>dataset:White</td>
+																</tr>
+																<tr>
+																	<td>dataset:Mike_Ehrmantraut</td>
+																	<td>dataset:Cleaner</td>
+																	<td>dataset:USA</td>
+																	<td>dataset:White</td>
+																	<td>dataset:White</td>
+																</tr>
+																<tr>
+																	<td>dataset:Saul_Goodman</td>
+																	<td>dataset:Lawyer</td>
+																	<td>dataset:USA</td>
+																	<td>dataset:White</td>
+																	<td>dataset:White</td>
+																</tr>
+																<tr>
+																	<td>dataset:Walter_White</td>
+																	<td>dataset:Car_wash_cashier</td>
+																	<td>dataset:USA</td>
+																	<td>dataset:White</td>
+																	<td>dataset:White</td>
+																</tr>
+																<tr>
+																	<td>dataset:Walter_White</td>
+																	<td>dataset:Chemist</td>
+																	<td>dataset:USA</td>
+																	<td>dataset:White</td>
+																	<td>dataset:White</td>
+																</tr>
+																<tr>
+																	<td>dataset:Walter_White</td>
+																	<td>dataset:Drug_dealer</td>
+																	<td>dataset:USA</td>
+																	<td>dataset:White</td>
+																	<td>dataset:White</td>
+																</tr>
+																<tr>
+																	<td>dataset:Walter_White</td>
+																	<td>dataset:High_school_Chemistry_teacher</td>
+																	<td>dataset:USA</td>
+																	<td>dataset:White</td>
+																	<td>dataset:White</td>
+																</tr>
+																<tr>
+																	<td>dataset:Walter_White</td>
+																	<td>dataset:Meth_manufacturer</td>
+																	<td>dataset:USA</td>
+																	<td>dataset:White</td>
+																	<td>dataset:White</td>
+																</tr>
+																</tbody>
+															</table>
 			      										</div>
 			      										<div class="modal-footer">
 			        										<button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
