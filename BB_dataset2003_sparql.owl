@@ -172,7 +172,7 @@
         <a-cont:hasAlternativeName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Chicken Man</a-cont:hasAlternativeName>
         <a-cont:hasAlternativeName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Chilean</a-cont:hasAlternativeName>
         <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gustavo</a-cont:hasFirstName>
-        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasSex rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasSex>
         <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Fring</a-cont:hasLastName>
         <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Gustavo Fring</a-cont:hasName>
     </rdf:Description>
@@ -194,7 +194,7 @@
         <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Skyler_White"/>
         <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White_Jr."/>
         <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Hank</a-cont:hasFirstName>
-        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasSex rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasSex>
         <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Schrader</a-cont:hasLastName>
         <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Hank Scharder</a-cont:hasName>
         <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
@@ -226,7 +226,7 @@
         <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_dealer"/>
         <a-cont:kills rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Gus_Fring"/>
         <a-cont:kills rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Hector_Salamanca"/>
-        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasSex rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasSex>
         <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Hector Salamanca</a-cont:hasName>
     </rdf:Description>
     
@@ -270,7 +270,7 @@
         <a-cont:kills rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Hank_Schrader"/>
         <a-cont:hasAlternativeName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Uncle Jack</a-cont:hasAlternativeName>
         <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Jack</a-cont:hasFirstName>
-        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasSex rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasSex>
         <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Welker</a-cont:hasLastName>
         <a-cont:hasName>Kack Welker</a-cont:hasName>
         <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
@@ -291,7 +291,7 @@
         <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#tattoo_artist"/>
         <a-cont:isRelatedTo rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jesse_Pinkman"/>
         <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Jane</a-cont:hasFirstName>
-        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</a-cont:hasGender>
+        <a-cont:hasSex rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</a-cont:hasSex>
         <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Margolis</a-cont:hasLastName>
         <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Jane Margolis</a-cont:hasName>
         <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
@@ -316,7 +316,7 @@
         <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Meth_manufacturer"/>
         <a-cont:kills rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Tod_Alquist"/>
         <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Jesse</a-cont:hasFirstName>
-        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasSex rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasSex>
         <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pinkman</a-cont:hasLastName>
         <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Jesse Bruce Pinkman</a-cont:hasName>
         <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
@@ -367,7 +367,7 @@
         <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_dealer"/>
         <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Head_of_logistics"/>
         <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lydia</a-cont:hasFirstName>
-        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</a-cont:hasGender>
+        <a-cont:hasSex rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</a-cont:hasSex>
         <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Rodarte-Quayle</a-cont:hasLastName>
         <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lydia Rodarte-Quayle</a-cont:hasName>
         <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Houston, TX, USA</a-cont:hasPlaceOfLiving>
@@ -391,7 +391,7 @@
         <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White"/>
         <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White_Jr."/>
         <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Marie</a-cont:hasFirstName>
-        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</a-cont:hasGender>
+        <a-cont:hasSex rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</a-cont:hasSex>
         <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Schrader</a-cont:hasLastName>
         <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Marie Schrader</a-cont:hasName>
         <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
@@ -426,7 +426,7 @@
         <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Opposing"/>
         <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Secondary"/>
         <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#UniversalBad"/>
-        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#Villain"/>
+        <rdf:type rdf:resource="http://www.w3id.org/arco/ontology/content#AntiHero"/>
         <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jesse_Pinkman"/>
         <a-cont:hasBusinessPartner rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White"/>
         <a-cont:hasEmployer rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Gus_Fring"/>
@@ -435,7 +435,7 @@
         <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA"/>
         <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Cleaner"/>
         <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Michael</a-cont:hasFirstName>
-        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasSex rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasSex>
         <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Erhmantraut</a-cont:hasLastName>
         <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Michael Erhmantraut</a-cont:hasName>
         <a-cont:hasNickname rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Mike</a-cont:hasNickname>
@@ -478,7 +478,7 @@
         <a-cont:hasGeographicOrigin rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#USA"/>
         <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Lawyer"/>
         <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">James</a-cont:hasFirstName>
-        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasSex rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasSex>
         <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">McGill</a-cont:hasLastName>
         <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">James Morgan McGill</a-cont:hasName>
         <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
@@ -521,7 +521,7 @@
         <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Short_story_writer"/>
         <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White"/>
         <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Skyler</a-cont:hasFirstName>
-        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</a-cont:hasGender>
+        <a-cont:hasSex rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">female</a-cont:hasSex>
         <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">White</a-cont:hasLastName>
         <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Skyler White</a-cont:hasName>
         <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
@@ -546,7 +546,7 @@
         <a-cont:hasProfession rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Drug_manufacturer"/>
         <a-cont:hasRelative rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jack_Welker"/>
         <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Tod</a-cont:hasFirstName>
-        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasSex rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasSex>
         <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Alquist</a-cont:hasLastName>
         <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Tod Alquist</a-cont:hasName>
         <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
@@ -597,7 +597,7 @@
         <a-cont:kills rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Jack_Welker"/>
         <a-cont:kills rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Lydia_Rodarte-Quayle"/>
         <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Walter</a-cont:hasFirstName>
-        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasSex rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasSex>
         <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">White</a-cont:hasLastName>
         <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Walter Hartwell White Sr.</a-cont:hasName>
         <a-cont:hasPlaceOfLiving rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Albuquerque, NM, USA</a-cont:hasPlaceOfLiving>
@@ -618,7 +618,7 @@
         <a-cont:hasParent rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Skyler_White"/>
         <a-cont:hasParent rdf:resource="http://www.semanticweb.org/ontologies/2021/2/BB_dataset#Walter_White"/>
         <a-cont:hasFirstName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Walter Jr.</a-cont:hasFirstName>
-        <a-cont:hasGender rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasGender>
+        <a-cont:hasSex rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">male</a-cont:hasSex>
         <a-cont:hasLastName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">White</a-cont:hasLastName>
         <a-cont:hasName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Walter Junior White</a-cont:hasName>
         <a-cont:hasNickname rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Junior</a-cont:hasNickname>
